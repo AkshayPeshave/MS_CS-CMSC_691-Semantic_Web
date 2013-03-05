@@ -1,0 +1,39 @@
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix gc: <http://www.daml.org/2001/01/gedcom/gedcom#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+foaf:knows a owl:SymmetricProperty.
+
+# A person knows their parents
+{?C gc:parent ?P} => {?C foaf:knows ?P}.
+
+# A person knows their children
+{?C gc:parent ?P} => {?P foaf:knows ?C}.
+
+# A person knows their siblings
+{?E1 gc:sibling ?E2} => {?E1 foaf:knows ?E2}.
+
+# A person know another by their nickname too
+{?P1 foaf:knows ?P2. ?P2 foaf:nick ?N2} => {?P1 foaf:knows ?N2}.
+
+# sister-in-law relationship
+# step 1: assert a pair of siblings
+# step 2: assert wife of one of the siblings
+# inference: wife is other sibling's sister-in-law and inverse relation is brother-in-law
+{?S1 gc:sibling ?S2. ?S2 gc:wife ?W} => {?S1 gc:sister_in_law ?W. ?W gc:brother_in_law ?S1}.
+
+#spouse's niece and nephew are the person's niece and nephew too
+{?S1 gc:spouse ?S2. ?S2 gc:nephew ?N} => {?S1 gc:nephew ?N}.
+{?S1 gc:spouse ?S2. ?S2 gc:niece ?N} => {?S1 gc:niece ?N}.
+
+
+#citizenship propogation by marriage from husband to wife and vice-versa
+{?S1 gc:spouse ?S2. ?S1 gc:citizenship ?C} => {?S2 gc:citizenship ?C}.
+
+#citizenship propogation by birth from parent
+{?C gc:parent ?P. ?P gc:citizenship ?CT} => {?C gc:citizenship ?CT}.
+
+
+

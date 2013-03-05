@@ -1,18 +1,19 @@
+computer science vocabulary -> ACM Computing CLassification System
+mathematics vocabulary -> AMS Math Subject Classification
+....both in RDF, SKOS and N3
+
+
+
+
+
+
+
 annotate course pages
 relate with wiki and google book resources
 relate with Kuhn library artifacts
 relate with research portal artifacts
 present a knowledge graph visualization for this network
 
-
-
 annotate thesis reports and derive relationships between core concept/topic of thesis and references used.
 
-
 link projects/topics of computing to mathematics topics and create a graph of relationships between project <-> computational topic <-> mathematics topic <-> faculty <-> reading material
-
-
-RDFa
-XSLT
-google visualisation
-alchemy API

@@ -1,0 +1,386 @@
+#Processed by Id: cwm.py,v 1.197 2007/12/13 15:38:39 syosi Exp 
+        #    using base file:///media/sf_GitHub/MS_CS-CMSC_691-Semantic_Web/HW3/myfamily.n3
+        
+#  Notation3 generation by
+#       notation3.py,v 1.200 2007/12/11 21:18:08 syosi Exp
+
+#   Base was: file:///media/sf_GitHub/MS_CS-CMSC_691-Semantic_Web/HW3/myfamily.n3
+     @prefix : <#> .
+    @prefix gc: <http://www.daml.org/2001/01/gedcom/gedcom#> .
+    @prefix owl: <http://www.w3.org/2002/07/owl#> .
+    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+    
+    "Abhay"     a rdfs:Resource .
+    
+    "Ajit"     a rdfs:Resource .
+    
+    "Akshay"     a rdfs:Resource .
+    
+    "Akshu"     a rdfs:Resource .
+    
+    "Anish"     a rdfs:Resource .
+    
+    "Appa"     a rdfs:Resource .
+    
+    "Archit"     a rdfs:Resource .
+    
+    "Archu"     a rdfs:Resource .
+    
+    "Aruna"     a rdfs:Resource .
+    
+    "Chanda"     a rdfs:Resource .
+    
+    "Chikoo"     a rdfs:Resource .
+    
+    "Gangadhar"     a rdfs:Resource .
+    
+    "Indian"     a rdfs:Resource .
+    
+    "Kumai"     a rdfs:Resource .
+    
+    "Kumud"     a rdfs:Resource .
+    
+    "Mitesh"     a rdfs:Resource .
+    
+    "Mr."     a rdfs:Resource .
+    
+    "Mrs."     a rdfs:Resource .
+    
+    "Ranjana"     a rdfs:Resource .
+    
+    "Sucheta"     a rdfs:Resource .
+    
+    "Suresh"     a rdfs:Resource .
+    
+    "United States"     a rdfs:Resource .
+    
+    rdf:type     a rdf:Property,
+                rdfs:Resource .
+    
+    :Abhay     a rdfs:Resource;
+         gc:aunt :Sucheta;
+         gc:brother :Ajit;
+         gc:childIn :fam_Gangadhar;
+         gc:citizenship "Indian";
+         gc:father :Gangadhar;
+         gc:firstcousin :Mitesh;
+         gc:givenName "Abhay";
+         gc:mother :Kumud;
+         gc:nephew :Anish,
+                :Archit;
+         gc:parent :Gangadhar,
+                :Kumud;
+         gc:sex gc:Male;
+         gc:sibling :Ajit;
+         gc:sister_in_law :Aruna;
+         gc:son :Akshay;
+         gc:spouse :Chanda;
+         gc:spouseIn :fam_Abhay;
+         gc:uncle :Suresh;
+         gc:wife :Chanda;
+         owl:differentFrom :Ajit,
+                :Chanda;
+         <http://xmlns.com/foaf/0.1/knows> "Akshu",
+                "Appa",
+                "Kumai",
+                :Ajit,
+                :Akshay,
+                :Gangadhar,
+                :Kumud;
+         <http://xmlns.com/foaf/0.1/title> "Mr." .
+    
+    :Ajit     a rdfs:Resource;
+         gc:aunt :Sucheta;
+         gc:brother :Abhay;
+         gc:childIn :fam_Gangadhar;
+         gc:citizenship "Indian";
+         gc:father :Gangadhar;
+         gc:firstcousin :Mitesh;
+         gc:givenName "Ajit";
+         gc:mother :Kumud;
+         gc:nephew :Akshay;
+         gc:parent :Gangadhar,
+                :Kumud;
+         gc:sex gc:Male;
+         gc:sibling :Abhay;
+         gc:sister_in_law :Chanda;
+         gc:son :Anish,
+                :Archit;
+         gc:spouse :Aruna;
+         gc:spouseIn :fam_Ajit;
+         gc:uncle :Suresh;
+         gc:wife :Aruna;
+         owl:differentFrom :Abhay,
+                :Aruna;
+         <http://xmlns.com/foaf/0.1/knows> "Appa",
+                "Archu",
+                "Kumai",
+                :Abhay,
+                :Anish,
+                :Archit,
+                :Gangadhar,
+                :Kumud;
+         <http://xmlns.com/foaf/0.1/title> "Mr." .
+    
+    :Akshay     a rdfs:Resource;
+         gc:aunt :Aruna;
+         gc:childIn :fam_Abhay;
+         gc:citizenship "Indian";
+         gc:father :Abhay;
+         gc:firstcousin :Anish,
+                :Archit;
+         gc:givenName "Akshay";
+         gc:grandfather :Gangadhar;
+         gc:grandmother :Kumud;
+         gc:grandparent :Gangadhar,
+                :Kumud;
+         gc:mother :Chanda;
+         gc:parent :Abhay,
+                :Chanda;
+         gc:sex gc:Male;
+         gc:uncle :Ajit;
+         <http://xmlns.com/foaf/0.1/knows> :Abhay,
+                :Chanda;
+         <http://xmlns.com/foaf/0.1/nick> "Akshu";
+         <http://xmlns.com/foaf/0.1/title> "Mr." .
+    
+    :Anish     a rdfs:Resource;
+         gc:aunt :Chanda;
+         gc:brother :Archit;
+         gc:childIn :fam_Ajit;
+         gc:citizenship "Indian";
+         gc:father :Ajit;
+         gc:firstcousin :Akshay;
+         gc:givenName "Anish";
+         gc:grandfather :Gangadhar;
+         gc:grandmother :Kumud;
+         gc:grandparent :Gangadhar,
+                :Kumud;
+         gc:mother :Aruna;
+         gc:parent :Ajit,
+                :Aruna;
+         gc:sex gc:Male;
+         gc:sibling :Archit;
+         gc:uncle :Abhay;
+         owl:differentFrom :Archit;
+         <http://xmlns.com/foaf/0.1/knows> "Archu",
+                :Ajit,
+                :Archit,
+                :Aruna;
+         <http://xmlns.com/foaf/0.1/title> "Mr." .
+    
+    :Archit     a rdfs:Resource;
+         gc:aunt :Chanda;
+         gc:brother :Anish;
+         gc:childIn :fam_Ajit;
+         gc:citizenship "Indian";
+         gc:father :Ajit;
+         gc:firstcousin :Akshay;
+         gc:givenName "Archit";
+         gc:grandfather :Gangadhar;
+         gc:grandmother :Kumud;
+         gc:grandparent :Gangadhar,
+                :Kumud;
+         gc:mother :Aruna;
+         gc:parent :Ajit,
+                :Aruna;
+         gc:sex gc:Male;
+         gc:sibling :Anish;
+         gc:uncle :Abhay;
+         owl:differentFrom :Anish;
+         <http://xmlns.com/foaf/0.1/knows> :Ajit,
+                :Anish,
+                :Aruna;
+         <http://xmlns.com/foaf/0.1/nick> "Archu";
+         <http://xmlns.com/foaf/0.1/title> "Mr." .
+    
+    :Aruna     a rdfs:Resource;
+         gc:brother_in_law :Abhay;
+         gc:citizenship "Indian";
+         gc:givenName "Aruna";
+         gc:husband :Ajit;
+         gc:nephew :Akshay;
+         gc:sex gc:Female;
+         gc:son :Anish,
+                :Archit;
+         gc:spouse :Ajit;
+         gc:spouseIn :fam_Ajit;
+         owl:differentFrom :Ajit;
+         <http://xmlns.com/foaf/0.1/knows> "Archu",
+                :Anish,
+                :Archit;
+         <http://xmlns.com/foaf/0.1/title> "Mrs." .
+    
+    :Chanda     a rdfs:Resource;
+         gc:brother_in_law :Ajit;
+         gc:citizenship "Indian";
+         gc:givenName "Chanda";
+         gc:husband :Abhay;
+         gc:nephew :Anish,
+                :Archit;
+         gc:sex gc:Female;
+         gc:son :Akshay;
+         gc:spouse :Abhay;
+         gc:spouseIn :fam_Abhay;
+         owl:differentFrom :Abhay;
+         <http://xmlns.com/foaf/0.1/knows> "Akshu",
+                :Akshay;
+         <http://xmlns.com/foaf/0.1/title> "Mrs." .
+    
+    :Gangadhar     a rdfs:Resource;
+         gc:brother :Suresh;
+         gc:childIn :fam_Apex;
+         gc:citizenship "Indian";
+         gc:givenName "Gangadhar";
+         gc:grandson :Akshay,
+                :Anish,
+                :Archit;
+         gc:nephew :Mitesh;
+         gc:sex gc:Male;
+         gc:sibling :Suresh;
+         gc:sister_in_law :Sucheta;
+         gc:son :Abhay,
+                :Ajit;
+         gc:spouse :Kumud;
+         gc:spouseIn :fam_Gangadhar;
+         gc:wife :Kumud;
+         owl:differentFrom :Kumud,
+                :Suresh;
+         <http://xmlns.com/foaf/0.1/knows> :Abhay,
+                :Ajit,
+                :Suresh;
+         <http://xmlns.com/foaf/0.1/nick> "Appa";
+         <http://xmlns.com/foaf/0.1/title> "Mr." .
+    
+    :Kumud     a rdfs:Resource;
+         gc:brother_in_law :Suresh;
+         gc:citizenship "Indian";
+         gc:givenName "Kumud";
+         gc:grandson :Akshay,
+                :Anish,
+                :Archit;
+         gc:husband :Gangadhar;
+         gc:nephew :Mitesh;
+         gc:sex gc:Female;
+         gc:son :Abhay,
+                :Ajit;
+         gc:spouse :Gangadhar;
+         gc:spouseIn :fam_Gangadhar;
+         owl:differentFrom :Gangadhar;
+         <http://xmlns.com/foaf/0.1/knows> :Abhay,
+                :Ajit;
+         <http://xmlns.com/foaf/0.1/nick> "Kumai";
+         <http://xmlns.com/foaf/0.1/title> "Mrs." .
+    
+    :Mitesh     a rdfs:Resource;
+         gc:aunt :Kumud;
+         gc:childIn :fam_Suresh;
+         gc:citizenship "Indian",
+                "United States";
+         gc:father :Suresh;
+         gc:firstcousin :Abhay,
+                :Ajit;
+         gc:givenName "Mitesh";
+         gc:mother :Sucheta;
+         gc:parent :Sucheta,
+                :Suresh;
+         gc:sex gc:Male;
+         gc:uncle :Gangadhar;
+         <http://xmlns.com/foaf/0.1/knows> "Ranjana",
+                :Sucheta,
+                :Suresh;
+         <http://xmlns.com/foaf/0.1/nick> "Chikoo";
+         <http://xmlns.com/foaf/0.1/title> "Mr." .
+    
+    :Sucheta     a rdfs:Resource;
+         gc:brother_in_law :Gangadhar;
+         gc:citizenship "Indian",
+                "United States";
+         gc:givenName "Sucheta";
+         gc:husband :Suresh;
+         gc:nephew :Abhay,
+                :Ajit;
+         gc:sex gc:Female;
+         gc:son :Mitesh;
+         gc:spouse :Suresh;
+         gc:spouseIn :fam_Suresh;
+         owl:differentFrom :Suresh;
+         <http://xmlns.com/foaf/0.1/knows> "Chikoo",
+                :Mitesh;
+         <http://xmlns.com/foaf/0.1/nick> "Ranjana";
+         <http://xmlns.com/foaf/0.1/title> "Mrs." .
+    
+    :Suresh     a rdfs:Resource;
+         gc:brother :Gangadhar;
+         gc:childIn :fam_Apex;
+         gc:citizenship "Indian",
+                "United States";
+         gc:givenName "Suresh";
+         gc:nephew :Abhay,
+                :Ajit;
+         gc:sex gc:Male;
+         gc:sibling :Gangadhar;
+         gc:sister_in_law :Kumud;
+         gc:son :Mitesh;
+         gc:spouse :Sucheta;
+         gc:spouseIn :fam_Suresh;
+         gc:wife :Sucheta;
+         owl:differentFrom :Gangadhar,
+                :Sucheta;
+         <http://xmlns.com/foaf/0.1/knows> "Appa",
+                "Chikoo",
+                :Gangadhar,
+                :Mitesh;
+         <http://xmlns.com/foaf/0.1/title> "Mr." .
+    
+    :fam_Abhay     a gc:Family,
+                rdfs:Resource .
+    
+    :fam_Ajit     a gc:Family,
+                rdfs:Resource .
+    
+    :fam_Apex     a gc:Family,
+                rdfs:Resource .
+    
+    :fam_Gangadhar     a gc:Family,
+                rdfs:Resource .
+    
+    :fam_Suresh     a gc:Family,
+                rdfs:Resource .
+    
+    gc:Family     a rdfs:Resource .
+    
+    gc:Female     a rdfs:Resource .
+    
+    gc:Male     a rdfs:Resource .
+    
+    gc:childIn     a rdf:Property,
+                rdfs:Resource .
+    
+    gc:citizenship     a rdf:Property,
+                rdfs:Resource .
+    
+    gc:givenName     a rdf:Property,
+                rdfs:Resource .
+    
+    gc:sex     a rdf:Property,
+                rdfs:Resource .
+    
+    gc:spouseIn     a rdf:Property,
+                rdfs:Resource .
+    
+    rdf:Property     a rdfs:Resource .
+    
+    rdfs:Resource     a rdfs:Resource .
+    
+    owl:differentFrom     a rdf:Property,
+                rdfs:Resource .
+    
+    <http://xmlns.com/foaf/0.1/nick>     a rdf:Property,
+                rdfs:Resource .
+    
+    <http://xmlns.com/foaf/0.1/title>     a rdf:Property,
+                rdfs:Resource .
+    
+#ENDS

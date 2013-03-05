@@ -1,0 +1,25 @@
+courseSchedule
+	courseSubject - string enumeration
+	courseCareer - string enumeration
+	semester - string enumeration
+	year - date year component
+	course (MV)
+		courseCode - string
+		courseTitle - string
+		section (MV)
+			sectionId
+				sectionNumber - number
+				sectionType - string enumeration
+				classNumber - number
+			status - string enumeration
+			session - string enumeration
+			days (MV)
+				day - string enumeration
+			startTime - time
+			endTime - time
+			location
+				building - string enumeration
+				room - string
+			meetingStartDate - date
+			meetingEndDate - date
+		

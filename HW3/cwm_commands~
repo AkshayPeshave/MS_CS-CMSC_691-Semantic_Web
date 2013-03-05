@@ -1,0 +1,5 @@
+cwm "/media/sf_GitHub/MS_CS-CMSC_691-Semantic_Web/HW3/myfamily.n3"      --apply="http://cs.umbc.edu/courses/graduate/691/spring13/01/examples/n3/rdfs-rules.n3"      --apply="http://cs.umbc.edu/courses/graduate/691/spring13/01/examples/n3/gedcom-relations.n3"
+
+
+cwm "/media/sf_GitHub/MS_CS-CMSC_691-Semantic_Web/HW3/myfamily.n3"      --apply="http://cs.umbc.edu/courses/graduate/691/spring13/01/examples/n3/rdfs-rules.n3"      --apply="http://cs.umbc.edu/courses/graduate/691/spring13/01/examples/n3/gedcom-relations.n3" --apply="http://userpages.umbc.edu/~peshave1/CMSC691/HW3/family-rules.n3"
+

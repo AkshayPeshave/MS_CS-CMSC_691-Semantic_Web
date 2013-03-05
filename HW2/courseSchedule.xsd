@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://userpages.umbc.edu/~peshave1/CMSC691/HW2/courseSchedule.xsd"
+    elementFormDefault="qualified"
+    xmlns:umbc="http://userpages.umbc.edu/~peshave1/CMSC691/HW2/courseSchedule.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="courseSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="courses" maxOccurs="1" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="course" type="umbc:academicCourse_type" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+          <xs:unique name="testUniqueCourse">
+            <xs:selector xpath="course"/>
+            <xs:field xpath="@courseCode"/>
+          </xs:unique>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="courseSubject" type="umbc:subject_type" use="required"/>
+      <xs:attribute name="courseCareer" type="umbc:career_type" use="required"/>
+      <xs:attribute name="semester" type="umbc:academicSemester_type" use="required"/>
+      <xs:attribute name="year" type="xs:gYear" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!--
+    A course is identified by 
+      1. course code - attribute
+      2. course title - element tag
+    Each course is offered by varied instructors in several sections
+  -->
+  <xs:complexType name="academicCourse_type">
+    <xs:sequence>
+      <xs:element name="courseTitle" type="xs:string" maxOccurs="1" minOccurs="1"/>
+      <xs:element name="sections" maxOccurs="1" minOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="section" type="umbc:courseSection_type" minOccurs="1" maxOccurs="unbounded">
+              <xs:unique name="testUniqueDay">
+                <xs:selector xpath="day"/>
+                <xs:field xpath="Value"/>
+              </xs:unique>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+        <xs:unique name="testUniqueSection">
+          <xs:selector xpath="section"/>
+          <xs:field xpath="sectionId"/>
+        </xs:unique>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="courseCode" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <!-- 
+    A course section is characterized by the required elements
+      1. Section Id
+      2. Status
+      3. Session-type
+      4. instructor
+      5. Days and times when the section meets
+      6. Location where the section meets
+      7. Start and end date for section meetings
+    An optional element is the 'topic' tag specifying a specialised topic for a section of some generalised course
+  -->
+  <xs:complexType name="courseSection_type">
+    <xs:sequence minOccurs="1" maxOccurs="1" >
+      <xs:element name="sectionId" type="umbc:courseSectionId_type" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="topic" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="status" type="umbc:courseSectionStatus_type" minOccurs="1" maxOccurs="1" />
+      <xs:element name="session" type="umbc:courseSectionSession_type" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="instructor" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="day" type="umbc:courseSectionDay_type" minOccurs="1" maxOccurs="5" />
+      <!--assumption: course section meets at the same time and location everytime-->
+      <xs:element name="startTime" minOccurs="1" maxOccurs="1">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:time xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="TBD"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="endTime" minOccurs="1" maxOccurs="1">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:time xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="TBD"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="location" type="umbc:campusLocation_type" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="meetingStartDate" type="xs:date" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="meetingEndDate" type="xs:date" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- 
+    The section id is a complex composite element specified as below.
+    The section number is monotonically increasing, similar to a serial no.
+  -->
+  <xs:complexType name="courseSectionId_type">
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element name="sectionNumber" type="xs:positiveInteger" />
+      <xs:element name="sectionType" type="umbc:courseSectionType_type" />
+      <xs:element name="classNumber" type="xs:positiveInteger" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <!--
+    The section type suggests whether the section is offered 
+    as a lecture or 
+    a discussion meeting or 
+    as an independent study/project
+  -->
+  <xs:simpleType name="courseSectionType_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="LEC"/>
+      <xs:enumeration value="IND"/>
+      <xs:enumeration value="DIS"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--
+    the location of a section meeting is composed of a campus building and a room in that building
+  -->
+  <xs:complexType name="campusLocation_type">
+    <xs:sequence maxOccurs="1" minOccurs="1">
+      <xs:element name="building" type="umbc:campusBuilding_type"/>
+      <xs:element name="room" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="campusBuilding_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Information Technology"/>
+      <xs:enumeration value="Janet &amp; Walter Sondheim"/>
+      <xs:enumeration value="Math &amp; Psychology"/>
+      <xs:enumeration value="Academic IV"/>
+      <xs:enumeration value="Engineering"/>
+      <xs:enumeration value="Albin O Kuhn Library &amp; G"/>
+      <xs:enumeration value="TBD"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--
+    the course career can be one of the following enumerated strings
+  -->
+  <xs:simpleType name="career_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undergraduate"/>
+      <xs:enumeration value="Graduate"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--
+    the possible subjects for the schedule generation can be enumerated here and only these 
+    are valid values for the 'courseSubject' course schedule attribute
+  -->
+  <xs:simpleType name="subject_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Computer Science" id="CMSC"/>
+      <xs:enumeration value="Information Systems" id="IS"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--
+    the possible academic semesters specified as a string enumeration
+  -->
+  <xs:simpleType name="academicSemester_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Summer"/>
+      <xs:enumeration value="Fall"/>
+      <xs:enumeration value="Winter"/>
+      <xs:enumeration value="Spring"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--
+    any course section can have one of the following status values at any time
+  -->
+  <xs:simpleType name="courseSectionStatus_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Open"/>
+      <xs:enumeration value="Closed"/>
+      <xs:enumeration value="Waitlist"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--
+    courses can be offered in several ways....
+    the type of offering for a particular section is one of the following enumerated strings
+  -->
+  <xs:simpleType name="courseSectionSession_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Regular"/>
+      <xs:enumeration value="Online"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--
+    assumption: courses can be conducted on weekdays only. 
+    Missing values to be specified as TBD
+  -->
+  <xs:simpleType name="courseSectionDay_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Mo"/>
+      <xs:enumeration value="Tu"/>
+      <xs:enumeration value="We"/>
+      <xs:enumeration value="Th"/>
+      <xs:enumeration value="Fr"/>
+      <xs:enumeration value="TBD"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

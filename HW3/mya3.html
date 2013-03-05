@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Homework Assignment 3 - RDF and N3</title>
+</head>
+<body>
+    <h2>CMSC 691 HW3 - RDF and N3 using GEDCOM genealogy ontology specification</h2>
+    On this assignment I started off by reviewing:  
+    <ul>
+        <li>The GEDCOM ontology and all property and event tags therein.</li>
+        <li>The inference logic specified in the GEDCOM family rules N3 file.</li>
+    </ul>
+    <br />
+    Following the sequence of the homework requirements, I created a <a href="http://userpages.umbc.edu/~peshave1/CMSC691/HW3/myfamily.n3">N3 file containing my family details</a>. I specified genealogy information for 5 nuclear families. I then interconnected these using :
+    <ul>
+        <li>Relationships like sibling</li>
+        <li>Having one person as a husband/father in his own nuclear family and as a child in his father's family</li>
+    </ul>
+    I also used the foaf vocabulary to assert, for the various people in my family, their:
+    <ul>
+        <li>Title (foaf:title)</li>
+        <li>Nicknames (foaf:nick)</li>
+    </ul>
+    <br />
+    Having tested the family details file to be error-free, I proceeded to create a <a href="http://userpages.umbc.edu/~peshave1/CMSC691/HW3/family-rules.n3">family rules inference logic N3 specification of my own</a>. As per requirements I first specified inference rules for :
+    <ul>
+        <li>A person knows her parents.</li>
+        <li>A person knows her children.</li>
+        <li>A person knows her siblings</li>
+    </ul>
+    Further, I specified rules for:
+    <ul>
+        <li>If a person A knows another person B, then person A would know person B by their nickname too.</li>
+        <li>Infering Sister-in-law and Brother-in-law GEDCOM relationships based on existing and/or inferred spouse and sibling relationships.</li>
+        <li>Propogating nephew and niece relationships amongst spouses.</li>
+        <li>Propogating citizenship GEDCOM values :
+            <ul>
+                <li>Amongst spouses (Citizenship status propogation by marriage).</li>
+                <li>From parents to their children (Citizenship status propogation through parents).</li>
+            </ul>
+        </li>
+    </ul>
+    <br /><br />
+    The facts about my family, both pre-specified and inferred, are stored in N3 format in a <a href="http://userpages.umbc.edu/~peshave1/CMSC691/HW3/myfamily-facts.n3">separate file for reference</a>.
+    <br /><br />
+</body>
+</html>

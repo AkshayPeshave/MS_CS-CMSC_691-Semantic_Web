@@ -1,0 +1,43 @@
+﻿.mainTable {
+    /*border: solid 2px black;*/
+    width: 1020px;
+}
+
+.pageHeaderRow {
+    /*text-align: center;*/
+    background-color: #d7dade;
+    vertical-align:middle;
+}
+
+.subjectCareerStyle {
+    text-align:right;
+    font-weight:bold;
+}
+
+.courseTable {
+    width: 980px;
+}
+
+.sectionTable {
+    width:970px;
+}
+
+.courseTableDetailsRow {
+    background-color: #9daccf;
+}
+
+.sectionTableHeader {
+    text-align: center;
+    font-weight: bold;
+}
+
+.sectionStatusCell {
+    width:20px;
+    border-right:none;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.sectionTableDetailsRow {
+    color: #808080;
+}

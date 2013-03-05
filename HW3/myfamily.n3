@@ -1,0 +1,102 @@
+# my family information using GEDCOM
+
+@prefix gc: <http://www.daml.org/2001/01/gedcom/gedcom#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix : <#> .
+
+
+:fam_Abhay a gc:Family.
+:fam_Ajit a gc:Family.
+:fam_Gangadhar a gc:Family.
+:fam_Suresh a gc:Family.
+:fam_Apex a gc:Family.
+
+:Akshay gc:sex gc:Male;
+  foaf:title "Mr.";
+  foaf:nick "Akshu";
+  gc:givenName "Akshay";
+  gc:childIn :fam_Abhay.
+
+:Abhay gc:sex gc:Male;
+  foaf:title "Mr.";
+  gc:givenName "Abhay";
+  gc:spouseIn :fam_Abhay;
+  gc:childIn :fam_Gangadhar;
+  owl:differentFrom :Chanda;
+  owl:differentFrom :Ajit.
+  
+  
+:Chanda gc:sex gc:Female;
+  foaf:title "Mrs.";
+  gc:givenName "Chanda";
+  gc:spouseIn :fam_Abhay;
+  owl:differentFrom :Abhay.
+  
+:Archit gc:sex gc:Male;
+  foaf:title "Mr.";
+  foaf:nick "Archu";
+  gc:givenName "Archit";
+  gc:childIn :fam_Ajit;
+  owl:differentFrom :Anish.
+  
+:Anish gc:sex gc:Male;
+  foaf:title "Mr.";
+  gc:givenName "Anish";
+  gc:childIn :fam_Ajit;
+  owl:differentFrom :Archit.
+
+:Ajit gc:sex gc:Male;
+  foaf:title "Mr.";
+  gc:givenName "Ajit";
+  gc:spouseIn :fam_Ajit;
+  gc:childIn :fam_Gangadhar;
+  owl:differentFrom :Aruna;
+  owl:differentFrom :Abhay. 
+
+:Aruna gc:sex gc:Female;
+  foaf:title "Mrs.";
+  gc:givenName "Aruna";
+  gc:spouseIn :fam_Ajit;
+  owl:differentFrom :Ajit.
+  
+:Gangadhar gc:sex gc:Male;
+  foaf:title "Mr.";
+  foaf:nick "Appa";
+  gc:givenName "Gangadhar";
+  gc:spouseIn :fam_Gangadhar;
+  gc:childIn :fam_Apex;
+  gc:citizenship "Indian";
+  owl:differentFrom :Suresh;
+  owl:differentFrom :Kumud.
+
+:Kumud gc:sex gc:Female;
+  foaf:title "Mrs.";
+  foaf:nick "Kumai";
+  gc:givenName "Kumud";
+  gc:spouseIn :fam_Gangadhar;
+  owl:differentFrom :Gangadhar.
+   
+:Mitesh gc:sex gc:Male;
+  foaf:title "Mr.";
+  foaf:nick "Chikoo";
+  gc:givenName "Mitesh";
+  gc:childIn :fam_Suresh.
+  
+:Suresh gc:sex gc:Male;
+  foaf:title "Mr.";
+  gc:givenName "Suresh";
+  gc:childIn :fam_Apex;
+  gc:spouseIn :fam_Suresh;
+  gc:citizenship "Indian";
+  owl:differentFrom :Sucheta;
+  owl:differentFrom :Gangadhar.
+
+:Sucheta gc:sex gc:Female;
+  foaf:title "Mrs.";
+  foaf:nick "Ranjana";
+  gc:givenName "Sucheta";
+  gc:spouseIn :fam_Suresh;
+  gc:citizenship "United States";
+  owl:differentFrom :Suresh.
+

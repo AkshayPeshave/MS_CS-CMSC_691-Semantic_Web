@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="http://userpages.umbc.edu/~peshave1/CMSC691/HW2/courseSchedule.xslt"?>
+<courseSchedule courseSubject="Computer Science" courseCareer="Undergraduate" semester="Spring" year="2013" 
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                xsi:noNamespaceSchemaLocation="http://userpages.umbc.edu/~peshave1/CMSC691/HW2/courseSchedule.xsd"
+                xmlns="http://userpages.umbc.edu/~peshave1/CMSC691/HW2/courseSchedule.xsd">
+  <courses>
+    <course courseCode="CMSC 201">
+      <courseTitle>Computer Science I for Majors</courseTitle>
+      <sections>
+        <section>
+          <sectionId>
+            <sectionNumber>01</sectionNumber>
+            <sectionType>LEC</sectionType>
+            <classNumber>1046</classNumber>
+          </sectionId>
+          <status>Open</status>
+          <session>Regular</session>
+          <instructor>Pedram Sadeghian</instructor>
+          <day>Mo</day>
+          <day>We</day>
+          <startTime>13:00:00</startTime>
+          <endTime>14:15:00</endTime>
+          <location>
+            <building>Information Technology</building>
+            <room>104</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>02</sectionNumber>
+            <sectionType>DIS</sectionType>
+            <classNumber>1047</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Pedram Sadeghian</instructor>
+          <day>Mo</day>
+          <startTime>14:30:00</startTime>
+          <endTime>15:20:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>104A</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>03</sectionNumber>
+            <sectionType>DIS</sectionType>
+            <classNumber>1048</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Pedram Sadeghian</instructor>
+          <day>We</day>
+          <startTime>14:30:00</startTime>
+          <endTime>15:20:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>104A</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>04</sectionNumber>
+            <sectionType>DIS</sectionType>
+            <classNumber>1049</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Pedram Sadeghian</instructor>
+          <day>Mo</day>
+          <startTime>16:00:00</startTime>
+          <endTime>16:50:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>104A</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>05</sectionNumber>
+            <sectionType>DIS</sectionType>
+            <classNumber>1050</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Pedram Sadeghian</instructor>
+          <day>We</day>
+          <startTime>16:00:00</startTime>
+          <endTime>16:50:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>104A</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>06</sectionNumber>
+            <sectionType>DIS</sectionType>
+            <classNumber>1051</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Pedram Sadeghian</instructor>
+          <day>Mo</day>
+          <startTime>17:30:00</startTime>
+          <endTime>18:20:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>104A</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>07</sectionNumber>
+            <sectionType>LEC</sectionType>
+            <classNumber>1052</classNumber>
+          </sectionId>
+          <status>Open</status>
+          <session>Regular</session>
+          <instructor>Shawn Lupoli</instructor>
+          <day>Tu</day>
+          <day>Th</day>
+          <startTime>17:30:00</startTime>
+          <endTime>18:45:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>027</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>10</sectionNumber>
+            <sectionType>DIS</sectionType>
+            <classNumber>1053</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Shawn Lupoli</instructor>
+          <day>Tu</day>
+          <startTime>19:10:00</startTime>
+          <endTime>20:00:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>104A</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>11</sectionNumber>
+            <sectionType>DIS</sectionType>
+            <classNumber>1055</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Shawn Lupoli</instructor>
+          <day>Th</day>
+          <startTime>19:10:00</startTime>
+          <endTime>20:00:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>104A</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>12</sectionNumber>
+            <sectionType>DIS</sectionType>
+            <classNumber>1056</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Shawn Lupoli</instructor>
+          <day>Tu</day>
+          <startTime>16:00:00</startTime>
+          <endTime>16:50:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>104A</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>13</sectionNumber>
+            <sectionType>DIS</sectionType>
+            <classNumber>1924</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Shawn Lupoli</instructor>
+          <day>Th</day>
+          <startTime>16:00:00</startTime>
+          <endTime>16:50:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>104A</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>14</sectionNumber>
+            <sectionType>DIS</sectionType>
+            <classNumber>6874</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Shawn Lupoli</instructor>
+          <day>Tu</day>
+          <startTime>14:30:00</startTime>
+          <endTime>15:20:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>104A</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>17</sectionNumber>
+            <sectionType>LEC</sectionType>
+            <classNumber>8523</classNumber>
+          </sectionId>
+          <status>Open</status>
+          <session>Regular</session>
+          <instructor>Pedram Sadeghian</instructor>
+          <day>Mo</day>
+          <day>We</day>
+          <startTime>09:00:00</startTime>
+          <endTime>10:15:00</endTime>
+          <location>
+            <building>Information Technology</building>
+            <room>223</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>18</sectionNumber>
+            <sectionType>DIS</sectionType>
+            <classNumber>8524</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Pedram Sadeghian</instructor>
+          <day>Mo</day>
+          <startTime>11:00:00</startTime>
+          <endTime>11:50:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>333</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>19</sectionNumber>
+            <sectionType>DIS</sectionType>
+            <classNumber>8525</classNumber>
+          </sectionId>
+          <status>Open</status>
+          <session>Regular</session>
+          <instructor>Pedram Sadeghian</instructor>
+          <day>We</day>
+          <startTime>11:00:00</startTime>
+          <endTime>11:50:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>122</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+      </sections>
+    </course>
+    <course courseCode="CMSC 331">
+      <courseTitle>Principles of Programming Language</courseTitle>
+      <sections>
+        <section>
+          <sectionId>
+            <sectionNumber>01</sectionNumber>
+            <sectionType>LEC</sectionType>
+            <classNumber>1076</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Shawn Lupoli</instructor>
+          <day>Tu</day>
+          <day>Th</day>
+          <startTime>14:30:00</startTime>
+          <endTime>15:45:00</endTime>
+          <location>
+            <building>Information Technology</building>
+            <room>229</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>02</sectionNumber>
+            <sectionType>LEC</sectionType>
+            <classNumber>6909</classNumber>
+          </sectionId>
+          <status>Open</status>
+          <session>Regular</session>
+          <instructor>John Park</instructor>
+          <day>Tu</day>
+          <day>Th</day>
+          <startTime>10:00:00</startTime>
+          <endTime>11:15:00</endTime>
+          <location>
+            <building>Information Technology</building>
+            <room>227</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+      </sections>
+    </course>
+    <course courseCode="CMSC 491">
+      <courseTitle>Special Topics in Computer Science</courseTitle>
+      <sections>
+        <section>
+          <sectionId>
+            <sectionNumber>01</sectionNumber>
+            <sectionType>LEC</sectionType>
+            <classNumber>6917</classNumber>
+          </sectionId>
+          <topic>Privacy Security Mobile Social</topic>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Anupam Joshi</instructor>
+          <day>Tu</day>
+          <day>Th</day>
+          <startTime>11:30:00</startTime>
+          <endTime>12:45:00</endTime>
+          <location>
+            <building>Albin O Kuhn Library &amp; G</building>
+            <room>216M</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>02</sectionNumber>
+            <sectionType>LEC</sectionType>
+            <classNumber>7228</classNumber>
+          </sectionId>
+          <topic>Clinical Informatics</topic>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Michael Grasso</instructor>
+          <day>Mo</day>
+          <day>We</day>
+          <startTime>17:30:00</startTime>
+          <endTime>18:45:00</endTime>
+          <location>
+            <building>Janet &amp; Walter Sondheim</building>
+            <room>101</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>03</sectionNumber>
+            <sectionType>LEC</sectionType>
+            <classNumber>8386</classNumber>
+          </sectionId>
+          <topic>Semantic Web</topic>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Timothy Finin</instructor>
+          <day>Mo</day>
+          <day>We</day>
+          <startTime>16:00:00</startTime>
+          <endTime>17:15:00</endTime>
+          <location>
+            <building>Math &amp; Psychology</building>
+            <room>104</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+      </sections>
+    </course>
+    <course courseCode="CMSC 104">
+      <courseTitle>Problem Solving and Computer Programming</courseTitle>
+      <sections>
+        <section>
+          <sectionId>
+            <sectionNumber>01</sectionNumber>
+            <sectionType>LEC</sectionType>
+            <classNumber>1043</classNumber>
+          </sectionId>
+          <status>Open</status>
+          <session>Regular</session>
+          <instructor>Zachary Radtka</instructor>
+          <day>Mo</day>
+          <day>We</day>
+          <startTime>19:00:00</startTime>
+          <endTime>20:15:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>122</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>02</sectionNumber>
+            <sectionType>LEC</sectionType>
+            <classNumber>1044</classNumber>
+          </sectionId>
+          <status>Closed</status>
+          <session>Regular</session>
+          <instructor>Jason Tang</instructor>
+          <day>Tu</day>
+          <day>Th</day>
+          <startTime>17:30:00</startTime>
+          <endTime>18:45:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>122</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+        <section>
+          <sectionId>
+            <sectionNumber>03</sectionNumber>
+            <sectionType>LEC</sectionType>
+            <classNumber>1045</classNumber>
+          </sectionId>
+          <status>Waitlist</status>
+          <session>Regular</session>
+          <instructor>Pedram Sadeghian</instructor>
+          <day>Mo</day>
+          <day>We</day>
+          <startTime>17:30:00</startTime>
+          <endTime>18:45:00</endTime>
+          <location>
+            <building>Engineering</building>
+            <room>122</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+      </sections>
+    </course>
+    <course courseCode="CMSC 483">
+      <courseTitle>Parallel and Distributed Processing</courseTitle>
+      <sections>
+        <section>
+          <sectionId>
+            <sectionNumber>01</sectionNumber>
+            <sectionType>LEC</sectionType>
+            <classNumber>6937</classNumber>
+          </sectionId>
+          <status>Open</status>
+          <session>Regular</session>
+          <instructor>John Dorband</instructor>
+          <day>Tu</day>
+          <day>Th</day>
+          <startTime>14:30:00</startTime>
+          <endTime>15:45:00</endTime>
+          <location>
+            <building>Janet &amp; Walter Sondheim</building>
+            <room>101</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+      </sections>
+    </course>
+    <course courseCode="CMSC 499">
+      <courseTitle>Independent Study in Computer Science</courseTitle>
+      <sections>
+        <section>
+          <sectionId>
+            <sectionNumber>01</sectionNumber>
+            <sectionType>IND</sectionType>
+            <classNumber>1096</classNumber>
+          </sectionId>
+          <status>Open</status>
+          <session>Regular</session>
+          <instructor>Alan Sherman</instructor>
+          <day>TBD</day>
+          <startTime>TBD</startTime>
+          <endTime>TBD</endTime>
+          <location>
+            <building>TBD</building>
+            <room>TBD</room>
+          </location>
+          <meetingStartDate>2013-01-28</meetingStartDate>
+          <meetingEndDate>2013-05-14</meetingEndDate>
+        </section>
+      </sections>
+    </course>
+  </courses>
+</courseSchedule>
