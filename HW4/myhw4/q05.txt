@@ -1,0 +1,19 @@
+# Find MD universities known to have > 5000 students of any type
+# Universities in Maryland state
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpr: <http://dbpedia.org/resource/>
+PREFIX dbpo: <http://dbpedia.org/ontology/>
+PREFIX dbpprop: <http://dbpedia.org/property/>
+
+SELECT DISTINCT ?University, ?Undergraduate, ?Graduate, ?Total
+WHERE {
+{ ?University a dbpo:University } UNION { ?University dbpprop:type dbpedia:Private_university } UNION { ?University dbpprop:type dbpedia:Public_university } .
+?University dbpo:state dbpr:Maryland .
+OPTIONAL { ?University dbpo:numberOfPostgraduateStudents  ?Graduate } .
+OPTIONAL { ?University dbpo:numberOfUndergraduateStudents  ?Undergraduate  }
+BIND ( (if( bound(?Undergraduate), ?Undergraduate, 0)) + (if( bound(?Graduate), ?Graduate, 0)) as ?Total) . 
+FILTER ( ?Total > 5000 )
+}
+ORDER BY DESC(?Total)

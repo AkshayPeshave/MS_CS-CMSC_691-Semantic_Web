@@ -1,0 +1,23 @@
+# List universities and the nunber of presidents or chancellors of US
+# Universities that attended them
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpr: <http://dbpedia.org/resource/>
+PREFIX dbpo: <http://dbpedia.org/ontology/>
+PREFIX dbpprop: <http://dbpedia.org/property/>
+
+
+SELECT ?AlmaMater, COUNT( ?President ) AS ?NumberOfPresidents
+WHERE {
+{ ?University a dbpo:University } UNION { ?University dbpprop:type dbpedia:Private_university } UNION { ?University dbpprop:type dbpedia:Public_university } .
+?State dbpo:country dbpedia:United_States . 
+?University dbpo:state ?State . 
+{ ?University dbpo:president ?President } UNION { ?University dbpo:chancellor ?President } UNION { ?University dbpedia-owl:head ?President }  . 
+
+{ ?President dbpprop:almaMater ?AlmaMater } UNION { ?President dbpo:alumnus ?AlmaMater } .
+{ ?AlmaMater a dbpo:University } UNION { ?AlmaMater dbpprop:type dbpedia:Private_university } UNION { ?AlmaMater dbpprop:type dbpedia:Public_university } .
+}
+GROUP BY ?AlmaMater
+ORDER BY DESC(?NumberOfPresidents)

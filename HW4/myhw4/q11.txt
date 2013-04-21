@@ -1,0 +1,32 @@
+# Find social triads involving Barack Obama and two other people who
+# have some connection to the state of Illinois.  A social triad is a
+# group of three people where there is a link between every pair.
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpr: <http://dbpedia.org/resource/>
+PREFIX dbpo: <http://dbpedia.org/ontology/>
+PREFIX dbpprop: <http://dbpedia.org/property/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT DISTINCT ?Person1 , ?Person2
+WHERE { 
+ 
+?BarackObama a dbpo:Person . 
+?BarackObama foaf:isPrimaryTopicOf ?PriTopic . 
+FILTER ( ?PriTopic = <http://en.wikipedia.org/wiki/Barack_Obama> ) . 
+
+{ { ?BarackObama [] ?Person1  } UNION { ?Person1 [] ?BarackObama } } . 
+?Person1 a dbpo:Person .
+
+{ { ?Person1 [] ?Person2 } UNION { ?Person2 [] ?Person1 } } . 
+?Person2 a dbpo:Person .
+FILTER ( ?Person1 != ?Person2 ) .
+
+{ { ?BarackObama [] ?Person2 } UNION { ?Person2 [] ?BarackObama } } . 
+
+?Person1 [] dbpedia:Illinois .
+?Person2 [] dbpedia:Illinois .
+
+}

@@ -1,0 +1,24 @@
+# Find the set of people who are directly linked to Alan Turing (in
+# either direction) by any property
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpr: <http://dbpedia.org/resource/>
+PREFIX dbpo: <http://dbpedia.org/ontology/>
+PREFIX dbpprop: <http://dbpedia.org/property/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+
+
+SELECT DISTINCT ?Person
+WHERE { 
+?AlanTuring a dbpo:Person . 
+?AlanTuring foaf:isPrimaryTopicOf ?PriTopic . 
+FILTER ( ?PriTopic = <http://en.wikipedia.org/wiki/Alan_Turing> ) . 
+
+{ ?AlanTuring [] ?Person } UNION { ?Person [] ?AlanTuring } .
+?Person a dbpo:Person . 
+FILTER ( ?Person != ?AlanTuring )
+
+}

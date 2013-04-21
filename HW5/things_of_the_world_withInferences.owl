@@ -1,0 +1,1205 @@
+@prefix : <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-8#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-8> .
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-8> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Child
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Child> rdf:type owl:ObjectProperty ;
+                                                                                           
+                                                                                           owl:inverseOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Parent> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Employee
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Employee> rdf:type owl:AsymmetricProperty ,
+                                                                                                       owl:IrreflexiveProperty ,
+                                                                                                       owl:ObjectProperty ,
+                                                                                                       owl:TransitiveProperty ;
+                                                                                              
+                                                                                              rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ;
+                                                                                              
+                                                                                              owl:inverseOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Employer> ;
+                                                                                              
+                                                                                              rdfs:range [ rdf:type owl:Class ;
+                                                                                                           owl:unionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult>
+                                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Child>
+                                                                                                                       )
+                                                                                                         ] .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Employer
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Employer> rdf:type owl:AsymmetricProperty ,
+                                                                                                       owl:IrreflexiveProperty ,
+                                                                                                       owl:ObjectProperty ,
+                                                                                                       owl:TransitiveProperty ;
+                                                                                              
+                                                                                              rdfs:range <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ;
+                                                                                              
+                                                                                              rdfs:comment [ ] ;
+
+rdfs:domain [ rdf:type owl:Class ;
+              owl:unionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult>
+                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Child>
+                          )
+            ] .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Father
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Father> rdf:type owl:FunctionalProperty ,
+                                                                                                     owl:ObjectProperty ;
+                                                                                            
+                                                                                            rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                            
+                                                                                            rdfs:subPropertyOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Parent> ,
+                                                                                                               [ owl:inverseOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Child>
+                                                                                                               ] ;
+                                                                                            
+                                                                                            rdfs:range [ rdf:type owl:Class ;
+                                                                                                         owl:intersectionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person>
+                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                owl:onProperty <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> ;
+                                                                                                                                owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                    owl:onDatatype xsd:string ;
+                                                                                                                                                    owl:withRestrictions ( [ xsd:pattern "Male"
+                                                                                                                                                                           ]
+                                                                                                                                                                         )
+                                                                                                                                                  ]
+                                                                                                                              ]
+                                                                                                                            )
+                                                                                                       ] .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandfather
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandfather> rdf:type owl:ObjectProperty ;
+                                                                                                 
+                                                                                                 rdfs:range <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ;
+                                                                                                 
+                                                                                                 rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                                 
+                                                                                                 rdfs:range <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                                 
+                                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandparent> ;
+                                                                                                 
+                                                                                                 owl:propertyChainAxiom ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Father>
+                                                                                                                          <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Father>
+                                                                                                                        ) ,
+                                                                                                                        ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Mother>
+                                                                                                                          <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Father>
+                                                                                                                        ) .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandmother
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandmother> rdf:type owl:ObjectProperty ;
+                                                                                                 
+                                                                                                 rdfs:range <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female> ;
+                                                                                                 
+                                                                                                 rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                                 
+                                                                                                 rdfs:range <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                                 
+                                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandparent> ;
+                                                                                                 
+                                                                                                 owl:propertyChainAxiom ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Mother>
+                                                                                                                          <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Mother>
+                                                                                                                        ) ,
+                                                                                                                        ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Father>
+                                                                                                                          <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Mother>
+                                                                                                                        ) .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandparent
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandparent> rdf:type owl:ObjectProperty ;
+                                                                                                 
+                                                                                                 rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                                 
+                                                                                                 rdfs:range <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                                 
+                                                                                                 owl:propertyChainAxiom ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandfather>
+                                                                                                                        ) ,
+                                                                                                                        ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandmother>
+                                                                                                                        ) .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Location
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Location> rdf:type owl:ObjectProperty ,
+                                                                                                       owl:TransitiveProperty ;
+                                                                                              
+                                                                                              rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ;
+                                                                                              
+                                                                                              rdfs:range <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Mother
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Mother> rdf:type owl:FunctionalProperty ,
+                                                                                                     owl:ObjectProperty ;
+                                                                                            
+                                                                                            rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                            
+                                                                                            rdfs:subPropertyOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Parent> ;
+                                                                                            
+                                                                                            rdfs:range [ rdf:type owl:Class ;
+                                                                                                         owl:intersectionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person>
+                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                owl:onProperty <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> ;
+                                                                                                                                owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                    owl:onDatatype xsd:string ;
+                                                                                                                                                    owl:withRestrictions ( [ xsd:pattern "Female"
+                                                                                                                                                                           ]
+                                                                                                                                                                         )
+                                                                                                                                                  ]
+                                                                                                                              ]
+                                                                                                                            )
+                                                                                                       ] ;
+                                                                                            
+                                                                                            rdfs:subPropertyOf [ owl:inverseOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Child>
+                                                                                                               ] .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Parent
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Parent> rdf:type owl:ObjectProperty ;
+                                                                                            
+                                                                                            rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                            
+                                                                                            rdfs:range <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                            
+                                                                                            owl:propertyChainAxiom ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Mother>
+                                                                                                                   ) ,
+                                                                                                                   ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Father>
+                                                                                                                   ) .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-SSN
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-SSN> rdf:type owl:AsymmetricProperty ,
+                                                                                                  owl:FunctionalProperty ,
+                                                                                                  owl:InverseFunctionalProperty ,
+                                                                                                  owl:IrreflexiveProperty ,
+                                                                                                  owl:ObjectProperty ,
+                                                                                                  owl:TransitiveProperty ;
+                                                                                         
+                                                                                         rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                         
+                                                                                         rdfs:range <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> rdf:type owl:DatatypeProperty ,
+                                                                                              owl:FunctionalProperty ;
+                                                                                     
+                                                                                     rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                     
+                                                                                     rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#latitude
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#latitude> rdf:type owl:DatatypeProperty ,
+                                                                                                   owl:FunctionalProperty ;
+                                                                                          
+                                                                                          rdfs:comment """positive values indication North.
+Negative values indicate South."""^^xsd:string ;
+                                                                                          
+                                                                                          rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ;
+                                                                                          
+                                                                                          rdfs:range xsd:decimal .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#longitude
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#longitude> rdf:type owl:DatatypeProperty ,
+                                                                                                    owl:FunctionalProperty ;
+                                                                                           
+                                                                                           rdfs:comment """Positive values indication North.
+Negative values indicate South."""^^xsd:string ;
+                                                                                           
+                                                                                           rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ;
+                                                                                           
+                                                                                           rdfs:range xsd:decimal .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> rdf:type owl:DatatypeProperty ;
+                                                                                      
+                                                                                      rdfs:range xsd:string ;
+                                                                                      
+                                                                                      rdfs:domain owl:Thing .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> rdf:type owl:DatatypeProperty ,
+                                                                                              owl:FunctionalProperty ;
+                                                                                     
+                                                                                     rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ;
+                                                                                     
+                                                                                     rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                                                                              rdf:first "Female" ;
+                                                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                                                         rdf:first "Male" ;
+                                                                                                                         rdf:rest rdf:nil
+                                                                                                                       ]
+                                                                                                            ]
+                                                                                                ] .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#ssn
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#ssn> rdf:type owl:DatatypeProperty ,
+                                                                                              owl:FunctionalProperty ;
+                                                                                     
+                                                                                     rdfs:domain <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> ;
+                                                                                     
+                                                                                     rdfs:range xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Abstract_Object
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Abstract_Object> rdf:type owl:Class ;
+                                                                                                 
+                                                                                                 owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Boy> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Child> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Employed> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Girl> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Infant> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Unemployed> ,
+                                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult> rdf:type owl:Class ;
+                                                                                       
+                                                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                             owl:intersectionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person>
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> ;
+                                                                                                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                         owl:onDatatype xsd:int ;
+                                                                                                                                                         owl:withRestrictions ( [ xsd:minExclusive 18
+                                                                                                                                                                                ]
+                                                                                                                                                                              )
+                                                                                                                                                       ]
+                                                                                                                                  ]
+                                                                                                                                )
+                                                                                                           ] ;
+                                                                                       
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                       
+                                                                                       owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Boy> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Child> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Girl> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Infant> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> rdf:type owl:Class ;
+                                                                                                
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ;
+                                                                                                
+                                                                                                owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> ,
+                                                                                                                 <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                                                 <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                                 <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Boy
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Boy> rdf:type owl:Class ;
+                                                                                     
+                                                                                     owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                           owl:intersectionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male>
+                                                                                                                                <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person>
+                                                                                                                                [ rdf:type owl:Class ;
+                                                                                                                                  owl:complementOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult>
+                                                                                                                                ]
+                                                                                                                              )
+                                                                                                         ] ;
+                                                                                     
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> ,
+                                                                                                     <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                     
+                                                                                     owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Girl> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Child
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Child> rdf:type owl:Class ;
+                                                                                       
+                                                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                             owl:intersectionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person>
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> ;
+                                                                                                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                         owl:onDatatype xsd:int ;
+                                                                                                                                                         owl:withRestrictions ( [ xsd:maxInclusive 18
+                                                                                                                                                                                ]
+                                                                                                                                                                                [ xsd:minExclusive 2
+                                                                                                                                                                                ]
+                                                                                                                                                                              )
+                                                                                                                                                       ]
+                                                                                                                                  ]
+                                                                                                                                )
+                                                                                                           ] ;
+                                                                                       
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                       
+                                                                                       owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Infant> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Employed
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Employed> rdf:type owl:Class ;
+                                                                                          
+                                                                                          owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                                owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                                                       owl:unionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult>
+                                                                                                                                                     <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Child>
+                                                                                                                                                   )
+                                                                                                                                     ]
+                                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                                       owl:onProperty <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Employer> ;
+                                                                                                                                       owl:someValuesFrom <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization>
+                                                                                                                                     ]
+                                                                                                                                   )
+                                                                                                              ] ;
+                                                                                          
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                          
+                                                                                          owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Infant> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Unemployed> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female> rdf:type owl:Class ;
+                                                                                        
+                                                                                        owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                              owl:intersectionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer>
+                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                     owl:onProperty <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> ;
+                                                                                                                                     owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                         owl:onDatatype xsd:string ;
+                                                                                                                                                         owl:withRestrictions ( [ xsd:pattern "Female"
+                                                                                                                                                                                ]
+                                                                                                                                                                              )
+                                                                                                                                                       ]
+                                                                                                                                   ]
+                                                                                                                                 )
+                                                                                                            ] ;
+                                                                                        
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ;
+                                                                                        
+                                                                                        owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> ,
+                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ,
+                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> ,
+                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Girl
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Girl> rdf:type owl:Class ;
+                                                                                      
+                                                                                      owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                            owl:intersectionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female>
+                                                                                                                                 <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person>
+                                                                                                                                 [ rdf:type owl:Class ;
+                                                                                                                                   owl:unionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Child>
+                                                                                                                                                 <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Infant>
+                                                                                                                                               )
+                                                                                                                                 ]
+                                                                                                                               )
+                                                                                                          ] ;
+                                                                                      
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> ;
+                                                                                      
+                                                                                      owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> ,
+                                                                                                       <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ,
+                                                                                                       <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> ,
+                                                                                                       <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                                       <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                       <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> rdf:type owl:Class ;
+                                                                                                  
+                                                                                                  rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ;
+                                                                                                  
+                                                                                                  owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Infant> ,
+                                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ,
+                                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> ,
+                                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> ,
+                                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Unemployed> ,
+                                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Infant
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Infant> rdf:type owl:Class ;
+                                                                                        
+                                                                                        owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                              owl:intersectionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person>
+                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                     owl:onProperty <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> ;
+                                                                                                                                     owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                          owl:onDatatype xsd:int ;
+                                                                                                                                                          owl:withRestrictions ( [ xsd:minExclusive 0
+                                                                                                                                                                                 ]
+                                                                                                                                                                                 [ xsd:maxInclusive 2
+                                                                                                                                                                                 ]
+                                                                                                                                                                               )
+                                                                                                                                                        ]
+                                                                                                                                   ]
+                                                                                                                                 )
+                                                                                                            ] ;
+                                                                                        
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                        
+                                                                                        owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> ,
+                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Unemployed> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> rdf:type owl:Class ;
+                                                                                      
+                                                                                      owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                            owl:intersectionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer>
+                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                   owl:onProperty <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> ;
+                                                                                                                                   owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                       owl:onDatatype xsd:string ;
+                                                                                                                                                       owl:withRestrictions ( [ xsd:pattern "Male"
+                                                                                                                                                                              ]
+                                                                                                                                                                            )
+                                                                                                                                                     ]
+                                                                                                                                 ]
+                                                                                                                               )
+                                                                                                          ] ;
+                                                                                      
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ;
+                                                                                      
+                                                                                      owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                                       <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                       <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> ,
+                                                                                                       <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> rdf:type owl:Class ;
+                                                                                     
+                                                                                     owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                           owl:intersectionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person>
+                                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                                  owl:onProperty <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> ;
+                                                                                                                                  owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                      owl:onDatatype xsd:string ;
+                                                                                                                                                      owl:withRestrictions ( [ xsd:pattern "Male"
+                                                                                                                                                                             ]
+                                                                                                                                                                           )
+                                                                                                                                                    ]
+                                                                                                                                ]
+                                                                                                                              )
+                                                                                                         ] ;
+                                                                                     
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ,
+                                                                                                     <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ;
+                                                                                     
+                                                                                     owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> rdf:type owl:Class ;
+                                                                                              
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Abstract_Object> ;
+                                                                                              
+                                                                                              owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Unemployed> ,
+                                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> rdf:type owl:Class ;
+                                                                                        
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ;
+                                                                                        
+                                                                                        owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> ;
+                                                                                        
+                                                                                        owl:disjointUnionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult>
+                                                                                                              <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Child>
+                                                                                                              <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Infant>
+                                                                                                            ) .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> rdf:type owl:Class ;
+                                                                                                 
+                                                                                                 owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> ;
+                                                                                                 
+                                                                                                 owl:disjointUnionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object>
+                                                                                                                       <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object>
+                                                                                                                     ) .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> rdf:type owl:Class ;
+                                                                                       
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> ;
+                                                                                       
+                                                                                       owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Unemployed> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> rdf:type owl:Class ;
+                                                                                     
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Abstract_Object> ;
+                                                                                     
+                                                                                     owl:disjointWith <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Unemployed> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> rdf:type owl:Class ;
+                                                                                                   
+                                                                                                   rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ;
+                                                                                                   
+                                                                                                   owl:disjointUnionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female>
+                                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male>
+                                                                                                                       ) .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Unemployed
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Unemployed> rdf:type owl:Class ;
+                                                                                            
+                                                                                            owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                                  owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                                                         owl:unionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult>
+                                                                                                                                                       <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Child>
+                                                                                                                                                     )
+                                                                                                                                       ]
+                                                                                                                                       [ rdf:type owl:Class ;
+                                                                                                                                         owl:complementOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Employed>
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                                ] ;
+                                                                                            
+                                                                                            rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> rdf:type owl:Class ;
+                                                                                       
+                                                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                             owl:intersectionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person>
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> ;
+                                                                                                                                    owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                        owl:onDatatype xsd:string ;
+                                                                                                                                                        owl:withRestrictions ( [ xsd:pattern "Female"
+                                                                                                                                                                               ]
+                                                                                                                                                                             )
+                                                                                                                                                      ]
+                                                                                                                                  ]
+                                                                                                                                )
+                                                                                                           ] ;
+                                                                                       
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female> ,
+                                                                                                       <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> .
+
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing owl:disjointUnionOf ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Abstract_Object>
+                                <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object>
+                              ) .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Akshay
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Akshay> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult> ,
+                                                                                                 <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                                 <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ,
+                                                                                                 <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> ,
+                                                                                                 <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                 <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                 <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                 owl:NamedIndividual ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> 25 ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Akshay"^^xsd:string ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-SSN> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Akshay's_SSN> ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Location> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Baltimore> ,
+                                                                                                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Maryland> ,
+                                                                                                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#United_States_of_America> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Akshay's_SSN
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Akshay's_SSN> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Abstract_Object> ,
+                                                                                                       <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> ,
+                                                                                                       owl:NamedIndividual ;
+                                                                                              
+                                                                                              <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#ssn> "000-00-0000"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Baltimore
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Baltimore> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> ,
+                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                    owl:NamedIndividual ;
+                                                                                           
+                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#longitude> -76.6167 ;
+                                                                                           
+                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#latitude> 39.2833 ;
+                                                                                           
+                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Baltimore"^^xsd:string ;
+                                                                                           
+                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Location> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Maryland> ,
+                                                                                                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#United_States_of_America> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Boy> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Child> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                  owl:NamedIndividual ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> 15 ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Chintoo"^^xsd:string ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> "Male"^^xsd:string ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Parent> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Father> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Father> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Father> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandmother> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Grandma> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandparent> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Grandma> ,
+                                                                                                                                                                                          <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Grandpa> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandfather> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Grandpa> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandparent> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_MaternalGrandma> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandmother> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_MaternalGrandma> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandfather> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_MaternalGrandpa> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Grandparent> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_MaternalGrandpa> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Parent> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Mother> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Mother> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Mother> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-SSN> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_SSN> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Father
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Father> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                           owl:NamedIndividual ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> 37 ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Chintoo's Father"^^xsd:string ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> "Male"^^xsd:string ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Child> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo> ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Mother> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Grandma> ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Parent> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Grandma> ,
+                                                                                                                                                                                              <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Grandpa> ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Father> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Grandpa> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Grandma
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Grandma> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult> ,
+                                                                                                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female> ,
+                                                                                                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> ,
+                                                                                                            owl:NamedIndividual ;
+                                                                                                   
+                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> 68 ;
+                                                                                                   
+                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Chintoo's Grandma"^^xsd:string ;
+                                                                                                   
+                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> "Female"^^xsd:string ;
+                                                                                                   
+                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Child> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Father> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Grandpa
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Grandpa> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult> ,
+                                                                                                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ,
+                                                                                                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> ,
+                                                                                                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                            <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                            owl:NamedIndividual ;
+                                                                                                   
+                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> 65 ;
+                                                                                                   
+                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Chintoo's Grandpa"^^xsd:string ;
+                                                                                                   
+                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> "Male"^^xsd:string ;
+                                                                                                   
+                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Child> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Father> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_MaternalGrandma
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_MaternalGrandma> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult> ,
+                                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female> ,
+                                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> ,
+                                                                                                                    owl:NamedIndividual ;
+                                                                                                           
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> 60 ;
+                                                                                                           
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Chintoo's Maternal Grandma"^^xsd:string ;
+                                                                                                           
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> "Female"^^xsd:string ;
+                                                                                                           
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Child> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Mother> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_MaternalGrandpa
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_MaternalGrandpa> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult> ,
+                                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ,
+                                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> ,
+                                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                                    owl:NamedIndividual ;
+                                                                                                           
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> 75 ;
+                                                                                                           
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Chintoo's Maternal Grandpa"^^xsd:string ;
+                                                                                                           
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> "Male"^^xsd:string ;
+                                                                                                           
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Child> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Mother> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Mother
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_Mother> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> ,
+                                                                                                           owl:NamedIndividual ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> 35 ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Chintoo's Mom"^^xsd:string ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> "Female"^^xsd:string ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Child> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo> ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Parent> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_MaternalGrandma> ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Mother> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_MaternalGrandma> ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Father> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_MaternalGrandpa> ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Parent> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_MaternalGrandpa> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_SSN
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Chintoo's_SSN> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Abstract_Object> ,
+                                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#SSN> ,
+                                                                                                        owl:NamedIndividual ;
+                                                                                               
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#ssn> "000-00-0000"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Dr._Finin
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Dr._Finin> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult> ,
+                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Employed> ,
+                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ,
+                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> ,
+                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                    <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                    owl:NamedIndividual ;
+                                                                                           
+                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> 55 ;
+                                                                                           
+                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Dr. Tim Finin"^^xsd:string ;
+                                                                                           
+                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> "Male"^^xsd:string ;
+                                                                                           
+                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Location> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Baltimore> ,
+                                                                                                                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Maryland> ;
+                                                                                           
+                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Employer> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#UMBC> ;
+                                                                                           
+                                                                                           <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Location> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#United_States_of_America> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Google
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Google> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Abstract_Object> ,
+                                                                                                 <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                                 owl:NamedIndividual ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Google"^^xsd:string ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Employee> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Mary> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Jessica
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Jessica> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Girl> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Infant> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                  <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> ,
+                                                                                                  owl:NamedIndividual ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> 1 ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> "Female"^^xsd:string ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Jessica"^^xsd:string ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Father> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#John> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Parent> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#John> ,
+                                                                                                                                                                                     <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Mary> ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Mother> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Mary> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#John
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#John> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Male> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Man> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Unemployed> ,
+                                                                                               owl:NamedIndividual ;
+                                                                                      
+                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#age> 35 ;
+                                                                                      
+                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "John"^^xsd:string ;
+                                                                                      
+                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> "Male"^^xsd:string ;
+                                                                                      
+                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Child> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Jessica> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Mary
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Mary> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Employed> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Female> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Woman> ,
+                                                                                               owl:NamedIndividual ,
+                                                                                               [ rdf:type owl:Class ;
+                                                                                                 owl:complementOf <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Infant>
+                                                                                               ] ;
+                                                                                      
+                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#sex> "Female"^^xsd:string ;
+                                                                                      
+                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Mary"^^xsd:string ;
+                                                                                      
+                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Employer> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Google> ;
+                                                                                      
+                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Child> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Jessica> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Maryland
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Maryland> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> ,
+                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                   owl:NamedIndividual ;
+                                                                                          
+                                                                                          <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#longitude> -76.7855 ;
+                                                                                          
+                                                                                          <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#latitude> 39.0617 ;
+                                                                                          
+                                                                                          <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "Maryland"^^xsd:string ;
+                                                                                          
+                                                                                          <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Location> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#United_States_of_America> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Some_Person
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Some_Person> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Animate_Object> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Employed> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Person> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Sexual_Reproducer> ,
+                                                                                                      owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#UMBC
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#UMBC> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Abstract_Object> ,
+                                                                                               <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Organization> ,
+                                                                                               owl:NamedIndividual ;
+                                                                                      
+                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "University of Maryland, Baltimore County"^^xsd:string ;
+                                                                                      
+                                                                                      <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#has-Employee> <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Dr._Finin> .
+
+
+
+###  http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#United_States_of_America
+
+<http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#United_States_of_America> rdf:type <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Inanimate_Object> ,
+                                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Physical_Object> ,
+                                                                                                                   <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Place> ,
+                                                                                                                   owl:NamedIndividual ;
+                                                                                                          
+                                                                                                          <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#longitude> -98.7372 ;
+                                                                                                          
+                                                                                                          <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#latitude> 40.4230 ;
+                                                                                                          
+                                                                                                          <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#name> "United States of America"^^xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult>
+                <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Child>
+                <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Infant>
+              )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Adult>
+                <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Boy>
+                <http://www.semanticweb.org/akshaypeshave/ontologies/2013/3/untitled-ontology-4#Girl>
+              )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

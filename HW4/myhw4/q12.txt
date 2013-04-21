@@ -1,0 +1,12 @@
+# Construct an RDF graph of new assertions that follow from the fact
+# that dbpo:spouse is a symmetric relation
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpr: <http://dbpedia.org/resource/>
+PREFIX dbpo: <http://dbpedia.org/ontology/>
+PREFIX dbpprop: <http://dbpedia.org/property/>
+
+
+CONSTRUCT { ?S2 dbpo:spouse ?S1 }
+WHERE { ?S1 dbpo:spouse ?S2 }
