@@ -1,0 +1,4403 @@
+#Processed by Id: cwm.py,v 1.197 2007/12/13 15:38:39 syosi Exp 
+        #    using base file:///Python27/
+        
+#  Notation3 generation by
+#       notation3.py,v 1.200 2007/12/11 21:18:08 syosi Exp
+
+#   Base was: file:///Python27/
+     @prefix : <http://rdfs.org/sioc/ns#> .
+    @prefix infe: <inferenceEngine.n3#> .
+    @prefix log: <http://www.w3.org/2000/10/swap/log#> .
+    @prefix owl: <http://www.w3.org/2002/07/owl#> .
+    
+     @forAll infe:Author,
+                infe:Author1,
+                infe:Author2,
+                infe:CCSNode,
+                infe:Publication,
+                infe:Topic .
+    
+    "A.1"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Arthur Zimek",
+                "Hans-Peter Kriegel",
+                "Peer Kr&#246",
+                "ger",
+                <http://dx.doi.org/10.1145/1497577.1497578>;
+         :topic "algorithms",
+                "clustering",
+                "data mining",
+                "high-dimensional data",
+                "survey",
+                "theory" .
+    
+    "Akitoshi Kawamura"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "complexity measures and classes",
+                "computable analysis",
+                "computational complexity",
+                "higher-type complexity",
+                "second-order polynomials",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Akitoshi Kawamura",
+                "Stephen Cook" .
+    
+    "Alex Kesselman"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "convergence time",
+                "game theory",
+                "nash equilibrium",
+                "nonnumerical algorithms and problems",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Alex Kesselman",
+                "Eyal Even-Dar",
+                "Yishay Mansour" .
+    
+    "Alex Samorodnitsky"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "combinatorial algorithms",
+                "influence of a boolean function",
+                "sublinear query approximation algorithms",
+                "symmetric chains",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Alex Samorodnitsky",
+                "Dana Ron",
+                "Muli Safra",
+                "Omri Weinstein",
+                "Ronitt Rubinfeld" .
+    
+    "Alexander Razborov"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "dnf",
+                "probabilistic computation",
+                "pseudo-random generators",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Alexander Razborov" .
+    
+    "Alexander Souza"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "average-case analysis",
+                "economics",
+                "multiagent systems",
+                "price of anarchy",
+                "selfish routing",
+                "sequencing and scheduling",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Alexander Souza",
+                "Martin Hoefer" .
+    
+    "Amin Saberi"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "belief propagation",
+                "general",
+                "graph matching",
+                "message-passing",
+                "network alignment";
+         <http://xmlns.com/foaf/0.1/knows> "Amin Saberi",
+                "David F. Gleich",
+                "Mohsen Bayati",
+                "Ying Wang" .
+    
+    "Aminul Islam"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "corpus-based measures",
+                "experimentation",
+                "natural language interfaces",
+                "performance",
+                "semantic similarity of words",
+                "similarity of short texts",
+                "text analysis";
+         <http://xmlns.com/foaf/0.1/knows> "Aminul Islam",
+                "Diana Inkpen" .
+    
+    "Andreas Krause"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "blogs",
+                "data mining",
+                "experimentation",
+                "information cascades",
+                "meme-tracking",
+                "networks of diffusion",
+                "news media",
+                "social networks";
+         <http://xmlns.com/foaf/0.1/knows> "Andreas Krause",
+                "Jure Leskovec",
+                "Manuel Gomez-Rodriguez" .
+    
+    "Anindya De"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "extractors",
+                "locally samplable sources",
+                "lower bounds",
+                "probabilistic computation",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Anindya De",
+                "Thomas Watson" .
+    
+    "Antonio A. F. Loureiro"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "complex networks",
+                "data mining",
+                "social networks",
+                "sports analytics",
+                "statistical computing",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Antonio A. F. Loureiro",
+                "Christos Faloutsos",
+                "Pedro O. S. Vaz de Melo",
+                "Virgilio A. F. Almeida" .
+    
+    "Arie M. C. A. Koster"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "computations on discrete structures",
+                "design",
+                "dynamic programming",
+                "exact algorithms",
+                "experimentation",
+                "graph algorithms",
+                "graph theory",
+                "separators",
+                "theory",
+                "treewidth";
+         <http://xmlns.com/foaf/0.1/knows> "Arie M. C. A. Koster",
+                "Dieter Kratsch",
+                "Dimitrios M. Thilikos",
+                "Fedor V. Fomin",
+                "Hans L. Bodlaender" .
+    
+    "Aristides Gionis"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "0--1 data",
+                "algorithms",
+                "clustering aggregation",
+                "clustering categorical data",
+                "correlation clustering",
+                "data clustering",
+                "data mining",
+                "experimentation",
+                "management",
+                "nonnumerical algorithms and problems",
+                "randomization tests",
+                "significance testing",
+                "swaps";
+         <http://xmlns.com/foaf/0.1/knows> "Aristides Gionis",
+                "Heikki Mannila",
+                "Panayiotis Tsaparas",
+                "Taneli Mielik&#228",
+                "inen" .
+    
+    "Arthur Zimek"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "clustering",
+                "data mining",
+                "high-dimensional data",
+                "survey",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Arthur Zimek",
+                "Hans-Peter Kriegel",
+                "Peer Kr&#246",
+                "ger" .
+    
+    "Artur Czumaj"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "coordination ration",
+                "economics",
+                "nash equilibria",
+                "noncooperative networks",
+                "selfish strategies",
+                "theory",
+                "traffic routing";
+         <http://xmlns.com/foaf/0.1/knows> "Artur Czumaj",
+                "Berthold V&#246",
+                "cking" .
+    
+    "Asaf Levin"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "approximation algorithm",
+                "biclustering",
+                "combinatorics",
+                "gene expression",
+                "order preserving",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Asaf Levin",
+                "Dorit S. Hochbaum" .
+    
+    "Ashwin Machanavajjhala"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "data privacy",
+                "diversity",
+                "k-anonymity",
+                "miscellaneous",
+                "privacy-preserving data publishing",
+                "security";
+         <http://xmlns.com/foaf/0.1/knows> "Ashwin Machanavajjhala",
+                "Daniel Kifer",
+                "Johannes Gehrke",
+                "Muthuramakrishnan Venkitasubramaniam" .
+    
+    "Avi Wigderson"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "arithmetization",
+                "communication complexity",
+                "computation by abstract devices",
+                "interactive proofs",
+                "low-degree polynomials",
+                "oracles",
+                "query complexity",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Avi Wigderson",
+                "Scott Aaronson" .
+    
+    "B.2.4"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Markus P&#252",
+                "Yevgen Voronenko",
+                "schel",
+                <http://dx.doi.org/10.1145/1240233.1240234>;
+         :topic "addition chains",
+                "algebraic algorithms",
+                "algorithms",
+                "cost/performance",
+                "design",
+                "directed graph",
+                "fir filter",
+                "fixed-point arithmetic",
+                "number-theoretic computations",
+                "performance",
+                "strength reduction",
+                "theory" .
+    
+    "Berthold V&#246"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "coordination ration",
+                "economics",
+                "nash equilibria",
+                "noncooperative networks",
+                "selfish strategies",
+                "theory",
+                "traffic routing";
+         <http://xmlns.com/foaf/0.1/knows> "Artur Czumaj",
+                "Berthold V&#246",
+                "cking" .
+    
+    "C.2.1"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Hirotada Kobayashi",
+                "Keiji Matsumoto",
+                "Seiichiro Tani",
+                <http://dx.doi.org/10.1145/2141938.2141939>;
+         :topic "algorithms",
+                "distributed computing",
+                "distributed networks",
+                "general",
+                "models of computation",
+                "modes of computation",
+                "network protocols",
+                "quantum algorithms",
+                "quantum communication",
+                "theory" .
+    
+    "C.2.2"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Christian Sommer",
+                "Hirotada Kobayashi",
+                "Keiji Matsumoto",
+                "Seiichiro Tani",
+                "Shang-Hua Teng",
+                "Wei Chen",
+                "Yajun Wang",
+                <http://dx.doi.org/10.1145/2141938.2141939>,
+                <http://dx.doi.org/10.1145/2390176.2390180>;
+         :topic "algorithms",
+                "complex networks",
+                "distance oracle",
+                "distributed computing",
+                "distributed networks",
+                "general",
+                "graph theory",
+                "models of computation",
+                "modes of computation",
+                "network protocols",
+                "nonnumerical algorithms and problems",
+                "power-law graphs",
+                "quantum algorithms",
+                "quantum communication",
+                "shortest path",
+                "shortest-path query",
+                "theory" .
+    
+    "C.2.3"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Jeffrey Erman",
+                "Nick Duffield",
+                "Patrick Haffner",
+                "Subhabrata Sen",
+                "Yu Jin",
+                "Zhi-Li Zhang",
+                <http://dx.doi.org/10.1145/2133360.2133364>;
+         :topic "algorithms",
+                "classifier design and evaluation",
+                "communications network",
+                "machine learning",
+                "measurement",
+                "network management",
+                "theory",
+                "traffic classification" .
+    
+    "Chandan Saha"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "arithmetic circuits",
+                "numerical algorithms and problems",
+                "polynomials",
+                "sum of square roots",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Chandan Saha",
+                "Neeraj Kayal" .
+    
+    "Charles E. Leiserson"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithm",
+                "algorithms",
+                "analysis of algorithms and problem complexity",
+                "cache-oblivious",
+                "caching",
+                "fast fourier transform",
+                "i/o complexity",
+                "matrix multiplication",
+                "matrix transpose",
+                "sorting",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Charles E. Leiserson",
+                "Harald Prokop",
+                "Matteo Frigo",
+                "Sridhar Ramachandran" .
+    
+    "Chris Bourke"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "directed graph reachability",
+                "path and circuit problems",
+                "planar graphs",
+                "relations among complexity classes",
+                "theory",
+                "unambiguous log-space";
+         <http://xmlns.com/foaf/0.1/knows> "Chris Bourke",
+                "N. V. Vinodchandran",
+                "Raghunath Tewari" .
+    
+    "Christian Sommer"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "complex networks",
+                "distance oracle",
+                "graph theory",
+                "network protocols",
+                "nonnumerical algorithms and problems",
+                "power-law graphs",
+                "shortest path",
+                "shortest-path query",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Christian Sommer",
+                "Shang-Hua Teng",
+                "Wei Chen",
+                "Yajun Wang" .
+    
+    "Christos Faloutsos"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "complex networks",
+                "data mining",
+                "densification power laws",
+                "graph generators",
+                "graph mining",
+                "heavy-tailed distributions",
+                "measurement",
+                "multilinear algebra",
+                "performance",
+                "small-world phenomena",
+                "social networks",
+                "sports analytics",
+                "statistical computing",
+                "stream mining",
+                "tensor",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Antonio A. F. Loureiro",
+                "Christos Faloutsos",
+                "Dacheng Tao",
+                "Jimeng Sun",
+                "Jon Kleinberg",
+                "Jure Leskovec",
+                "Pedro O. S. Vaz de Melo",
+                "Philip S. Yu",
+                "Spiros Papadimitriou",
+                "Virgilio A. F. Almeida" .
+    
+    "Dacheng Tao"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "data mining",
+                "multilinear algebra",
+                "performance",
+                "stream mining",
+                "tensor",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Christos Faloutsos",
+                "Dacheng Tao",
+                "Jimeng Sun",
+                "Philip S. Yu",
+                "Spiros Papadimitriou" .
+    
+    "Daming Zhu"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "biology and genetics",
+                "block interchange",
+                "genome",
+                "permutation",
+                "sorting and searching",
+                "theory",
+                "time complexity",
+                "transposition",
+                "tree",
+                "trees";
+         <http://xmlns.com/foaf/0.1/knows> "Daming Zhu",
+                "Jianxing Feng" .
+    
+    "Dana Moshkovitz"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "almost k-wise independence",
+                "combinatorial algorithms",
+                "derandomization",
+                "generalized hashing",
+                "group testing",
+                "k-restriction",
+                "set-cover",
+                "splitter",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Dana Moshkovitz",
+                "Noga Alon",
+                "Shmuel Safra" .
+    
+    "Dana Ron"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "combinatorial algorithms",
+                "influence of a boolean function",
+                "sublinear query approximation algorithms",
+                "symmetric chains",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Alex Samorodnitsky",
+                "Dana Ron",
+                "Muli Safra",
+                "Omri Weinstein",
+                "Ronitt Rubinfeld" .
+    
+    "Daniel Kifer"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "data privacy",
+                "diversity",
+                "k-anonymity",
+                "miscellaneous",
+                "privacy-preserving data publishing",
+                "security";
+         <http://xmlns.com/foaf/0.1/knows> "Ashwin Machanavajjhala",
+                "Daniel Kifer",
+                "Johannes Gehrke",
+                "Muthuramakrishnan Venkitasubramaniam" .
+    
+    "David Barber"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "bilinear program",
+                "computational complexity",
+                "computations on polynomials",
+                "matrix fractional program",
+                "motzkin-straus theorem",
+                "nonlinear optimization",
+                "numerical algorithms and problems",
+                "partially observable markov decision process",
+                "performance",
+                "stochastic controller",
+                "sum-of-square-roots problem";
+         <http://xmlns.com/foaf/0.1/knows> "David Barber",
+                "Michael L. Littman",
+                "Nikos Vlassis" .
+    
+    "David F. Gleich"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "belief propagation",
+                "general",
+                "graph matching",
+                "message-passing",
+                "network alignment";
+         <http://xmlns.com/foaf/0.1/knows> "Amin Saberi",
+                "David F. Gleich",
+                "Mohsen Bayati",
+                "Ying Wang" .
+    
+    "Diana Inkpen"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "corpus-based measures",
+                "experimentation",
+                "natural language interfaces",
+                "performance",
+                "semantic similarity of words",
+                "similarity of short texts",
+                "text analysis";
+         <http://xmlns.com/foaf/0.1/knows> "Aminul Islam",
+                "Diana Inkpen" .
+    
+    "Dieter Kratsch"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "computations on discrete structures",
+                "design",
+                "dynamic programming",
+                "exact algorithms",
+                "experimentation",
+                "graph algorithms",
+                "graph theory",
+                "separators",
+                "theory",
+                "treewidth";
+         <http://xmlns.com/foaf/0.1/knows> "Arie M. C. A. Koster",
+                "Dieter Kratsch",
+                "Dimitrios M. Thilikos",
+                "Fedor V. Fomin",
+                "Hans L. Bodlaender" .
+    
+    "Dimitrios M. Thilikos"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "computations on discrete structures",
+                "design",
+                "dynamic programming",
+                "exact algorithms",
+                "experimentation",
+                "graph algorithms",
+                "graph theory",
+                "separators",
+                "theory",
+                "treewidth";
+         <http://xmlns.com/foaf/0.1/knows> "Arie M. C. A. Koster",
+                "Dieter Kratsch",
+                "Dimitrios M. Thilikos",
+                "Fedor V. Fomin",
+                "Hans L. Bodlaender" .
+    
+    "Dingding Wang"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "comparative document summarization",
+                "discriminative sentence selection",
+                "experimentation",
+                "information search and retrieval",
+                "learning",
+                "performance";
+         <http://xmlns.com/foaf/0.1/knows> "Dingding Wang",
+                "Shenghuo Zhu",
+                "Tao Li",
+                "Yihong Gong" .
+    
+    "Dorit S. Hochbaum"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "approximation algorithm",
+                "biclustering",
+                "combinatorics",
+                "gene expression",
+                "order preserving",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Asaf Levin",
+                "Dorit S. Hochbaum" .
+    
+    "Dustin Wehr"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "branching programs",
+                "general",
+                "log space",
+                "logdcfl",
+                "lower bounds",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Dustin Wehr",
+                "Mark Braverman",
+                "Pierre McKenzie",
+                "Rahul Santhanam",
+                "Stephen Cook" .
+    
+    "E.1"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Daming Zhu",
+                "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Ho-Leung Chan",
+                "Jianxing Feng",
+                "Kunihiko Sadakane",
+                "Oren Weimann",
+                "Paolo Ferragina",
+                "Rajeev Raman",
+                "Raphael Yuster",
+                "Srinivasa Rao Satti",
+                "Tak-Wah Lam",
+                "Veli M&#228",
+                "Venkatesh Raman",
+                "Wing-Kai Hon",
+                "kinen",
+                <http://dx.doi.org/10.1145/1240233.1240243>,
+                <http://dx.doi.org/10.1145/1240233.1240244>,
+                <http://dx.doi.org/10.1145/1273340.1273341>,
+                <http://dx.doi.org/10.1145/1290672.1290680>,
+                <http://dx.doi.org/10.1145/1367064.1367072>,
+                <http://dx.doi.org/10.1145/2438645.2438646>;
+         :topic "access methods",
+                "algorithms",
+                "arrays",
+                "biology and genetics",
+                "block interchange",
+                "burrows-wheeler transform",
+                "compressed dynamic data structures",
+                "compressed suffix tree",
+                "compressed text databases",
+                "compression boosting",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "distance oracles",
+                "entropy",
+                "fault tolerance",
+                "file organization",
+                "genome",
+                "graph theory",
+                "index generation",
+                "indexing methods",
+                "multisets",
+                "partial sums",
+                "pattern matching",
+                "perfect hashing",
+                "permutation",
+                "prefix sums",
+                "rank and select",
+                "replacement paths",
+                "search process",
+                "sequences",
+                "sets",
+                "shortest paths",
+                "sorting and searching",
+                "string matching",
+                "succinct data structures",
+                "text compression",
+                "text indexing",
+                "theory",
+                "time complexity",
+                "transposition",
+                "tree",
+                "trees",
+                "tries",
+                "wavelet tree" .
+    
+    "E.2"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Gonzalo Navarro",
+                "Veli M&#228",
+                "kinen",
+                <http://dx.doi.org/10.1145/1367064.1367072>;
+         :topic "access methods",
+                "algorithms",
+                "compressed dynamic data structures",
+                "compressed text databases",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "entropy",
+                "file organization",
+                "partial sums",
+                "pattern matching",
+                "search process",
+                "sequences",
+                "sorting and searching" .
+    
+    "E.4"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Ho-Leung Chan",
+                "Kunihiko Sadakane",
+                "Paolo Ferragina",
+                "Rajeev Raman",
+                "Srinivasa Rao Satti",
+                "Tak-Wah Lam",
+                "Veli M&#228",
+                "Venkatesh Raman",
+                "Wing-Kai Hon",
+                "kinen",
+                <http://dx.doi.org/10.1145/1240233.1240243>,
+                <http://dx.doi.org/10.1145/1240233.1240244>,
+                <http://dx.doi.org/10.1145/1290672.1290680>,
+                <http://dx.doi.org/10.1145/1367064.1367072>;
+         :topic "access methods",
+                "algorithms",
+                "arrays",
+                "burrows-wheeler transform",
+                "compressed dynamic data structures",
+                "compressed suffix tree",
+                "compressed text databases",
+                "compression boosting",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "entropy",
+                "file organization",
+                "index generation",
+                "indexing methods",
+                "multisets",
+                "partial sums",
+                "pattern matching",
+                "perfect hashing",
+                "prefix sums",
+                "rank and select",
+                "search process",
+                "sequences",
+                "sets",
+                "sorting and searching",
+                "string matching",
+                "succinct data structures",
+                "text compression",
+                "text indexing",
+                "theory",
+                "trees",
+                "tries",
+                "wavelet tree" .
+    
+    "E.m"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Ashwin Machanavajjhala",
+                "Daniel Kifer",
+                "Johannes Gehrke",
+                "Muthuramakrishnan Venkitasubramaniam",
+                <http://dx.doi.org/10.1145/1217299.1217302>;
+         :topic "data privacy",
+                "diversity",
+                "k-anonymity",
+                "miscellaneous",
+                "privacy-preserving data publishing",
+                "security" .
+    
+    "Emanuele Viola"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "communication complexity",
+                "lower bound",
+                "nondeterminism",
+                "number on forehead",
+                "randomization",
+                "relations among complexity classes",
+                "relations among complexity measures",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Emanuele Viola",
+                "Matei David",
+                "Toniann Pitassi" .
+    
+    "Eric Purdy"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "coin-weighing problems",
+                "complexity of proof procedures",
+                "relations among complexity measures",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Eric Purdy" .
+    
+    "Eyal Even-Dar"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "convergence time",
+                "game theory",
+                "nash equilibrium",
+                "nonnumerical algorithms and problems",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Alex Kesselman",
+                "Eyal Even-Dar",
+                "Yishay Mansour" .
+    
+    "F.1"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Avi Wigderson",
+                "Scott Aaronson",
+                <http://dx.doi.org/10.1145/1490270.1490272>;
+         :topic "arithmetization",
+                "communication complexity",
+                "computation by abstract devices",
+                "interactive proofs",
+                "low-degree polynomials",
+                "oracles",
+                "query complexity",
+                "theory" .
+    
+    "F.1.1"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Hirotada Kobayashi",
+                "Jacobo Tor&#225",
+                "Keiji Matsumoto",
+                "Seiichiro Tani",
+                "Vikraman Arvind",
+                "n",
+                <http://dx.doi.org/10.1145/1944857.1944859>,
+                <http://dx.doi.org/10.1145/2141938.2141939>;
+         :topic "algorithms",
+                "arthur-merlin games",
+                "computational and structural complexity",
+                "computations on discrete structures",
+                "derandomization",
+                "distributed computing",
+                "distributed networks",
+                "general",
+                "limited nondeterminism",
+                "models of computation",
+                "modes of computation",
+                "network protocols",
+                "quantum algorithms",
+                "quantum communication",
+                "relations between models",
+                "theory" .
+    
+    "F.1.2"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Alexander Razborov",
+                "Anindya De",
+                "Hirotada Kobayashi",
+                "Keiji Matsumoto",
+                "Muthuramakrishnan Venkitasubramaniam",
+                "Rafael Pass",
+                "Seiichiro Tani",
+                "Thomas Watson",
+                <http://dx.doi.org/10.1145/1490270.1490273>,
+                <http://dx.doi.org/10.1145/2141938.2141939>,
+                <http://dx.doi.org/10.1145/2141938.2141941>,
+                <http://dx.doi.org/10.1145/2382559.2382561>;
+         :topic "algorithms",
+                "distributed computing",
+                "distributed networks",
+                "dnf",
+                "extractors",
+                "general",
+                "interactive proofs",
+                "locally samplable sources",
+                "lower bounds",
+                "models of computation",
+                "modes of computation",
+                "network protocols",
+                "parallel-repetition",
+                "probabilistic computation",
+                "pseudo-random generators",
+                "public-coin protocols",
+                "quantum algorithms",
+                "quantum communication",
+                "security",
+                "soundness error",
+                "theory" .
+    
+    "F.1.3"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Akitoshi Kawamura",
+                "Chris Bourke",
+                "Emanuele Viola",
+                "Eric Purdy",
+                "Jacobo Tor&#225",
+                "Matei David",
+                "Meena Mahajan",
+                "N. V. Vinodchandran",
+                "Nutan Limaye",
+                "Raghav Kulkarni",
+                "Raghunath Tewari",
+                "Samir Datta",
+                "Stephen Cook",
+                "Toniann Pitassi",
+                "Vikraman Arvind",
+                "n",
+                <http://dx.doi.org/10.1145/1490270.1490274>,
+                <http://dx.doi.org/10.1145/1595391.1595392>,
+                <http://dx.doi.org/10.1145/1714450.1714453>,
+                <http://dx.doi.org/10.1145/1944857.1944858>,
+                <http://dx.doi.org/10.1145/1944857.1944859>,
+                <http://dx.doi.org/10.1145/2189778.2189780>;
+         :topic "algorithms",
+                "arthur-merlin games",
+                "bipartite graphs",
+                "coin-weighing problems",
+                "communication complexity",
+                "complexity measures and classes",
+                "complexity of proof procedures",
+                "computable analysis",
+                "computational and structural complexity",
+                "computational complexity",
+                "computations on discrete structures",
+                "counting classes",
+                "derandomization",
+                "determinant",
+                "directed graph reachability",
+                "higher-type complexity",
+                "limited nondeterminism",
+                "lower bound",
+                "nondeterminism",
+                "number on forehead",
+                "path and circuit problems",
+                "perfect matching",
+                "permanent",
+                "planar graphs",
+                "planarity",
+                "randomization",
+                "relations among complexity classes",
+                "relations among complexity measures",
+                "relations between models",
+                "second-order polynomials",
+                "theory",
+                "unambiguous log-space" .
+    
+    "F.2"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Artur Czumaj",
+                "Berthold V&#246",
+                "Charles E. Leiserson",
+                "Harald Prokop",
+                "Matteo Frigo",
+                "Prasad Raghavendra",
+                "Sridhar Ramachandran",
+                "Venkatesan Guruswami",
+                "cking",
+                <http://dx.doi.org/10.1145/1186810.1186814>,
+                <http://dx.doi.org/10.1145/1595391.1595393>,
+                <http://dx.doi.org/10.1145/2071379.2071383>;
+         :topic "algorithm",
+                "algorithms",
+                "analysis of algorithms and problem complexity",
+                "cache-oblivious",
+                "caching",
+                "coordination ration",
+                "economics",
+                "fast fourier transform",
+                "hardness of approximation",
+                "i/o complexity",
+                "linearity testing",
+                "matrix multiplication",
+                "matrix transpose",
+                "nash equilibria",
+                "noncooperative networks",
+                "probabilistically checkable proofs",
+                "selfish strategies",
+                "sorting",
+                "sparse linear equations",
+                "theory",
+                "traffic routing" .
+    
+    "F.2.0"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Dustin Wehr",
+                "Hirotada Kobayashi",
+                "Keiji Matsumoto",
+                "Mark Braverman",
+                "Michael Elkin",
+                "Pierre McKenzie",
+                "Rahul Santhanam",
+                "Seiichiro Tani",
+                "Stephen Cook",
+                <http://dx.doi.org/10.1145/1103963.1103968>,
+                <http://dx.doi.org/10.1145/2077336.2077337>,
+                <http://dx.doi.org/10.1145/2141938.2141939>;
+         :topic "algorithms",
+                "almost shortest paths",
+                "branching programs",
+                "combinatorics",
+                "distributed computing",
+                "distributed networks",
+                "general",
+                "graph algorithms",
+                "graph theory",
+                "log space",
+                "logdcfl",
+                "lower bounds",
+                "models of computation",
+                "modes of computation",
+                "network protocols",
+                "quantum algorithms",
+                "quantum communication",
+                "spanners",
+                "theory" .
+    
+    "F.2.1"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Chandan Saha",
+                "David Barber",
+                "Markus P&#252",
+                "Michael L. Littman",
+                "Neeraj Kayal",
+                "Nikos Vlassis",
+                "Yevgen Voronenko",
+                "schel",
+                <http://dx.doi.org/10.1145/1240233.1240234>,
+                <http://dx.doi.org/10.1145/2382559.2382560>,
+                <http://dx.doi.org/10.1145/2382559.2382563>;
+         :topic "addition chains",
+                "algebraic algorithms",
+                "algorithms",
+                "arithmetic circuits",
+                "bilinear program",
+                "computational complexity",
+                "computations on polynomials",
+                "cost/performance",
+                "design",
+                "directed graph",
+                "fir filter",
+                "fixed-point arithmetic",
+                "matrix fractional program",
+                "motzkin-straus theorem",
+                "nonlinear optimization",
+                "number-theoretic computations",
+                "numerical algorithms and problems",
+                "partially observable markov decision process",
+                "performance",
+                "polynomials",
+                "stochastic controller",
+                "strength reduction",
+                "sum of square roots",
+                "sum-of-square-roots problem",
+                "theory" .
+    
+    "F.2.2"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Alex Kesselman",
+                "Alexander Souza",
+                "Arie M. C. A. Koster",
+                "Aristides Gionis",
+                "Christian Sommer",
+                "Daming Zhu",
+                "Dieter Kratsch",
+                "Dimitrios M. Thilikos",
+                "Eric Purdy",
+                "Eyal Even-Dar",
+                "Fedor V. Fomin",
+                "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Hans L. Bodlaender",
+                "Heikki Mannila",
+                "Hiroshi Fujiwara",
+                "Ho-Leung Chan",
+                "Jacobo Tor&#225",
+                "Jianxing Feng",
+                "Kirk Pruhs",
+                "Kunihiko Sadakane",
+                "Martin Hoefer",
+                "Meena Mahajan",
+                "Nikhil Bansal",
+                "Nutan Limaye",
+                "Oren Weimann",
+                "Panayiotis Tsaparas",
+                "Paolo Ferragina",
+                "Raghav Kulkarni",
+                "Rajeev Raman",
+                "Raphael Yuster",
+                "Samir Datta",
+                "Shang-Hua Teng",
+                "Srinivasa Rao Satti",
+                "Susanne Albers",
+                "Tak-Wah Lam",
+                "Veli M&#228",
+                "Venkatesh Raman",
+                "Vikraman Arvind",
+                "Wei Chen",
+                "Wing-Kai Hon",
+                "Yajun Wang",
+                "Yishay Mansour",
+                "Zeev Nutov",
+                "kinen",
+                "n",
+                <http://dx.doi.org/10.1145/1217299.1217303>,
+                <http://dx.doi.org/10.1145/1240233.1240243>,
+                <http://dx.doi.org/10.1145/1240233.1240244>,
+                <http://dx.doi.org/10.1145/1273340.1273341>,
+                <http://dx.doi.org/10.1145/1273340.1273348>,
+                <http://dx.doi.org/10.1145/1290672.1290680>,
+                <http://dx.doi.org/10.1145/1290672.1290686>,
+                <http://dx.doi.org/10.1145/1367064.1367072>,
+                <http://dx.doi.org/10.1145/1714450.1714453>,
+                <http://dx.doi.org/10.1145/1867719.1867721>,
+                <http://dx.doi.org/10.1145/1944857.1944858>,
+                <http://dx.doi.org/10.1145/1944857.1944859>,
+                <http://dx.doi.org/10.1145/2390176.2390177>,
+                <http://dx.doi.org/10.1145/2390176.2390180>,
+                <http://dx.doi.org/10.1145/2390176.2390188>,
+                <http://dx.doi.org/10.1145/2438645.2438646>,
+                <http://dx.doi.org/10.1145/2438645.2438650>;
+         :topic "access methods",
+                "algorithms",
+                "approximation algorithms",
+                "arrays",
+                "arthur-merlin games",
+                "average-case analysis",
+                "biology and genetics",
+                "bipartite graphs",
+                "block interchange",
+                "burrows-wheeler transform",
+                "clustering aggregation",
+                "clustering categorical data",
+                "coin-weighing problems",
+                "combinatorial algorithms",
+                "competitive analysis",
+                "complex networks",
+                "complexity of proof procedures",
+                "compressed dynamic data structures",
+                "compressed suffix tree",
+                "compressed text databases",
+                "compression boosting",
+                "computational and structural complexity",
+                "computations on discrete structures",
+                "convergence time",
+                "correlation clustering",
+                "counting classes",
+                "data clustering",
+                "data compaction and compression",
+                "data mining",
+                "derandomization",
+                "design",
+                "determinant",
+                "dictionaries",
+                "distance oracle",
+                "distance oracles",
+                "dynamic programming",
+                "economics",
+                "entropy",
+                "exact algorithms",
+                "experimentation",
+                "fault tolerance",
+                "file organization",
+                "flow time",
+                "game theory",
+                "genome",
+                "graph algorithms",
+                "graph connectivity",
+                "graph theory",
+                "index generation",
+                "indexing methods",
+                "limited nondeterminism",
+                "multiagent systems",
+                "multisets",
+                "nash equilibrium",
+                "network protocols",
+                "node-costs",
+                "nonnumerical algorithms and problems",
+                "offline algorithms",
+                "online algorithms",
+                "partial sums",
+                "path and circuit problems",
+                "pattern matching",
+                "perfect hashing",
+                "perfect matching",
+                "performance",
+                "permanent",
+                "permutation",
+                "planarity",
+                "power-law graphs",
+                "prefix sums",
+                "price of anarchy",
+                "rank and select",
+                "relations among complexity classes",
+                "relations among complexity measures",
+                "relations between models",
+                "replacement paths",
+                "rooted connectivity",
+                "scheduling",
+                "search process",
+                "selfish routing",
+                "separators",
+                "sequences",
+                "sequencing and scheduling",
+                "sets",
+                "shortest path",
+                "shortest paths",
+                "shortest-path query",
+                "sorting and searching",
+                "speed scaling",
+                "string matching",
+                "succinct data structures",
+                "text compression",
+                "text indexing",
+                "theory",
+                "time complexity",
+                "transposition",
+                "tree",
+                "trees",
+                "treewidth",
+                "tries",
+                "variable-speed processor",
+                "wavelet tree" .
+    
+    "F.2.3"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Meena Mahajan",
+                "Nutan Limaye",
+                "Raghav Kulkarni",
+                "Samir Datta",
+                <http://dx.doi.org/10.1145/1714450.1714453>;
+         :topic "algorithms",
+                "bipartite graphs",
+                "computations on discrete structures",
+                "counting classes",
+                "determinant",
+                "path and circuit problems",
+                "perfect matching",
+                "permanent",
+                "planarity",
+                "relations among complexity classes",
+                "theory" .
+    
+    "Fabio Fassetti"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "classification",
+                "data mining",
+                "nearest neighbor",
+                "nearest neighbor rule",
+                "probability density functions",
+                "uncertain data";
+         <http://xmlns.com/foaf/0.1/knows> "Fabio Fassetti",
+                "Fabrizio Angiulli" .
+    
+    "Fabrizio Angiulli"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "classification",
+                "data mining",
+                "nearest neighbor",
+                "nearest neighbor rule",
+                "probability density functions",
+                "uncertain data";
+         <http://xmlns.com/foaf/0.1/knows> "Fabio Fassetti",
+                "Fabrizio Angiulli" .
+    
+    "Fedor V. Fomin"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "computations on discrete structures",
+                "design",
+                "dynamic programming",
+                "exact algorithms",
+                "experimentation",
+                "graph algorithms",
+                "graph theory",
+                "separators",
+                "theory",
+                "treewidth";
+         <http://xmlns.com/foaf/0.1/knows> "Arie M. C. A. Koster",
+                "Dieter Kratsch",
+                "Dimitrios M. Thilikos",
+                "Fedor V. Fomin",
+                "Hans L. Bodlaender" .
+    
+    "G.1.10"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Christos Faloutsos",
+                "Dacheng Tao",
+                "Jimeng Sun",
+                "Philip S. Yu",
+                "Spiros Papadimitriou",
+                <http://dx.doi.org/10.1145/1409620.1409621>;
+         :topic "algorithms",
+                "data mining",
+                "multilinear algebra",
+                "performance",
+                "stream mining",
+                "tensor",
+                "theory" .
+    
+    "G.2.1"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Alex Samorodnitsky",
+                "Asaf Levin",
+                "Dana Moshkovitz",
+                "Dana Ron",
+                "Dorit S. Hochbaum",
+                "Hiroshi Fujiwara",
+                "Michael Elkin",
+                "Muli Safra",
+                "Noga Alon",
+                "Omri Weinstein",
+                "Ronitt Rubinfeld",
+                "Shmuel Safra",
+                "Susanne Albers",
+                <http://dx.doi.org/10.1145/1103963.1103968>,
+                <http://dx.doi.org/10.1145/1150334.1150336>,
+                <http://dx.doi.org/10.1145/1290672.1290686>,
+                <http://dx.doi.org/10.1145/2382559.2382562>,
+                <http://dx.doi.org/10.1145/2438645.2438651>;
+         :topic "algorithms",
+                "almost k-wise independence",
+                "almost shortest paths",
+                "approximation algorithm",
+                "biclustering",
+                "combinatorial algorithms",
+                "combinatorics",
+                "competitive analysis",
+                "derandomization",
+                "dynamic programming",
+                "flow time",
+                "gene expression",
+                "general",
+                "generalized hashing",
+                "graph algorithms",
+                "graph theory",
+                "group testing",
+                "influence of a boolean function",
+                "k-restriction",
+                "offline algorithms",
+                "online algorithms",
+                "order preserving",
+                "sequencing and scheduling",
+                "set-cover",
+                "spanners",
+                "splitter",
+                "sublinear query approximation algorithms",
+                "symmetric chains",
+                "theory",
+                "variable-speed processor" .
+    
+    "G.2.2"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Arie M. C. A. Koster",
+                "Chris Bourke",
+                "Christian Sommer",
+                "Dieter Kratsch",
+                "Dimitrios M. Thilikos",
+                "Fedor V. Fomin",
+                "Hans L. Bodlaender",
+                "Ken-Ichi Kawarabayashi",
+                "Liam Roditty",
+                "Meena Mahajan",
+                "Michael Elkin",
+                "N. V. Vinodchandran",
+                "Nutan Limaye",
+                "Oren Weimann",
+                "Raghav Kulkarni",
+                "Raghunath Tewari",
+                "Raphael Yuster",
+                "Roei Tov",
+                "Samir Datta",
+                "Shang-Hua Teng",
+                "Wei Chen",
+                "Yajun Wang",
+                "Yusuke Kobayashi",
+                "Zeev Nutov",
+                <http://dx.doi.org/10.1145/1103963.1103968>,
+                <http://dx.doi.org/10.1145/1490270.1490274>,
+                <http://dx.doi.org/10.1145/1714450.1714453>,
+                <http://dx.doi.org/10.1145/2390176.2390177>,
+                <http://dx.doi.org/10.1145/2390176.2390180>,
+                <http://dx.doi.org/10.1145/2390176.2390188>,
+                <http://dx.doi.org/10.1145/2438645.2438646>,
+                <http://dx.doi.org/10.1145/2438645.2438647>,
+                <http://dx.doi.org/10.1145/2438645.2438648>;
+         :topic "4-edge-connected graph",
+                "algorithms",
+                "almost shortest paths",
+                "approximation",
+                "approximation algorithm",
+                "approximation algorithms",
+                "bipartite graphs",
+                "combinatorics",
+                "complex networks",
+                "computations on discrete structures",
+                "counting classes",
+                "design",
+                "determinant",
+                "directed graph reachability",
+                "distance oracle",
+                "distance oracles",
+                "dynamic programming",
+                "edge-disjoint paths",
+                "eulerian graph",
+                "exact algorithms",
+                "experimentation",
+                "fault tolerance",
+                "general",
+                "girth",
+                "graph algorithms",
+                "graph connectivity",
+                "graph theory",
+                "graphs",
+                "minimum weight cycle",
+                "network protocols",
+                "node-costs",
+                "nonnumerical algorithms and problems",
+                "path and circuit problems",
+                "perfect matching",
+                "performance",
+                "permanent",
+                "planar graphs",
+                "planarity",
+                "power-law graphs",
+                "relations among complexity classes",
+                "replacement paths",
+                "rooted connectivity",
+                "separators",
+                "shortest path",
+                "shortest paths",
+                "shortest-path query",
+                "spanners",
+                "theory",
+                "treewidth",
+                "unambiguous log-space" .
+    
+    "G.2.3"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Alexander Souza",
+                "Martin Hoefer",
+                <http://dx.doi.org/10.1145/1867719.1867721>;
+         :topic "algorithms",
+                "average-case analysis",
+                "economics",
+                "multiagent systems",
+                "price of anarchy",
+                "selfish routing",
+                "sequencing and scheduling",
+                "theory" .
+    
+    "G.3"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Antonio A. F. Loureiro",
+                "Christos Faloutsos",
+                "Pedro O. S. Vaz de Melo",
+                "Virgilio A. F. Almeida",
+                <http://dx.doi.org/10.1145/2362383.2362387>;
+         :topic "complex networks",
+                "data mining",
+                "social networks",
+                "sports analytics",
+                "statistical computing",
+                "theory" .
+    
+    "Giovanni Manzini"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "arrays",
+                "burrows-wheeler transform",
+                "compression boosting",
+                "data compaction and compression",
+                "entropy",
+                "index generation",
+                "indexing methods",
+                "pattern matching",
+                "rank and select",
+                "search process",
+                "sorting and searching",
+                "text compression",
+                "text indexing",
+                "theory",
+                "trees",
+                "wavelet tree";
+         <http://xmlns.com/foaf/0.1/knows> "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Paolo Ferragina",
+                "Veli M&#228",
+                "kinen" .
+    
+    "Gonzalo Navarro"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "access methods",
+                "algorithms",
+                "arrays",
+                "burrows-wheeler transform",
+                "compressed dynamic data structures",
+                "compressed text databases",
+                "compression boosting",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "entropy",
+                "file organization",
+                "index generation",
+                "indexing methods",
+                "partial sums",
+                "pattern matching",
+                "rank and select",
+                "search process",
+                "sequences",
+                "sorting and searching",
+                "text compression",
+                "text indexing",
+                "theory",
+                "trees",
+                "wavelet tree";
+         <http://xmlns.com/foaf/0.1/knows> "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Paolo Ferragina",
+                "Veli M&#228",
+                "kinen" .
+    
+    "H.2.2"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Gonzalo Navarro",
+                "Veli M&#228",
+                "kinen",
+                <http://dx.doi.org/10.1145/1367064.1367072>;
+         :topic "access methods",
+                "algorithms",
+                "compressed dynamic data structures",
+                "compressed text databases",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "entropy",
+                "file organization",
+                "partial sums",
+                "pattern matching",
+                "search process",
+                "sequences",
+                "sorting and searching" .
+    
+    "H.2.8"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Andreas Krause",
+                "Antonio A. F. Loureiro",
+                "Aristides Gionis",
+                "Arthur Zimek",
+                "Christos Faloutsos",
+                "Dacheng Tao",
+                "Fabio Fassetti",
+                "Fabrizio Angiulli",
+                "Hans-Peter Kriegel",
+                "Heikki Mannila",
+                "Indrajit Bhattacharya",
+                "Jimeng Sun",
+                "Jon Kleinberg",
+                "Jure Leskovec",
+                "Laiwan Chan",
+                "Lise Getoor",
+                "Manuel Gomez-Rodriguez",
+                "Panayiotis Tsaparas",
+                "Pedro O. S. Vaz de Melo",
+                "Peer Kr&#246",
+                "Philip S. Yu",
+                "Spiros Papadimitriou",
+                "Taneli Mielik&#228",
+                "Virgilio A. F. Almeida",
+                "Yehuda Koren",
+                "Zhenxing Wang",
+                "ger",
+                "inen",
+                <http://dx.doi.org/10.1145/1217299.1217301>,
+                <http://dx.doi.org/10.1145/1217299.1217303>,
+                <http://dx.doi.org/10.1145/1217299.1217304>,
+                <http://dx.doi.org/10.1145/1297332.1297338>,
+                <http://dx.doi.org/10.1145/1409620.1409621>,
+                <http://dx.doi.org/10.1145/1497577.1497578>,
+                <http://dx.doi.org/10.1145/1644873.1644874>,
+                <http://dx.doi.org/10.1145/2086737.2086741>,
+                <http://dx.doi.org/10.1145/2362383.2362384>,
+                <http://dx.doi.org/10.1145/2362383.2362387>,
+                <http://dx.doi.org/10.1145/2435209.2435210>;
+         :topic "0--1 data",
+                "algorithms",
+                "bayesian networks",
+                "blogs",
+                "causal modeling",
+                "classification",
+                "clustering",
+                "clustering aggregation",
+                "clustering categorical data",
+                "collaborative filtering",
+                "complex networks",
+                "correlation clustering",
+                "data cleaning",
+                "data clustering",
+                "data mining",
+                "densification power laws",
+                "entity resolution",
+                "experimentation",
+                "graph clustering",
+                "graph generators",
+                "graph mining",
+                "graphical models",
+                "heavy-tailed distributions",
+                "high-dimensional data",
+                "information cascades",
+                "information filtering",
+                "management",
+                "measurement",
+                "meme-tracking",
+                "multilinear algebra",
+                "nearest neighbor",
+                "nearest neighbor rule",
+                "netflix prize",
+                "networks of diffusion",
+                "news media",
+                "nonnumerical algorithms and problems",
+                "performance",
+                "probability density functions",
+                "randomization tests",
+                "recommender systems",
+                "record linkage",
+                "significance testing",
+                "small-world phenomena",
+                "social networks",
+                "sports analytics",
+                "statistical computing",
+                "stream mining",
+                "survey",
+                "swaps",
+                "tensor",
+                "theory",
+                "uncertain data" .
+    
+    "H.3.1"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Ho-Leung Chan",
+                "Kunihiko Sadakane",
+                "Paolo Ferragina",
+                "Tak-Wah Lam",
+                "Veli M&#228",
+                "Wing-Kai Hon",
+                "kinen",
+                <http://dx.doi.org/10.1145/1240233.1240243>,
+                <http://dx.doi.org/10.1145/1240233.1240244>;
+         :topic "algorithms",
+                "arrays",
+                "burrows-wheeler transform",
+                "compressed suffix tree",
+                "compression boosting",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "entropy",
+                "index generation",
+                "indexing methods",
+                "pattern matching",
+                "rank and select",
+                "search process",
+                "sorting and searching",
+                "string matching",
+                "text compression",
+                "text indexing",
+                "theory",
+                "trees",
+                "wavelet tree" .
+    
+    "H.3.2"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Gonzalo Navarro",
+                "Veli M&#228",
+                "kinen",
+                <http://dx.doi.org/10.1145/1367064.1367072>;
+         :topic "access methods",
+                "algorithms",
+                "compressed dynamic data structures",
+                "compressed text databases",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "entropy",
+                "file organization",
+                "partial sums",
+                "pattern matching",
+                "search process",
+                "sequences",
+                "sorting and searching" .
+    
+    "H.3.3"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Dingding Wang",
+                "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Indrajit Bhattacharya",
+                "Lise Getoor",
+                "Neil R. Smalheiser",
+                "Paolo Ferragina",
+                "Shenghuo Zhu",
+                "Tao Li",
+                "Veli M&#228",
+                "Vetle I. Torvik",
+                "Yehuda Koren",
+                "Yihong Gong",
+                "kinen",
+                <http://dx.doi.org/10.1145/1217299.1217304>,
+                <http://dx.doi.org/10.1145/1240233.1240243>,
+                <http://dx.doi.org/10.1145/1367064.1367072>,
+                <http://dx.doi.org/10.1145/1552303.1552304>,
+                <http://dx.doi.org/10.1145/1644873.1644874>,
+                <http://dx.doi.org/10.1145/2435209.2435211>;
+         :topic "access methods",
+                "algorithms",
+                "arrays",
+                "bibliographic databases",
+                "burrows-wheeler transform",
+                "clustering",
+                "collaborative filtering",
+                "comparative document summarization",
+                "compressed dynamic data structures",
+                "compressed text databases",
+                "compression boosting",
+                "computations on discrete structures",
+                "data cleaning",
+                "data compaction and compression",
+                "data mining",
+                "design methodology",
+                "digital libraries",
+                "discriminative sentence selection",
+                "entity resolution",
+                "entropy",
+                "experimentation",
+                "file organization",
+                "graph clustering",
+                "index generation",
+                "indexing methods",
+                "information filtering",
+                "information search and retrieval",
+                "learning",
+                "models",
+                "name disambiguation",
+                "netflix prize",
+                "partial sums",
+                "pattern matching",
+                "performance",
+                "rank and select",
+                "recommender systems",
+                "record linkage",
+                "search process",
+                "sequences",
+                "sorting and searching",
+                "text compression",
+                "text indexing",
+                "theory",
+                "trees",
+                "wavelet tree" .
+    
+    "H.3.7"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Neil R. Smalheiser",
+                "Vetle I. Torvik",
+                <http://dx.doi.org/10.1145/1552303.1552304>;
+         :topic "algorithms",
+                "bibliographic databases",
+                "clustering",
+                "design methodology",
+                "digital libraries",
+                "experimentation",
+                "information search and retrieval",
+                "models",
+                "name disambiguation",
+                "performance" .
+    
+    "H.4.0"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Amin Saberi",
+                "David F. Gleich",
+                "Mohsen Bayati",
+                "Ying Wang",
+                <http://dx.doi.org/10.1145/2435209.2435212>;
+         :topic "algorithms",
+                "belief propagation",
+                "general",
+                "graph matching",
+                "message-passing",
+                "network alignment" .
+    
+    "Hans L. Bodlaender"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "computations on discrete structures",
+                "design",
+                "dynamic programming",
+                "exact algorithms",
+                "experimentation",
+                "graph algorithms",
+                "graph theory",
+                "separators",
+                "theory",
+                "treewidth";
+         <http://xmlns.com/foaf/0.1/knows> "Arie M. C. A. Koster",
+                "Dieter Kratsch",
+                "Dimitrios M. Thilikos",
+                "Fedor V. Fomin",
+                "Hans L. Bodlaender" .
+    
+    "Hans-Peter Kriegel"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "clustering",
+                "data mining",
+                "high-dimensional data",
+                "survey",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Arthur Zimek",
+                "Hans-Peter Kriegel",
+                "Peer Kr&#246",
+                "ger" .
+    
+    "Harald Prokop"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithm",
+                "algorithms",
+                "analysis of algorithms and problem complexity",
+                "cache-oblivious",
+                "caching",
+                "fast fourier transform",
+                "i/o complexity",
+                "matrix multiplication",
+                "matrix transpose",
+                "sorting",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Charles E. Leiserson",
+                "Harald Prokop",
+                "Matteo Frigo",
+                "Sridhar Ramachandran" .
+    
+    "Heikki Mannila"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "0--1 data",
+                "algorithms",
+                "clustering aggregation",
+                "clustering categorical data",
+                "correlation clustering",
+                "data clustering",
+                "data mining",
+                "experimentation",
+                "management",
+                "nonnumerical algorithms and problems",
+                "randomization tests",
+                "significance testing",
+                "swaps";
+         <http://xmlns.com/foaf/0.1/knows> "Aristides Gionis",
+                "Heikki Mannila",
+                "Panayiotis Tsaparas",
+                "Taneli Mielik&#228",
+                "inen" .
+    
+    "Hiroshi Fujiwara"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "combinatorial algorithms",
+                "competitive analysis",
+                "dynamic programming",
+                "flow time",
+                "offline algorithms",
+                "online algorithms",
+                "sequencing and scheduling",
+                "theory",
+                "variable-speed processor";
+         <http://xmlns.com/foaf/0.1/knows> "Hiroshi Fujiwara",
+                "Susanne Albers" .
+    
+    "Hirotada Kobayashi"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "distributed computing",
+                "distributed networks",
+                "general",
+                "models of computation",
+                "modes of computation",
+                "network protocols",
+                "quantum algorithms",
+                "quantum communication",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Hirotada Kobayashi",
+                "Keiji Matsumoto",
+                "Seiichiro Tani" .
+    
+    "Ho-Leung Chan"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "compressed suffix tree",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "indexing methods",
+                "nonnumerical algorithms and problems",
+                "pattern matching",
+                "performance",
+                "scheduling",
+                "speed scaling",
+                "string matching",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Ho-Leung Chan",
+                "Kirk Pruhs",
+                "Kunihiko Sadakane",
+                "Nikhil Bansal",
+                "Tak-Wah Lam",
+                "Wing-Kai Hon" .
+    
+    "I.1.2"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Markus P&#252",
+                "Yevgen Voronenko",
+                "schel",
+                <http://dx.doi.org/10.1145/1240233.1240234>;
+         :topic "addition chains",
+                "algebraic algorithms",
+                "algorithms",
+                "cost/performance",
+                "design",
+                "directed graph",
+                "fir filter",
+                "fixed-point arithmetic",
+                "number-theoretic computations",
+                "performance",
+                "strength reduction",
+                "theory" .
+    
+    "I.2.1"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Aminul Islam",
+                "Diana Inkpen",
+                <http://dx.doi.org/10.1145/1376815.1376819>;
+         :topic "algorithms",
+                "corpus-based measures",
+                "experimentation",
+                "natural language interfaces",
+                "performance",
+                "semantic similarity of words",
+                "similarity of short texts",
+                "text analysis" .
+    
+    "I.2.11"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Alexander Souza",
+                "Martin Hoefer",
+                <http://dx.doi.org/10.1145/1867719.1867721>;
+         :topic "algorithms",
+                "average-case analysis",
+                "economics",
+                "multiagent systems",
+                "price of anarchy",
+                "selfish routing",
+                "sequencing and scheduling",
+                "theory" .
+    
+    "I.2.6"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Dingding Wang",
+                "Shenghuo Zhu",
+                "Tao Li",
+                "Yihong Gong",
+                <http://dx.doi.org/10.1145/2435209.2435211>;
+         :topic "algorithms",
+                "comparative document summarization",
+                "discriminative sentence selection",
+                "experimentation",
+                "information search and retrieval",
+                "learning",
+                "performance" .
+    
+    "I.2.7"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Aminul Islam",
+                "Diana Inkpen",
+                <http://dx.doi.org/10.1145/1376815.1376819>;
+         :topic "algorithms",
+                "corpus-based measures",
+                "experimentation",
+                "natural language interfaces",
+                "performance",
+                "semantic similarity of words",
+                "similarity of short texts",
+                "text analysis" .
+    
+    "I.5.1"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Neil R. Smalheiser",
+                "Vetle I. Torvik",
+                <http://dx.doi.org/10.1145/1552303.1552304>;
+         :topic "algorithms",
+                "bibliographic databases",
+                "clustering",
+                "design methodology",
+                "digital libraries",
+                "experimentation",
+                "information search and retrieval",
+                "models",
+                "name disambiguation",
+                "performance" .
+    
+    "I.5.2"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Jeffrey Erman",
+                "Neil R. Smalheiser",
+                "Nick Duffield",
+                "Patrick Haffner",
+                "Subhabrata Sen",
+                "Vetle I. Torvik",
+                "Yu Jin",
+                "Zhi-Li Zhang",
+                <http://dx.doi.org/10.1145/1552303.1552304>,
+                <http://dx.doi.org/10.1145/2133360.2133364>;
+         :topic "algorithms",
+                "bibliographic databases",
+                "classifier design and evaluation",
+                "clustering",
+                "communications network",
+                "design methodology",
+                "digital libraries",
+                "experimentation",
+                "information search and retrieval",
+                "machine learning",
+                "measurement",
+                "models",
+                "name disambiguation",
+                "network management",
+                "performance",
+                "theory",
+                "traffic classification" .
+    
+    "I.5.3"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Arthur Zimek",
+                "Christos Faloutsos",
+                "Dacheng Tao",
+                "Hans-Peter Kriegel",
+                "Jimeng Sun",
+                "Neil R. Smalheiser",
+                "Peer Kr&#246",
+                "Philip S. Yu",
+                "Spiros Papadimitriou",
+                "Vetle I. Torvik",
+                "ger",
+                <http://dx.doi.org/10.1145/1409620.1409621>,
+                <http://dx.doi.org/10.1145/1497577.1497578>,
+                <http://dx.doi.org/10.1145/1552303.1552304>;
+         :topic "algorithms",
+                "bibliographic databases",
+                "clustering",
+                "data mining",
+                "design methodology",
+                "digital libraries",
+                "experimentation",
+                "high-dimensional data",
+                "information search and retrieval",
+                "models",
+                "multilinear algebra",
+                "name disambiguation",
+                "performance",
+                "stream mining",
+                "survey",
+                "tensor",
+                "theory" .
+    
+    "I.7.2"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Paolo Ferragina",
+                "Veli M&#228",
+                "kinen",
+                <http://dx.doi.org/10.1145/1240233.1240243>;
+         :topic "algorithms",
+                "arrays",
+                "burrows-wheeler transform",
+                "compression boosting",
+                "data compaction and compression",
+                "entropy",
+                "index generation",
+                "indexing methods",
+                "pattern matching",
+                "rank and select",
+                "search process",
+                "sorting and searching",
+                "text compression",
+                "text indexing",
+                "theory",
+                "trees",
+                "wavelet tree" .
+    
+    "Indrajit Bhattacharya"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "clustering",
+                "data cleaning",
+                "data mining",
+                "entity resolution",
+                "graph clustering",
+                "record linkage";
+         <http://xmlns.com/foaf/0.1/knows> "Indrajit Bhattacharya",
+                "Lise Getoor" .
+    
+    "J.3"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Daming Zhu",
+                "Jianxing Feng",
+                <http://dx.doi.org/10.1145/1273340.1273341>;
+         :topic "algorithms",
+                "biology and genetics",
+                "block interchange",
+                "genome",
+                "permutation",
+                "sorting and searching",
+                "theory",
+                "time complexity",
+                "transposition",
+                "tree",
+                "trees" .
+    
+    "Jacobo Tor&#225"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "arthur-merlin games",
+                "computational and structural complexity",
+                "computations on discrete structures",
+                "derandomization",
+                "limited nondeterminism",
+                "relations between models",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Jacobo Tor&#225",
+                "Vikraman Arvind",
+                "n" .
+    
+    "Jeffrey Erman"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "classifier design and evaluation",
+                "communications network",
+                "machine learning",
+                "measurement",
+                "network management",
+                "theory",
+                "traffic classification";
+         <http://xmlns.com/foaf/0.1/knows> "Jeffrey Erman",
+                "Nick Duffield",
+                "Patrick Haffner",
+                "Subhabrata Sen",
+                "Yu Jin",
+                "Zhi-Li Zhang" .
+    
+    "Jianxing Feng"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "biology and genetics",
+                "block interchange",
+                "genome",
+                "permutation",
+                "sorting and searching",
+                "theory",
+                "time complexity",
+                "transposition",
+                "tree",
+                "trees";
+         <http://xmlns.com/foaf/0.1/knows> "Daming Zhu",
+                "Jianxing Feng" .
+    
+    "Jimeng Sun"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "data mining",
+                "multilinear algebra",
+                "performance",
+                "stream mining",
+                "tensor",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Christos Faloutsos",
+                "Dacheng Tao",
+                "Jimeng Sun",
+                "Philip S. Yu",
+                "Spiros Papadimitriou" .
+    
+    "Johannes Gehrke"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "data privacy",
+                "diversity",
+                "k-anonymity",
+                "miscellaneous",
+                "privacy-preserving data publishing",
+                "security";
+         <http://xmlns.com/foaf/0.1/knows> "Ashwin Machanavajjhala",
+                "Daniel Kifer",
+                "Johannes Gehrke",
+                "Muthuramakrishnan Venkitasubramaniam" .
+    
+    "Jon Kleinberg"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "data mining",
+                "densification power laws",
+                "graph generators",
+                "graph mining",
+                "heavy-tailed distributions",
+                "measurement",
+                "small-world phenomena",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Christos Faloutsos",
+                "Jon Kleinberg",
+                "Jure Leskovec" .
+    
+    "Jure Leskovec"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "blogs",
+                "data mining",
+                "densification power laws",
+                "experimentation",
+                "graph generators",
+                "graph mining",
+                "heavy-tailed distributions",
+                "information cascades",
+                "measurement",
+                "meme-tracking",
+                "networks of diffusion",
+                "news media",
+                "small-world phenomena",
+                "social networks",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Andreas Krause",
+                "Christos Faloutsos",
+                "Jon Kleinberg",
+                "Jure Leskovec",
+                "Manuel Gomez-Rodriguez" .
+    
+    "K.4.4"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Artur Czumaj",
+                "Berthold V&#246",
+                "cking",
+                <http://dx.doi.org/10.1145/1186810.1186814>;
+         :topic "algorithms",
+                "coordination ration",
+                "economics",
+                "nash equilibria",
+                "noncooperative networks",
+                "selfish strategies",
+                "theory",
+                "traffic routing" .
+    
+    "K.6.0"     a :Community;
+         <http://purl.org/dc/terms/hasPart> "Artur Czumaj",
+                "Berthold V&#246",
+                "cking",
+                <http://dx.doi.org/10.1145/1186810.1186814>;
+         :topic "algorithms",
+                "coordination ration",
+                "economics",
+                "nash equilibria",
+                "noncooperative networks",
+                "selfish strategies",
+                "theory",
+                "traffic routing" .
+    
+    "Keiji Matsumoto"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "distributed computing",
+                "distributed networks",
+                "general",
+                "models of computation",
+                "modes of computation",
+                "network protocols",
+                "quantum algorithms",
+                "quantum communication",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Hirotada Kobayashi",
+                "Keiji Matsumoto",
+                "Seiichiro Tani" .
+    
+    "Ken-Ichi Kawarabayashi"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "4-edge-connected graph",
+                "algorithms",
+                "approximation algorithm",
+                "edge-disjoint paths",
+                "eulerian graph",
+                "graph theory";
+         <http://xmlns.com/foaf/0.1/knows> "Ken-Ichi Kawarabayashi",
+                "Yusuke Kobayashi" .
+    
+    "Kirk Pruhs"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "design",
+                "nonnumerical algorithms and problems",
+                "performance",
+                "scheduling",
+                "speed scaling";
+         <http://xmlns.com/foaf/0.1/knows> "Ho-Leung Chan",
+                "Kirk Pruhs",
+                "Nikhil Bansal" .
+    
+    "Kunihiko Sadakane"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "compressed suffix tree",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "indexing methods",
+                "pattern matching",
+                "string matching",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Ho-Leung Chan",
+                "Kunihiko Sadakane",
+                "Tak-Wah Lam",
+                "Wing-Kai Hon" .
+    
+    "Laiwan Chan"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "bayesian networks",
+                "causal modeling",
+                "data mining",
+                "graphical models",
+                "performance";
+         <http://xmlns.com/foaf/0.1/knows> "Laiwan Chan",
+                "Zhenxing Wang" .
+    
+    "Liam Roditty"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "approximation",
+                "girth",
+                "graph theory",
+                "graphs",
+                "minimum weight cycle",
+                "performance",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Liam Roditty",
+                "Roei Tov" .
+    
+    "Lise Getoor"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "clustering",
+                "data cleaning",
+                "data mining",
+                "entity resolution",
+                "graph clustering",
+                "record linkage";
+         <http://xmlns.com/foaf/0.1/knows> "Indrajit Bhattacharya",
+                "Lise Getoor" .
+    
+    "Manuel Gomez-Rodriguez"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "blogs",
+                "data mining",
+                "experimentation",
+                "information cascades",
+                "meme-tracking",
+                "networks of diffusion",
+                "news media",
+                "social networks";
+         <http://xmlns.com/foaf/0.1/knows> "Andreas Krause",
+                "Jure Leskovec",
+                "Manuel Gomez-Rodriguez" .
+    
+    "Mark Braverman"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "branching programs",
+                "general",
+                "log space",
+                "logdcfl",
+                "lower bounds",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Dustin Wehr",
+                "Mark Braverman",
+                "Pierre McKenzie",
+                "Rahul Santhanam",
+                "Stephen Cook" .
+    
+    "Markus P&#252"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "addition chains",
+                "algebraic algorithms",
+                "algorithms",
+                "cost/performance",
+                "design",
+                "directed graph",
+                "fir filter",
+                "fixed-point arithmetic",
+                "number-theoretic computations",
+                "performance",
+                "strength reduction",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Markus P&#252",
+                "Yevgen Voronenko",
+                "schel" .
+    
+    "Martin Hoefer"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "average-case analysis",
+                "economics",
+                "multiagent systems",
+                "price of anarchy",
+                "selfish routing",
+                "sequencing and scheduling",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Alexander Souza",
+                "Martin Hoefer" .
+    
+    "Matei David"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "communication complexity",
+                "lower bound",
+                "nondeterminism",
+                "number on forehead",
+                "randomization",
+                "relations among complexity classes",
+                "relations among complexity measures",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Emanuele Viola",
+                "Matei David",
+                "Toniann Pitassi" .
+    
+    "Matteo Frigo"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithm",
+                "algorithms",
+                "analysis of algorithms and problem complexity",
+                "cache-oblivious",
+                "caching",
+                "fast fourier transform",
+                "i/o complexity",
+                "matrix multiplication",
+                "matrix transpose",
+                "sorting",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Charles E. Leiserson",
+                "Harald Prokop",
+                "Matteo Frigo",
+                "Sridhar Ramachandran" .
+    
+    "Meena Mahajan"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "bipartite graphs",
+                "computations on discrete structures",
+                "counting classes",
+                "determinant",
+                "path and circuit problems",
+                "perfect matching",
+                "permanent",
+                "planarity",
+                "relations among complexity classes",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Meena Mahajan",
+                "Nutan Limaye",
+                "Raghav Kulkarni",
+                "Samir Datta" .
+    
+    "Michael Elkin"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "almost shortest paths",
+                "combinatorics",
+                "general",
+                "graph algorithms",
+                "graph theory",
+                "spanners",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Michael Elkin" .
+    
+    "Michael L. Littman"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "bilinear program",
+                "computational complexity",
+                "computations on polynomials",
+                "matrix fractional program",
+                "motzkin-straus theorem",
+                "nonlinear optimization",
+                "numerical algorithms and problems",
+                "partially observable markov decision process",
+                "performance",
+                "stochastic controller",
+                "sum-of-square-roots problem";
+         <http://xmlns.com/foaf/0.1/knows> "David Barber",
+                "Michael L. Littman",
+                "Nikos Vlassis" .
+    
+    "Mohsen Bayati"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "belief propagation",
+                "general",
+                "graph matching",
+                "message-passing",
+                "network alignment";
+         <http://xmlns.com/foaf/0.1/knows> "Amin Saberi",
+                "David F. Gleich",
+                "Mohsen Bayati",
+                "Ying Wang" .
+    
+    "Muli Safra"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "combinatorial algorithms",
+                "influence of a boolean function",
+                "sublinear query approximation algorithms",
+                "symmetric chains",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Alex Samorodnitsky",
+                "Dana Ron",
+                "Muli Safra",
+                "Omri Weinstein",
+                "Ronitt Rubinfeld" .
+    
+    "Muthuramakrishnan Venkitasubramaniam"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "data privacy",
+                "diversity",
+                "interactive proofs",
+                "k-anonymity",
+                "miscellaneous",
+                "modes of computation",
+                "parallel-repetition",
+                "privacy-preserving data publishing",
+                "public-coin protocols",
+                "security",
+                "soundness error",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Ashwin Machanavajjhala",
+                "Daniel Kifer",
+                "Johannes Gehrke",
+                "Muthuramakrishnan Venkitasubramaniam",
+                "Rafael Pass" .
+    
+    "N. V. Vinodchandran"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "directed graph reachability",
+                "path and circuit problems",
+                "planar graphs",
+                "relations among complexity classes",
+                "theory",
+                "unambiguous log-space";
+         <http://xmlns.com/foaf/0.1/knows> "Chris Bourke",
+                "N. V. Vinodchandran",
+                "Raghunath Tewari" .
+    
+    "Neeraj Kayal"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "arithmetic circuits",
+                "numerical algorithms and problems",
+                "polynomials",
+                "sum of square roots",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Chandan Saha",
+                "Neeraj Kayal" .
+    
+    "Neil R. Smalheiser"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "bibliographic databases",
+                "clustering",
+                "design methodology",
+                "digital libraries",
+                "experimentation",
+                "information search and retrieval",
+                "models",
+                "name disambiguation",
+                "performance";
+         <http://xmlns.com/foaf/0.1/knows> "Neil R. Smalheiser",
+                "Vetle I. Torvik" .
+    
+    "Nick Duffield"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "classifier design and evaluation",
+                "communications network",
+                "machine learning",
+                "measurement",
+                "network management",
+                "theory",
+                "traffic classification";
+         <http://xmlns.com/foaf/0.1/knows> "Jeffrey Erman",
+                "Nick Duffield",
+                "Patrick Haffner",
+                "Subhabrata Sen",
+                "Yu Jin",
+                "Zhi-Li Zhang" .
+    
+    "Nikhil Bansal"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "design",
+                "nonnumerical algorithms and problems",
+                "performance",
+                "scheduling",
+                "speed scaling";
+         <http://xmlns.com/foaf/0.1/knows> "Ho-Leung Chan",
+                "Kirk Pruhs",
+                "Nikhil Bansal" .
+    
+    "Nikos Vlassis"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "bilinear program",
+                "computational complexity",
+                "computations on polynomials",
+                "matrix fractional program",
+                "motzkin-straus theorem",
+                "nonlinear optimization",
+                "numerical algorithms and problems",
+                "partially observable markov decision process",
+                "performance",
+                "stochastic controller",
+                "sum-of-square-roots problem";
+         <http://xmlns.com/foaf/0.1/knows> "David Barber",
+                "Michael L. Littman",
+                "Nikos Vlassis" .
+    
+    "Noga Alon"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "almost k-wise independence",
+                "combinatorial algorithms",
+                "derandomization",
+                "generalized hashing",
+                "group testing",
+                "k-restriction",
+                "set-cover",
+                "splitter",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Dana Moshkovitz",
+                "Noga Alon",
+                "Shmuel Safra" .
+    
+    "Nutan Limaye"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "bipartite graphs",
+                "computations on discrete structures",
+                "counting classes",
+                "determinant",
+                "path and circuit problems",
+                "perfect matching",
+                "permanent",
+                "planarity",
+                "relations among complexity classes",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Meena Mahajan",
+                "Nutan Limaye",
+                "Raghav Kulkarni",
+                "Samir Datta" .
+    
+    "Omri Weinstein"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "combinatorial algorithms",
+                "influence of a boolean function",
+                "sublinear query approximation algorithms",
+                "symmetric chains",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Alex Samorodnitsky",
+                "Dana Ron",
+                "Muli Safra",
+                "Omri Weinstein",
+                "Ronitt Rubinfeld" .
+    
+    "Oren Weimann"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "computations on discrete structures",
+                "design",
+                "distance oracles",
+                "fault tolerance",
+                "graph theory",
+                "replacement paths",
+                "shortest paths",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Oren Weimann",
+                "Raphael Yuster" .
+    
+    "Panayiotis Tsaparas"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "0--1 data",
+                "algorithms",
+                "clustering aggregation",
+                "clustering categorical data",
+                "correlation clustering",
+                "data clustering",
+                "data mining",
+                "experimentation",
+                "management",
+                "nonnumerical algorithms and problems",
+                "randomization tests",
+                "significance testing",
+                "swaps";
+         <http://xmlns.com/foaf/0.1/knows> "Aristides Gionis",
+                "Heikki Mannila",
+                "Panayiotis Tsaparas",
+                "Taneli Mielik&#228",
+                "inen" .
+    
+    "Paolo Ferragina"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "arrays",
+                "burrows-wheeler transform",
+                "compression boosting",
+                "data compaction and compression",
+                "entropy",
+                "index generation",
+                "indexing methods",
+                "pattern matching",
+                "rank and select",
+                "search process",
+                "sorting and searching",
+                "text compression",
+                "text indexing",
+                "theory",
+                "trees",
+                "wavelet tree";
+         <http://xmlns.com/foaf/0.1/knows> "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Paolo Ferragina",
+                "Veli M&#228",
+                "kinen" .
+    
+    "Patrick Haffner"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "classifier design and evaluation",
+                "communications network",
+                "machine learning",
+                "measurement",
+                "network management",
+                "theory",
+                "traffic classification";
+         <http://xmlns.com/foaf/0.1/knows> "Jeffrey Erman",
+                "Nick Duffield",
+                "Patrick Haffner",
+                "Subhabrata Sen",
+                "Yu Jin",
+                "Zhi-Li Zhang" .
+    
+    "Pedro O. S. Vaz de Melo"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "complex networks",
+                "data mining",
+                "social networks",
+                "sports analytics",
+                "statistical computing",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Antonio A. F. Loureiro",
+                "Christos Faloutsos",
+                "Pedro O. S. Vaz de Melo",
+                "Virgilio A. F. Almeida" .
+    
+    "Peer Kr&#246"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "clustering",
+                "data mining",
+                "high-dimensional data",
+                "survey",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Arthur Zimek",
+                "Hans-Peter Kriegel",
+                "Peer Kr&#246",
+                "ger" .
+    
+    "Philip S. Yu"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "data mining",
+                "multilinear algebra",
+                "performance",
+                "stream mining",
+                "tensor",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Christos Faloutsos",
+                "Dacheng Tao",
+                "Jimeng Sun",
+                "Philip S. Yu",
+                "Spiros Papadimitriou" .
+    
+    "Pierre McKenzie"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "branching programs",
+                "general",
+                "log space",
+                "logdcfl",
+                "lower bounds",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Dustin Wehr",
+                "Mark Braverman",
+                "Pierre McKenzie",
+                "Rahul Santhanam",
+                "Stephen Cook" .
+    
+    "Prasad Raghavendra"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "analysis of algorithms and problem complexity",
+                "hardness of approximation",
+                "linearity testing",
+                "probabilistically checkable proofs",
+                "sparse linear equations",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Prasad Raghavendra",
+                "Venkatesan Guruswami" .
+    
+    "Rafael Pass"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "interactive proofs",
+                "modes of computation",
+                "parallel-repetition",
+                "public-coin protocols",
+                "security",
+                "soundness error",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Muthuramakrishnan Venkitasubramaniam",
+                "Rafael Pass" .
+    
+    "Raghav Kulkarni"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "bipartite graphs",
+                "computations on discrete structures",
+                "counting classes",
+                "determinant",
+                "path and circuit problems",
+                "perfect matching",
+                "permanent",
+                "planarity",
+                "relations among complexity classes",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Meena Mahajan",
+                "Nutan Limaye",
+                "Raghav Kulkarni",
+                "Samir Datta" .
+    
+    "Raghunath Tewari"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "directed graph reachability",
+                "path and circuit problems",
+                "planar graphs",
+                "relations among complexity classes",
+                "theory",
+                "unambiguous log-space";
+         <http://xmlns.com/foaf/0.1/knows> "Chris Bourke",
+                "N. V. Vinodchandran",
+                "Raghunath Tewari" .
+    
+    "Rahul Santhanam"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "branching programs",
+                "general",
+                "log space",
+                "logdcfl",
+                "lower bounds",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Dustin Wehr",
+                "Mark Braverman",
+                "Pierre McKenzie",
+                "Rahul Santhanam",
+                "Stephen Cook" .
+    
+    "Rajeev Raman"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "multisets",
+                "perfect hashing",
+                "prefix sums",
+                "sets",
+                "succinct data structures",
+                "theory",
+                "tries";
+         <http://xmlns.com/foaf/0.1/knows> "Rajeev Raman",
+                "Srinivasa Rao Satti",
+                "Venkatesh Raman" .
+    
+    "Raphael Yuster"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "computations on discrete structures",
+                "design",
+                "distance oracles",
+                "fault tolerance",
+                "graph theory",
+                "replacement paths",
+                "shortest paths",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Oren Weimann",
+                "Raphael Yuster" .
+    
+    "Roei Tov"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "approximation",
+                "girth",
+                "graph theory",
+                "graphs",
+                "minimum weight cycle",
+                "performance",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Liam Roditty",
+                "Roei Tov" .
+    
+    "Ronitt Rubinfeld"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "combinatorial algorithms",
+                "influence of a boolean function",
+                "sublinear query approximation algorithms",
+                "symmetric chains",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Alex Samorodnitsky",
+                "Dana Ron",
+                "Muli Safra",
+                "Omri Weinstein",
+                "Ronitt Rubinfeld" .
+    
+    "Samir Datta"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "bipartite graphs",
+                "computations on discrete structures",
+                "counting classes",
+                "determinant",
+                "path and circuit problems",
+                "perfect matching",
+                "permanent",
+                "planarity",
+                "relations among complexity classes",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Meena Mahajan",
+                "Nutan Limaye",
+                "Raghav Kulkarni",
+                "Samir Datta" .
+    
+    "Scott Aaronson"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "arithmetization",
+                "communication complexity",
+                "computation by abstract devices",
+                "interactive proofs",
+                "low-degree polynomials",
+                "oracles",
+                "query complexity",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Avi Wigderson",
+                "Scott Aaronson" .
+    
+    "Seiichiro Tani"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "distributed computing",
+                "distributed networks",
+                "general",
+                "models of computation",
+                "modes of computation",
+                "network protocols",
+                "quantum algorithms",
+                "quantum communication",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Hirotada Kobayashi",
+                "Keiji Matsumoto",
+                "Seiichiro Tani" .
+    
+    "Shang-Hua Teng"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "complex networks",
+                "distance oracle",
+                "graph theory",
+                "network protocols",
+                "nonnumerical algorithms and problems",
+                "power-law graphs",
+                "shortest path",
+                "shortest-path query",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Christian Sommer",
+                "Shang-Hua Teng",
+                "Wei Chen",
+                "Yajun Wang" .
+    
+    "Shenghuo Zhu"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "comparative document summarization",
+                "discriminative sentence selection",
+                "experimentation",
+                "information search and retrieval",
+                "learning",
+                "performance";
+         <http://xmlns.com/foaf/0.1/knows> "Dingding Wang",
+                "Shenghuo Zhu",
+                "Tao Li",
+                "Yihong Gong" .
+    
+    "Shmuel Safra"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "almost k-wise independence",
+                "combinatorial algorithms",
+                "derandomization",
+                "generalized hashing",
+                "group testing",
+                "k-restriction",
+                "set-cover",
+                "splitter",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Dana Moshkovitz",
+                "Noga Alon",
+                "Shmuel Safra" .
+    
+    "Spiros Papadimitriou"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "data mining",
+                "multilinear algebra",
+                "performance",
+                "stream mining",
+                "tensor",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Christos Faloutsos",
+                "Dacheng Tao",
+                "Jimeng Sun",
+                "Philip S. Yu",
+                "Spiros Papadimitriou" .
+    
+    "Sridhar Ramachandran"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithm",
+                "algorithms",
+                "analysis of algorithms and problem complexity",
+                "cache-oblivious",
+                "caching",
+                "fast fourier transform",
+                "i/o complexity",
+                "matrix multiplication",
+                "matrix transpose",
+                "sorting",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Charles E. Leiserson",
+                "Harald Prokop",
+                "Matteo Frigo",
+                "Sridhar Ramachandran" .
+    
+    "Srinivasa Rao Satti"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "multisets",
+                "perfect hashing",
+                "prefix sums",
+                "sets",
+                "succinct data structures",
+                "theory",
+                "tries";
+         <http://xmlns.com/foaf/0.1/knows> "Rajeev Raman",
+                "Srinivasa Rao Satti",
+                "Venkatesh Raman" .
+    
+    "Stephen Cook"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "branching programs",
+                "complexity measures and classes",
+                "computable analysis",
+                "computational complexity",
+                "general",
+                "higher-type complexity",
+                "log space",
+                "logdcfl",
+                "lower bounds",
+                "second-order polynomials",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Akitoshi Kawamura",
+                "Dustin Wehr",
+                "Mark Braverman",
+                "Pierre McKenzie",
+                "Rahul Santhanam",
+                "Stephen Cook" .
+    
+    "Subhabrata Sen"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "classifier design and evaluation",
+                "communications network",
+                "machine learning",
+                "measurement",
+                "network management",
+                "theory",
+                "traffic classification";
+         <http://xmlns.com/foaf/0.1/knows> "Jeffrey Erman",
+                "Nick Duffield",
+                "Patrick Haffner",
+                "Subhabrata Sen",
+                "Yu Jin",
+                "Zhi-Li Zhang" .
+    
+    "Susanne Albers"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "combinatorial algorithms",
+                "competitive analysis",
+                "dynamic programming",
+                "flow time",
+                "offline algorithms",
+                "online algorithms",
+                "sequencing and scheduling",
+                "theory",
+                "variable-speed processor";
+         <http://xmlns.com/foaf/0.1/knows> "Hiroshi Fujiwara",
+                "Susanne Albers" .
+    
+    "Tak-Wah Lam"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "compressed suffix tree",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "indexing methods",
+                "pattern matching",
+                "string matching",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Ho-Leung Chan",
+                "Kunihiko Sadakane",
+                "Tak-Wah Lam",
+                "Wing-Kai Hon" .
+    
+    "Taneli Mielik&#228"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "0--1 data",
+                "algorithms",
+                "data mining",
+                "experimentation",
+                "management",
+                "randomization tests",
+                "significance testing",
+                "swaps";
+         <http://xmlns.com/foaf/0.1/knows> "Aristides Gionis",
+                "Heikki Mannila",
+                "Panayiotis Tsaparas",
+                "Taneli Mielik&#228",
+                "inen" .
+    
+    "Tao Li"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "comparative document summarization",
+                "discriminative sentence selection",
+                "experimentation",
+                "information search and retrieval",
+                "learning",
+                "performance";
+         <http://xmlns.com/foaf/0.1/knows> "Dingding Wang",
+                "Shenghuo Zhu",
+                "Tao Li",
+                "Yihong Gong" .
+    
+    "Thomas Watson"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "extractors",
+                "locally samplable sources",
+                "lower bounds",
+                "probabilistic computation",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Anindya De",
+                "Thomas Watson" .
+    
+    "Toniann Pitassi"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "communication complexity",
+                "lower bound",
+                "nondeterminism",
+                "number on forehead",
+                "randomization",
+                "relations among complexity classes",
+                "relations among complexity measures",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Emanuele Viola",
+                "Matei David",
+                "Toniann Pitassi" .
+    
+    "Veli M&#228"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "access methods",
+                "algorithms",
+                "arrays",
+                "burrows-wheeler transform",
+                "compressed dynamic data structures",
+                "compressed text databases",
+                "compression boosting",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "entropy",
+                "file organization",
+                "index generation",
+                "indexing methods",
+                "partial sums",
+                "pattern matching",
+                "rank and select",
+                "search process",
+                "sequences",
+                "sorting and searching",
+                "text compression",
+                "text indexing",
+                "theory",
+                "trees",
+                "wavelet tree";
+         <http://xmlns.com/foaf/0.1/knows> "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Paolo Ferragina",
+                "Veli M&#228",
+                "kinen" .
+    
+    "Venkatesan Guruswami"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "analysis of algorithms and problem complexity",
+                "hardness of approximation",
+                "linearity testing",
+                "probabilistically checkable proofs",
+                "sparse linear equations",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Prasad Raghavendra",
+                "Venkatesan Guruswami" .
+    
+    "Venkatesh Raman"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "multisets",
+                "perfect hashing",
+                "prefix sums",
+                "sets",
+                "succinct data structures",
+                "theory",
+                "tries";
+         <http://xmlns.com/foaf/0.1/knows> "Rajeev Raman",
+                "Srinivasa Rao Satti",
+                "Venkatesh Raman" .
+    
+    "Vetle I. Torvik"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "bibliographic databases",
+                "clustering",
+                "design methodology",
+                "digital libraries",
+                "experimentation",
+                "information search and retrieval",
+                "models",
+                "name disambiguation",
+                "performance";
+         <http://xmlns.com/foaf/0.1/knows> "Neil R. Smalheiser",
+                "Vetle I. Torvik" .
+    
+    "Vikraman Arvind"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "arthur-merlin games",
+                "computational and structural complexity",
+                "computations on discrete structures",
+                "derandomization",
+                "limited nondeterminism",
+                "relations between models",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Jacobo Tor&#225",
+                "Vikraman Arvind",
+                "n" .
+    
+    "Virgilio A. F. Almeida"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "complex networks",
+                "data mining",
+                "social networks",
+                "sports analytics",
+                "statistical computing",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Antonio A. F. Loureiro",
+                "Christos Faloutsos",
+                "Pedro O. S. Vaz de Melo",
+                "Virgilio A. F. Almeida" .
+    
+    "Wei Chen"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "complex networks",
+                "distance oracle",
+                "graph theory",
+                "network protocols",
+                "nonnumerical algorithms and problems",
+                "power-law graphs",
+                "shortest path",
+                "shortest-path query",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Christian Sommer",
+                "Shang-Hua Teng",
+                "Wei Chen",
+                "Yajun Wang" .
+    
+    "Wing-Kai Hon"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "compressed suffix tree",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "indexing methods",
+                "pattern matching",
+                "string matching",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Ho-Leung Chan",
+                "Kunihiko Sadakane",
+                "Tak-Wah Lam",
+                "Wing-Kai Hon" .
+    
+    "Yajun Wang"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "complex networks",
+                "distance oracle",
+                "graph theory",
+                "network protocols",
+                "nonnumerical algorithms and problems",
+                "power-law graphs",
+                "shortest path",
+                "shortest-path query",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Christian Sommer",
+                "Shang-Hua Teng",
+                "Wei Chen",
+                "Yajun Wang" .
+    
+    "Yehuda Koren"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "collaborative filtering",
+                "data mining",
+                "information filtering",
+                "netflix prize",
+                "recommender systems";
+         <http://xmlns.com/foaf/0.1/knows> "Yehuda Koren" .
+    
+    "Yevgen Voronenko"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "addition chains",
+                "algebraic algorithms",
+                "algorithms",
+                "cost/performance",
+                "design",
+                "directed graph",
+                "fir filter",
+                "fixed-point arithmetic",
+                "number-theoretic computations",
+                "performance",
+                "strength reduction",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Markus P&#252",
+                "Yevgen Voronenko",
+                "schel" .
+    
+    "Yihong Gong"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "comparative document summarization",
+                "discriminative sentence selection",
+                "experimentation",
+                "information search and retrieval",
+                "learning",
+                "performance";
+         <http://xmlns.com/foaf/0.1/knows> "Dingding Wang",
+                "Shenghuo Zhu",
+                "Tao Li",
+                "Yihong Gong" .
+    
+    "Ying Wang"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "belief propagation",
+                "general",
+                "graph matching",
+                "message-passing",
+                "network alignment";
+         <http://xmlns.com/foaf/0.1/knows> "Amin Saberi",
+                "David F. Gleich",
+                "Mohsen Bayati",
+                "Ying Wang" .
+    
+    "Yishay Mansour"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "convergence time",
+                "game theory",
+                "nash equilibrium",
+                "nonnumerical algorithms and problems",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Alex Kesselman",
+                "Eyal Even-Dar",
+                "Yishay Mansour" .
+    
+    "Yu Jin"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "classifier design and evaluation",
+                "communications network",
+                "machine learning",
+                "measurement",
+                "network management",
+                "theory",
+                "traffic classification";
+         <http://xmlns.com/foaf/0.1/knows> "Jeffrey Erman",
+                "Nick Duffield",
+                "Patrick Haffner",
+                "Subhabrata Sen",
+                "Yu Jin",
+                "Zhi-Li Zhang" .
+    
+    "Yusuke Kobayashi"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "4-edge-connected graph",
+                "algorithms",
+                "approximation algorithm",
+                "edge-disjoint paths",
+                "eulerian graph",
+                "graph theory";
+         <http://xmlns.com/foaf/0.1/knows> "Ken-Ichi Kawarabayashi",
+                "Yusuke Kobayashi" .
+    
+    "Zeev Nutov"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "approximation algorithms",
+                "computations on discrete structures",
+                "graph algorithms",
+                "graph connectivity",
+                "node-costs",
+                "rooted connectivity",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Zeev Nutov" .
+    
+    "Zhenxing Wang"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "bayesian networks",
+                "causal modeling",
+                "data mining",
+                "graphical models",
+                "performance";
+         <http://xmlns.com/foaf/0.1/knows> "Laiwan Chan",
+                "Zhenxing Wang" .
+    
+    "Zhi-Li Zhang"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "classifier design and evaluation",
+                "communications network",
+                "machine learning",
+                "measurement",
+                "network management",
+                "theory",
+                "traffic classification";
+         <http://xmlns.com/foaf/0.1/knows> "Jeffrey Erman",
+                "Nick Duffield",
+                "Patrick Haffner",
+                "Subhabrata Sen",
+                "Yu Jin",
+                "Zhi-Li Zhang" .
+    
+    "cking"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "coordination ration",
+                "economics",
+                "nash equilibria",
+                "noncooperative networks",
+                "selfish strategies",
+                "theory",
+                "traffic routing";
+         <http://xmlns.com/foaf/0.1/knows> "Artur Czumaj",
+                "Berthold V&#246",
+                "cking" .
+    
+    "ger"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "clustering",
+                "data mining",
+                "high-dimensional data",
+                "survey",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Arthur Zimek",
+                "Hans-Peter Kriegel",
+                "Peer Kr&#246",
+                "ger" .
+    
+    "inen"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "0--1 data",
+                "algorithms",
+                "data mining",
+                "experimentation",
+                "management",
+                "randomization tests",
+                "significance testing",
+                "swaps";
+         <http://xmlns.com/foaf/0.1/knows> "Aristides Gionis",
+                "Heikki Mannila",
+                "Panayiotis Tsaparas",
+                "Taneli Mielik&#228",
+                "inen" .
+    
+    "kinen"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "access methods",
+                "algorithms",
+                "arrays",
+                "burrows-wheeler transform",
+                "compressed dynamic data structures",
+                "compressed text databases",
+                "compression boosting",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "entropy",
+                "file organization",
+                "index generation",
+                "indexing methods",
+                "partial sums",
+                "pattern matching",
+                "rank and select",
+                "search process",
+                "sequences",
+                "sorting and searching",
+                "text compression",
+                "text indexing",
+                "theory",
+                "trees",
+                "wavelet tree";
+         <http://xmlns.com/foaf/0.1/knows> "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Paolo Ferragina",
+                "Veli M&#228",
+                "kinen" .
+    
+    "n"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "algorithms",
+                "arthur-merlin games",
+                "computational and structural complexity",
+                "computations on discrete structures",
+                "derandomization",
+                "limited nondeterminism",
+                "relations between models",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Jacobo Tor&#225",
+                "Vikraman Arvind",
+                "n" .
+    
+    "schel"     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://xmlns.com/foaf/0.1/interest> "addition chains",
+                "algebraic algorithms",
+                "algorithms",
+                "cost/performance",
+                "design",
+                "directed graph",
+                "fir filter",
+                "fixed-point arithmetic",
+                "number-theoretic computations",
+                "performance",
+                "strength reduction",
+                "theory";
+         <http://xmlns.com/foaf/0.1/knows> "Markus P&#252",
+                "Yevgen Voronenko",
+                "schel" .
+    
+    <http://dx.doi.org/10.1145/1103963.1103968>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Michael Elkin";
+         <http://purl.org/dc/terms/identifier> "10.1145/1103963.1103968";
+         <http://purl.org/dc/terms/source> "F.2.0",
+                "G.2.1",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "almost shortest paths",
+                "combinatorics",
+                "general",
+                "graph algorithms",
+                "graph theory",
+                "spanners",
+                "theory";
+         <http://purl.org/dc/terms/title> "Computing almost shortest paths" .
+    
+    <http://dx.doi.org/10.1145/1150334.1150336>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Dana Moshkovitz",
+                "Noga Alon",
+                "Shmuel Safra";
+         <http://purl.org/dc/terms/identifier> "10.1145/1150334.1150336";
+         <http://purl.org/dc/terms/source> "G.2.1";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "almost k-wise independence",
+                "combinatorial algorithms",
+                "derandomization",
+                "generalized hashing",
+                "group testing",
+                "k-restriction",
+                "set-cover",
+                "splitter",
+                "theory";
+         <http://purl.org/dc/terms/title> "Algorithmic construction of sets for <i>k</i>-restrictions" .
+    
+    <http://dx.doi.org/10.1145/1186810.1186814>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Artur Czumaj",
+                "Berthold V&#246",
+                "cking";
+         <http://purl.org/dc/terms/identifier> "10.1145/1186810.1186814";
+         <http://purl.org/dc/terms/source> "F.2",
+                "K.4.4",
+                "K.6.0";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "coordination ration",
+                "economics",
+                "nash equilibria",
+                "noncooperative networks",
+                "selfish strategies",
+                "theory",
+                "traffic routing";
+         <http://purl.org/dc/terms/title> "Tight bounds for worst-case equilibria" .
+    
+    <http://dx.doi.org/10.1145/1217299.1217301>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Christos Faloutsos",
+                "Jon Kleinberg",
+                "Jure Leskovec";
+         <http://purl.org/dc/terms/identifier> "10.1145/1217299.1217301";
+         <http://purl.org/dc/terms/source> "H.2.8";
+         <http://purl.org/dc/terms/subject> "data mining",
+                "densification power laws",
+                "graph generators",
+                "graph mining",
+                "heavy-tailed distributions",
+                "measurement",
+                "small-world phenomena",
+                "theory";
+         <http://purl.org/dc/terms/title> "Graph evolution: Densification and shrinking diameters" .
+    
+    <http://dx.doi.org/10.1145/1217299.1217302>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Ashwin Machanavajjhala",
+                "Daniel Kifer",
+                "Johannes Gehrke",
+                "Muthuramakrishnan Venkitasubramaniam";
+         <http://purl.org/dc/terms/identifier> "10.1145/1217299.1217302";
+         <http://purl.org/dc/terms/source> "E.m";
+         <http://purl.org/dc/terms/subject> "data privacy",
+                "diversity",
+                "k-anonymity",
+                "miscellaneous",
+                "privacy-preserving data publishing",
+                "security";
+         <http://purl.org/dc/terms/title> "<i>L</i>-diversity: Privacy beyond <i>k</i>-anonymity" .
+    
+    <http://dx.doi.org/10.1145/1217299.1217303>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Aristides Gionis",
+                "Heikki Mannila",
+                "Panayiotis Tsaparas";
+         <http://purl.org/dc/terms/identifier> "10.1145/1217299.1217303";
+         <http://purl.org/dc/terms/source> "F.2.2",
+                "H.2.8";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "clustering aggregation",
+                "clustering categorical data",
+                "correlation clustering",
+                "data clustering",
+                "data mining",
+                "nonnumerical algorithms and problems";
+         <http://purl.org/dc/terms/title> "Clustering aggregation" .
+    
+    <http://dx.doi.org/10.1145/1217299.1217304>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Indrajit Bhattacharya",
+                "Lise Getoor";
+         <http://purl.org/dc/terms/identifier> "10.1145/1217299.1217304";
+         <http://purl.org/dc/terms/source> "H.2.8",
+                "H.3.3";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "clustering",
+                "data cleaning",
+                "data mining",
+                "entity resolution",
+                "graph clustering",
+                "record linkage";
+         <http://purl.org/dc/terms/title> "Collective entity resolution in relational data" .
+    
+    <http://dx.doi.org/10.1145/1240233.1240234>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Markus P&#252",
+                "Yevgen Voronenko",
+                "schel";
+         <http://purl.org/dc/terms/identifier> "10.1145/1240233.1240234";
+         <http://purl.org/dc/terms/source> "B.2.4",
+                "F.2.1",
+                "I.1.2";
+         <http://purl.org/dc/terms/subject> "addition chains",
+                "algebraic algorithms",
+                "algorithms",
+                "cost/performance",
+                "design",
+                "directed graph",
+                "fir filter",
+                "fixed-point arithmetic",
+                "number-theoretic computations",
+                "performance",
+                "strength reduction",
+                "theory";
+         <http://purl.org/dc/terms/title> "Multiplierless multiple constant multiplication" .
+    
+    <http://dx.doi.org/10.1145/1240233.1240243>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Paolo Ferragina",
+                "Veli M&#228",
+                "kinen";
+         <http://purl.org/dc/terms/identifier> "10.1145/1240233.1240243";
+         <http://purl.org/dc/terms/source> "E.1",
+                "E.4",
+                "F.2.2",
+                "H.3.1",
+                "H.3.3",
+                "I.7.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "arrays",
+                "burrows-wheeler transform",
+                "compression boosting",
+                "data compaction and compression",
+                "entropy",
+                "index generation",
+                "indexing methods",
+                "pattern matching",
+                "rank and select",
+                "search process",
+                "sorting and searching",
+                "text compression",
+                "text indexing",
+                "theory",
+                "trees",
+                "wavelet tree";
+         <http://purl.org/dc/terms/title> "Compressed representations of sequences and full-text indexes" .
+    
+    <http://dx.doi.org/10.1145/1240233.1240244>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Ho-Leung Chan",
+                "Kunihiko Sadakane",
+                "Tak-Wah Lam",
+                "Wing-Kai Hon";
+         <http://purl.org/dc/terms/identifier> "10.1145/1240233.1240244";
+         <http://purl.org/dc/terms/source> "E.1",
+                "E.4",
+                "F.2.2",
+                "H.3.1";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "compressed suffix tree",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "indexing methods",
+                "pattern matching",
+                "string matching",
+                "theory";
+         <http://purl.org/dc/terms/title> "Compressed indexes for dynamic text collections" .
+    
+    <http://dx.doi.org/10.1145/1273340.1273341>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Daming Zhu",
+                "Jianxing Feng";
+         <http://purl.org/dc/terms/identifier> "10.1145/1273340.1273341";
+         <http://purl.org/dc/terms/source> "E.1",
+                "F.2.2",
+                "J.3";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "biology and genetics",
+                "block interchange",
+                "genome",
+                "permutation",
+                "sorting and searching",
+                "theory",
+                "time complexity",
+                "transposition",
+                "tree",
+                "trees";
+         <http://purl.org/dc/terms/title> "Faster algorithms for sorting by transpositions and sorting by block interchanges" .
+    
+    <http://dx.doi.org/10.1145/1273340.1273348>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Alex Kesselman",
+                "Eyal Even-Dar",
+                "Yishay Mansour";
+         <http://purl.org/dc/terms/identifier> "10.1145/1273340.1273348";
+         <http://purl.org/dc/terms/source> "F.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "convergence time",
+                "game theory",
+                "nash equilibrium",
+                "nonnumerical algorithms and problems",
+                "theory";
+         <http://purl.org/dc/terms/title> "Convergence time to Nash equilibrium in load balancing" .
+    
+    <http://dx.doi.org/10.1145/1290672.1290680>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Rajeev Raman",
+                "Srinivasa Rao Satti",
+                "Venkatesh Raman";
+         <http://purl.org/dc/terms/identifier> "10.1145/1290672.1290680";
+         <http://purl.org/dc/terms/source> "E.1",
+                "E.4",
+                "F.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "multisets",
+                "perfect hashing",
+                "prefix sums",
+                "sets",
+                "succinct data structures",
+                "theory",
+                "tries";
+         <http://purl.org/dc/terms/title> "Succinct indexable dictionaries with applications to encoding <i>k</i>-ary trees prefix sums and multisets" .
+    
+    <http://dx.doi.org/10.1145/1290672.1290686>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Hiroshi Fujiwara",
+                "Susanne Albers";
+         <http://purl.org/dc/terms/identifier> "10.1145/1290672.1290686";
+         <http://purl.org/dc/terms/source> "F.2.2",
+                "G.2.1";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "combinatorial algorithms",
+                "competitive analysis",
+                "dynamic programming",
+                "flow time",
+                "offline algorithms",
+                "online algorithms",
+                "sequencing and scheduling",
+                "theory",
+                "variable-speed processor";
+         <http://purl.org/dc/terms/title> "Energy-efficient algorithms for flow time minimization" .
+    
+    <http://dx.doi.org/10.1145/1297332.1297338>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Aristides Gionis",
+                "Heikki Mannila",
+                "Panayiotis Tsaparas",
+                "Taneli Mielik&#228",
+                "inen";
+         <http://purl.org/dc/terms/identifier> "10.1145/1297332.1297338";
+         <http://purl.org/dc/terms/source> "H.2.8";
+         <http://purl.org/dc/terms/subject> "0--1 data",
+                "algorithms",
+                "data mining",
+                "experimentation",
+                "management",
+                "randomization tests",
+                "significance testing",
+                "swaps";
+         <http://purl.org/dc/terms/title> "Assessing data mining results via swap randomization" .
+    
+    <http://dx.doi.org/10.1145/1367064.1367072>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Gonzalo Navarro",
+                "Veli M&#228",
+                "kinen";
+         <http://purl.org/dc/terms/identifier> "10.1145/1367064.1367072";
+         <http://purl.org/dc/terms/source> "E.1",
+                "E.2",
+                "E.4",
+                "F.2.2",
+                "H.2.2",
+                "H.3.2",
+                "H.3.3";
+         <http://purl.org/dc/terms/subject> "access methods",
+                "algorithms",
+                "compressed dynamic data structures",
+                "compressed text databases",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "entropy",
+                "file organization",
+                "partial sums",
+                "pattern matching",
+                "search process",
+                "sequences",
+                "sorting and searching";
+         <http://purl.org/dc/terms/title> "Dynamic entropy-compressed sequences and full-text indexes" .
+    
+    <http://dx.doi.org/10.1145/1376815.1376819>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Aminul Islam",
+                "Diana Inkpen";
+         <http://purl.org/dc/terms/identifier> "10.1145/1376815.1376819";
+         <http://purl.org/dc/terms/source> "I.2.1",
+                "I.2.7";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "corpus-based measures",
+                "experimentation",
+                "natural language interfaces",
+                "performance",
+                "semantic similarity of words",
+                "similarity of short texts",
+                "text analysis";
+         <http://purl.org/dc/terms/title> "Semantic text similarity using corpus-based word similarity and string similarity" .
+    
+    <http://dx.doi.org/10.1145/1409620.1409621>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Christos Faloutsos",
+                "Dacheng Tao",
+                "Jimeng Sun",
+                "Philip S. Yu",
+                "Spiros Papadimitriou";
+         <http://purl.org/dc/terms/identifier> "10.1145/1409620.1409621";
+         <http://purl.org/dc/terms/source> "G.1.10",
+                "H.2.8",
+                "I.5.3";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "data mining",
+                "multilinear algebra",
+                "performance",
+                "stream mining",
+                "tensor",
+                "theory";
+         <http://purl.org/dc/terms/title> "Incremental tensor analysis: Theory and applications" .
+    
+    <http://dx.doi.org/10.1145/1490270.1490272>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Avi Wigderson",
+                "Scott Aaronson";
+         <http://purl.org/dc/terms/identifier> "10.1145/1490270.1490272";
+         <http://purl.org/dc/terms/source> "F.1";
+         <http://purl.org/dc/terms/subject> "arithmetization",
+                "communication complexity",
+                "computation by abstract devices",
+                "interactive proofs",
+                "low-degree polynomials",
+                "oracles",
+                "query complexity",
+                "theory";
+         <http://purl.org/dc/terms/title> "Algebrization: A New Barrier in Complexity Theory" .
+    
+    <http://dx.doi.org/10.1145/1490270.1490273>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Alexander Razborov";
+         <http://purl.org/dc/terms/identifier> "10.1145/1490270.1490273";
+         <http://purl.org/dc/terms/source> "F.1.2";
+         <http://purl.org/dc/terms/subject> "dnf",
+                "probabilistic computation",
+                "pseudo-random generators",
+                "theory";
+         <http://purl.org/dc/terms/title> "A Simple Proof of Bazzi&rsquo;s Theorem" .
+    
+    <http://dx.doi.org/10.1145/1490270.1490274>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Chris Bourke",
+                "N. V. Vinodchandran",
+                "Raghunath Tewari";
+         <http://purl.org/dc/terms/identifier> "10.1145/1490270.1490274";
+         <http://purl.org/dc/terms/source> "F.1.3",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "directed graph reachability",
+                "path and circuit problems",
+                "planar graphs",
+                "relations among complexity classes",
+                "theory",
+                "unambiguous log-space";
+         <http://purl.org/dc/terms/title> "Directed Planar Reachability Is in Unambiguous Log-Space" .
+    
+    <http://dx.doi.org/10.1145/1497577.1497578>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Arthur Zimek",
+                "Hans-Peter Kriegel",
+                "Peer Kr&#246",
+                "ger";
+         <http://purl.org/dc/terms/identifier> "10.1145/1497577.1497578";
+         <http://purl.org/dc/terms/source> "A.1",
+                "H.2.8",
+                "I.5.3";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "clustering",
+                "data mining",
+                "high-dimensional data",
+                "survey",
+                "theory";
+         <http://purl.org/dc/terms/title> "Clustering high-dimensional data: A survey on subspace clustering pattern-based clustering and correlation clustering" .
+    
+    <http://dx.doi.org/10.1145/1552303.1552304>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Neil R. Smalheiser",
+                "Vetle I. Torvik";
+         <http://purl.org/dc/terms/identifier> "10.1145/1552303.1552304";
+         <http://purl.org/dc/terms/source> "H.3.3",
+                "H.3.7",
+                "I.5.1",
+                "I.5.2",
+                "I.5.3";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "bibliographic databases",
+                "clustering",
+                "design methodology",
+                "digital libraries",
+                "experimentation",
+                "information search and retrieval",
+                "models",
+                "name disambiguation",
+                "performance";
+         <http://purl.org/dc/terms/title> "Author name disambiguation in MEDLINE" .
+    
+    <http://dx.doi.org/10.1145/1595391.1595392>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Emanuele Viola",
+                "Matei David",
+                "Toniann Pitassi";
+         <http://purl.org/dc/terms/identifier> "10.1145/1595391.1595392";
+         <http://purl.org/dc/terms/source> "F.1.3";
+         <http://purl.org/dc/terms/subject> "communication complexity",
+                "lower bound",
+                "nondeterminism",
+                "number on forehead",
+                "randomization",
+                "relations among complexity classes",
+                "relations among complexity measures",
+                "theory";
+         <http://purl.org/dc/terms/title> "Improved Separations between Nondeterministic and Randomized Multiparty Communication" .
+    
+    <http://dx.doi.org/10.1145/1595391.1595393>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Prasad Raghavendra",
+                "Venkatesan Guruswami";
+         <http://purl.org/dc/terms/identifier> "10.1145/1595391.1595393";
+         <http://purl.org/dc/terms/source> "F.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "analysis of algorithms and problem complexity",
+                "hardness of approximation",
+                "linearity testing",
+                "probabilistically checkable proofs",
+                "sparse linear equations",
+                "theory";
+         <http://purl.org/dc/terms/title> "Hardness of Solving Sparse Overdetermined Linear Systems: A 3-Query PCP over Integers" .
+    
+    <http://dx.doi.org/10.1145/1644873.1644874>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Yehuda Koren";
+         <http://purl.org/dc/terms/identifier> "10.1145/1644873.1644874";
+         <http://purl.org/dc/terms/source> "H.2.8",
+                "H.3.3";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "collaborative filtering",
+                "data mining",
+                "information filtering",
+                "netflix prize",
+                "recommender systems";
+         <http://purl.org/dc/terms/title> "Factor in the neighbors: Scalable and accurate collaborative filtering" .
+    
+    <http://dx.doi.org/10.1145/1714450.1714453>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Meena Mahajan",
+                "Nutan Limaye",
+                "Raghav Kulkarni",
+                "Samir Datta";
+         <http://purl.org/dc/terms/identifier> "10.1145/1714450.1714453";
+         <http://purl.org/dc/terms/source> "F.1.3",
+                "F.2.2",
+                "F.2.3",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "bipartite graphs",
+                "computations on discrete structures",
+                "counting classes",
+                "determinant",
+                "path and circuit problems",
+                "perfect matching",
+                "permanent",
+                "planarity",
+                "relations among complexity classes",
+                "theory";
+         <http://purl.org/dc/terms/title> "Planarity Determinants Permanents and (Unique) Matchings" .
+    
+    <http://dx.doi.org/10.1145/1867719.1867721>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Alexander Souza",
+                "Martin Hoefer";
+         <http://purl.org/dc/terms/identifier> "10.1145/1867719.1867721";
+         <http://purl.org/dc/terms/source> "F.2.2",
+                "G.2.3",
+                "I.2.11";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "average-case analysis",
+                "economics",
+                "multiagent systems",
+                "price of anarchy",
+                "selfish routing",
+                "sequencing and scheduling",
+                "theory";
+         <http://purl.org/dc/terms/title> "Tradeoffs and Average-Case Equilibria in Selfish Routing" .
+    
+    <http://dx.doi.org/10.1145/1944857.1944858>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Eric Purdy";
+         <http://purl.org/dc/terms/identifier> "10.1145/1944857.1944858";
+         <http://purl.org/dc/terms/source> "F.1.3",
+                "F.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "coin-weighing problems",
+                "complexity of proof procedures",
+                "relations among complexity measures",
+                "theory";
+         <http://purl.org/dc/terms/title> "Lower Bounds for Coin-Weighing Problems" .
+    
+    <http://dx.doi.org/10.1145/1944857.1944859>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Jacobo Tor&#225",
+                "Vikraman Arvind",
+                "n";
+         <http://purl.org/dc/terms/identifier> "10.1145/1944857.1944859";
+         <http://purl.org/dc/terms/source> "F.1.1",
+                "F.1.3",
+                "F.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "arthur-merlin games",
+                "computational and structural complexity",
+                "computations on discrete structures",
+                "derandomization",
+                "limited nondeterminism",
+                "relations between models",
+                "theory";
+         <http://purl.org/dc/terms/title> "Solvable Group Isomorphism Is (Almost) in NP &#8745; coNP" .
+    
+    <http://dx.doi.org/10.1145/2071379.2071383>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Charles E. Leiserson",
+                "Harald Prokop",
+                "Matteo Frigo",
+                "Sridhar Ramachandran";
+         <http://purl.org/dc/terms/identifier> "10.1145/2071379.2071383";
+         <http://purl.org/dc/terms/source> "F.2";
+         <http://purl.org/dc/terms/subject> "algorithm",
+                "algorithms",
+                "analysis of algorithms and problem complexity",
+                "cache-oblivious",
+                "caching",
+                "fast fourier transform",
+                "i/o complexity",
+                "matrix multiplication",
+                "matrix transpose",
+                "sorting",
+                "theory";
+         <http://purl.org/dc/terms/title> "Cache-Oblivious Algorithms" .
+    
+    <http://dx.doi.org/10.1145/2077336.2077337>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Dustin Wehr",
+                "Mark Braverman",
+                "Pierre McKenzie",
+                "Rahul Santhanam",
+                "Stephen Cook";
+         <http://purl.org/dc/terms/identifier> "10.1145/2077336.2077337";
+         <http://purl.org/dc/terms/source> "F.2.0";
+         <http://purl.org/dc/terms/subject> "branching programs",
+                "general",
+                "log space",
+                "logdcfl",
+                "lower bounds",
+                "theory";
+         <http://purl.org/dc/terms/title> "Pebbles and Branching Programs for Tree Evaluation" .
+    
+    <http://dx.doi.org/10.1145/2086737.2086741>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Andreas Krause",
+                "Jure Leskovec",
+                "Manuel Gomez-Rodriguez";
+         <http://purl.org/dc/terms/identifier> "10.1145/2086737.2086741";
+         <http://purl.org/dc/terms/source> "H.2.8";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "blogs",
+                "data mining",
+                "experimentation",
+                "information cascades",
+                "meme-tracking",
+                "networks of diffusion",
+                "news media",
+                "social networks";
+         <http://purl.org/dc/terms/title> "Inferring Networks of Diffusion and Influence" .
+    
+    <http://dx.doi.org/10.1145/2133360.2133364>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Jeffrey Erman",
+                "Nick Duffield",
+                "Patrick Haffner",
+                "Subhabrata Sen",
+                "Yu Jin",
+                "Zhi-Li Zhang";
+         <http://purl.org/dc/terms/identifier> "10.1145/2133360.2133364";
+         <http://purl.org/dc/terms/source> "C.2.3",
+                "I.5.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "classifier design and evaluation",
+                "communications network",
+                "machine learning",
+                "measurement",
+                "network management",
+                "theory",
+                "traffic classification";
+         <http://purl.org/dc/terms/title> "A Modular Machine Learning System for Flow-Level Traffic Classification in Large Networks" .
+    
+    <http://dx.doi.org/10.1145/2141938.2141939>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Hirotada Kobayashi",
+                "Keiji Matsumoto",
+                "Seiichiro Tani";
+         <http://purl.org/dc/terms/identifier> "10.1145/2141938.2141939";
+         <http://purl.org/dc/terms/source> "C.2.1",
+                "C.2.2",
+                "F.1.1",
+                "F.1.2",
+                "F.2.0";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "distributed computing",
+                "distributed networks",
+                "general",
+                "models of computation",
+                "modes of computation",
+                "network protocols",
+                "quantum algorithms",
+                "quantum communication",
+                "theory";
+         <http://purl.org/dc/terms/title> "Exact Quantum Algorithms for the Leader Election Problem" .
+    
+    <http://dx.doi.org/10.1145/2141938.2141941>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Anindya De",
+                "Thomas Watson";
+         <http://purl.org/dc/terms/identifier> "10.1145/2141938.2141941";
+         <http://purl.org/dc/terms/source> "F.1.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "extractors",
+                "locally samplable sources",
+                "lower bounds",
+                "probabilistic computation",
+                "theory";
+         <http://purl.org/dc/terms/title> "Extractors and Lower Bounds for Locally Samplable Sources" .
+    
+    <http://dx.doi.org/10.1145/2189778.2189780>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Akitoshi Kawamura",
+                "Stephen Cook";
+         <http://purl.org/dc/terms/identifier> "10.1145/2189778.2189780";
+         <http://purl.org/dc/terms/source> "F.1.3";
+         <http://purl.org/dc/terms/subject> "complexity measures and classes",
+                "computable analysis",
+                "computational complexity",
+                "higher-type complexity",
+                "second-order polynomials",
+                "theory";
+         <http://purl.org/dc/terms/title> "Complexity Theory for Operators in Analysis" .
+    
+    <http://dx.doi.org/10.1145/2362383.2362384>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Laiwan Chan",
+                "Zhenxing Wang";
+         <http://purl.org/dc/terms/identifier> "10.1145/2362383.2362384";
+         <http://purl.org/dc/terms/source> "H.2.8";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "bayesian networks",
+                "causal modeling",
+                "data mining",
+                "graphical models",
+                "performance";
+         <http://purl.org/dc/terms/title> "Learning bayesian networks from Markov random fields: An efficient algorithm for linear models" .
+    
+    <http://dx.doi.org/10.1145/2362383.2362387>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Antonio A. F. Loureiro",
+                "Christos Faloutsos",
+                "Pedro O. S. Vaz de Melo",
+                "Virgilio A. F. Almeida";
+         <http://purl.org/dc/terms/identifier> "10.1145/2362383.2362387";
+         <http://purl.org/dc/terms/source> "G.3",
+                "H.2.8";
+         <http://purl.org/dc/terms/subject> "complex networks",
+                "data mining",
+                "social networks",
+                "sports analytics",
+                "statistical computing",
+                "theory";
+         <http://purl.org/dc/terms/title> "Forecasting in the NBA and other team sports: Network effects in action" .
+    
+    <http://dx.doi.org/10.1145/2382559.2382560>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Chandan Saha",
+                "Neeraj Kayal";
+         <http://purl.org/dc/terms/identifier> "10.1145/2382559.2382560";
+         <http://purl.org/dc/terms/source> "F.2.1";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "arithmetic circuits",
+                "numerical algorithms and problems",
+                "polynomials",
+                "sum of square roots",
+                "theory";
+         <http://purl.org/dc/terms/title> "On the Sum of Square Roots of Polynomials and Related Problems" .
+    
+    <http://dx.doi.org/10.1145/2382559.2382561>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Muthuramakrishnan Venkitasubramaniam",
+                "Rafael Pass";
+         <http://purl.org/dc/terms/identifier> "10.1145/2382559.2382561";
+         <http://purl.org/dc/terms/source> "F.1.2";
+         <http://purl.org/dc/terms/subject> "interactive proofs",
+                "modes of computation",
+                "parallel-repetition",
+                "public-coin protocols",
+                "security",
+                "soundness error",
+                "theory";
+         <http://purl.org/dc/terms/title> "A Parallel Repetition Theorem for Constant-Round Arthur-Merlin Proofs" .
+    
+    <http://dx.doi.org/10.1145/2382559.2382562>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Alex Samorodnitsky",
+                "Dana Ron",
+                "Muli Safra",
+                "Omri Weinstein",
+                "Ronitt Rubinfeld";
+         <http://purl.org/dc/terms/identifier> "10.1145/2382559.2382562";
+         <http://purl.org/dc/terms/source> "G.2.1";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "combinatorial algorithms",
+                "influence of a boolean function",
+                "sublinear query approximation algorithms",
+                "symmetric chains",
+                "theory";
+         <http://purl.org/dc/terms/title> "Approximating the Influence of Monotone Boolean Functions in O(&#x0221A;n) Query Complexity" .
+    
+    <http://dx.doi.org/10.1145/2382559.2382563>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "David Barber",
+                "Michael L. Littman",
+                "Nikos Vlassis";
+         <http://purl.org/dc/terms/identifier> "10.1145/2382559.2382563";
+         <http://purl.org/dc/terms/source> "F.2.1";
+         <http://purl.org/dc/terms/subject> "bilinear program",
+                "computational complexity",
+                "computations on polynomials",
+                "matrix fractional program",
+                "motzkin-straus theorem",
+                "nonlinear optimization",
+                "numerical algorithms and problems",
+                "partially observable markov decision process",
+                "performance",
+                "stochastic controller",
+                "sum-of-square-roots problem";
+         <http://purl.org/dc/terms/title> "On the Computational Complexity of Stochastic Controller Optimization in POMDPs" .
+    
+    <http://dx.doi.org/10.1145/2390176.2390177>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Zeev Nutov";
+         <http://purl.org/dc/terms/identifier> "10.1145/2390176.2390177";
+         <http://purl.org/dc/terms/source> "F.2.2",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "approximation algorithms",
+                "computations on discrete structures",
+                "graph algorithms",
+                "graph connectivity",
+                "node-costs",
+                "rooted connectivity",
+                "theory";
+         <http://purl.org/dc/terms/title> "Approximating minimum-cost connectivity problems via uncrossable bifamilies" .
+    
+    <http://dx.doi.org/10.1145/2390176.2390180>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Christian Sommer",
+                "Shang-Hua Teng",
+                "Wei Chen",
+                "Yajun Wang";
+         <http://purl.org/dc/terms/identifier> "10.1145/2390176.2390180";
+         <http://purl.org/dc/terms/source> "C.2.2",
+                "F.2.2",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "complex networks",
+                "distance oracle",
+                "graph theory",
+                "network protocols",
+                "nonnumerical algorithms and problems",
+                "power-law graphs",
+                "shortest path",
+                "shortest-path query",
+                "theory";
+         <http://purl.org/dc/terms/title> "A compact routing scheme and approximate distance oracle for power-law graphs" .
+    
+    <http://dx.doi.org/10.1145/2390176.2390188>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Arie M. C. A. Koster",
+                "Dieter Kratsch",
+                "Dimitrios M. Thilikos",
+                "Fedor V. Fomin",
+                "Hans L. Bodlaender";
+         <http://purl.org/dc/terms/identifier> "10.1145/2390176.2390188";
+         <http://purl.org/dc/terms/source> "F.2.2",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "computations on discrete structures",
+                "design",
+                "dynamic programming",
+                "exact algorithms",
+                "experimentation",
+                "graph algorithms",
+                "graph theory",
+                "separators",
+                "theory",
+                "treewidth";
+         <http://purl.org/dc/terms/title> "On exact algorithms for treewidth" .
+    
+    <http://dx.doi.org/10.1145/2435209.2435210>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Fabio Fassetti",
+                "Fabrizio Angiulli";
+         <http://purl.org/dc/terms/identifier> "10.1145/2435209.2435210";
+         <http://purl.org/dc/terms/source> "H.2.8";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "classification",
+                "data mining",
+                "nearest neighbor",
+                "nearest neighbor rule",
+                "probability density functions",
+                "uncertain data";
+         <http://purl.org/dc/terms/title> "Nearest Neighbor-Based Classification of Uncertain Data" .
+    
+    <http://dx.doi.org/10.1145/2435209.2435211>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Dingding Wang",
+                "Shenghuo Zhu",
+                "Tao Li",
+                "Yihong Gong";
+         <http://purl.org/dc/terms/identifier> "10.1145/2435209.2435211";
+         <http://purl.org/dc/terms/source> "H.3.3",
+                "I.2.6";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "comparative document summarization",
+                "discriminative sentence selection",
+                "experimentation",
+                "information search and retrieval",
+                "learning",
+                "performance";
+         <http://purl.org/dc/terms/title> "Comparative Document Summarization via Discriminative Sentence Selection" .
+    
+    <http://dx.doi.org/10.1145/2435209.2435212>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Amin Saberi",
+                "David F. Gleich",
+                "Mohsen Bayati",
+                "Ying Wang";
+         <http://purl.org/dc/terms/identifier> "10.1145/2435209.2435212";
+         <http://purl.org/dc/terms/source> "H.4.0";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "belief propagation",
+                "general",
+                "graph matching",
+                "message-passing",
+                "network alignment";
+         <http://purl.org/dc/terms/title> "Message-Passing Algorithms for Sparse Network Alignment" .
+    
+    <http://dx.doi.org/10.1145/2438645.2438646>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Oren Weimann",
+                "Raphael Yuster";
+         <http://purl.org/dc/terms/identifier> "10.1145/2438645.2438646";
+         <http://purl.org/dc/terms/source> "E.1",
+                "F.2.2",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "computations on discrete structures",
+                "design",
+                "distance oracles",
+                "fault tolerance",
+                "graph theory",
+                "replacement paths",
+                "shortest paths",
+                "theory";
+         <http://purl.org/dc/terms/title> "Replacement Paths and Distance Sensitivity Oracles via Fast Matrix Multiplication" .
+    
+    <http://dx.doi.org/10.1145/2438645.2438647>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Liam Roditty",
+                "Roei Tov";
+         <http://purl.org/dc/terms/identifier> "10.1145/2438645.2438647";
+         <http://purl.org/dc/terms/source> "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "approximation",
+                "girth",
+                "graph theory",
+                "graphs",
+                "minimum weight cycle",
+                "performance",
+                "theory";
+         <http://purl.org/dc/terms/title> "Approximating the Girth" .
+    
+    <http://dx.doi.org/10.1145/2438645.2438648>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Ken-Ichi Kawarabayashi",
+                "Yusuke Kobayashi";
+         <http://purl.org/dc/terms/identifier> "10.1145/2438645.2438648";
+         <http://purl.org/dc/terms/source> "G.2.2";
+         <http://purl.org/dc/terms/subject> "4-edge-connected graph",
+                "algorithms",
+                "approximation algorithm",
+                "edge-disjoint paths",
+                "eulerian graph",
+                "graph theory";
+         <http://purl.org/dc/terms/title> "An O(log n)-Approximation Algorithm for the Edge-Disjoint Paths Problem in Eulerian Planar Graphs" .
+    
+    <http://dx.doi.org/10.1145/2438645.2438650>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Ho-Leung Chan",
+                "Kirk Pruhs",
+                "Nikhil Bansal";
+         <http://purl.org/dc/terms/identifier> "10.1145/2438645.2438650";
+         <http://purl.org/dc/terms/source> "F.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "design",
+                "nonnumerical algorithms and problems",
+                "performance",
+                "scheduling",
+                "speed scaling";
+         <http://purl.org/dc/terms/title> "Speed Scaling with an Arbitrary Power Function" .
+    
+    <http://dx.doi.org/10.1145/2438645.2438651>     a <http://xmlns.com/foaf/0.1/Document>;
+         <http://purl.org/dc/terms/creator> "Asaf Levin",
+                "Dorit S. Hochbaum";
+         <http://purl.org/dc/terms/identifier> "10.1145/2438645.2438651";
+         <http://purl.org/dc/terms/source> "G.2.1";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "approximation algorithm",
+                "biclustering",
+                "combinatorics",
+                "gene expression",
+                "order preserving",
+                "theory";
+         <http://purl.org/dc/terms/title> "Approximation Algorithms for a Minimization Variant of the Order-Preserving Submatrices and for Biclustering Problems" .
+    
+    <http://xmlns.com/foaf/0.1/knows>     a owl:SymmetricProperty .
+    {
+        infe:Publication     <http://purl.org/dc/terms/creator> infe:Author .
+        
+        }     log:implies {infe:Author     a <http://xmlns.com/foaf/0.1/Person> .
+        },
+                {infe:Publication     a <http://xmlns.com/foaf/0.1/Document> .
+        } .
+    {
+        infe:Publication     <http://purl.org/dc/terms/source> infe:CCSNode .
+        
+        }     log:implies {infe:CCSNode     a :Community;
+             <http://purl.org/dc/terms/hasPart> infe:Publication .
+        } .
+    {
+        infe:CCSNode     <http://purl.org/dc/terms/hasPart> infe:Publication .
+        infe:Publication     <http://purl.org/dc/terms/subject> infe:Topic .
+        
+        }     log:implies {infe:CCSNode     :topic infe:Topic .
+        } .
+    {
+        infe:Publication     <http://purl.org/dc/terms/creator> infe:Author;
+             <http://purl.org/dc/terms/subject> infe:Topic .
+        
+        }     log:implies {infe:Author     <http://xmlns.com/foaf/0.1/interest> infe:Topic .
+        } .
+    {
+        infe:Publication     <http://purl.org/dc/terms/creator> infe:Author1,
+                    infe:Author2 .
+        
+        }     log:implies {infe:Author1     <http://xmlns.com/foaf/0.1/knows> infe:Author2 .
+        } .
+    {
+        infe:CCSNode     <http://purl.org/dc/terms/hasPart> infe:Publication .
+        infe:Publication     a <http://xmlns.com/foaf/0.1/Document>;
+             <http://purl.org/dc/terms/creator> infe:Author .
+        
+        }     log:implies {infe:CCSNode     <http://purl.org/dc/terms/hasPart> infe:Author .
+        } .
+    
+#ENDS

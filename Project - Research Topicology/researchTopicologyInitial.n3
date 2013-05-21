@@ -1,0 +1,880 @@
+#Processed by Id: cwm.py,v 1.197 2007/12/13 15:38:39 syosi Exp 
+        #    using base file:///Python27/ACM_meta_output.n3
+        
+#  Notation3 generation by
+#       notation3.py,v 1.200 2007/12/11 21:18:08 syosi Exp
+
+#   Base was: file:///Python27/ACM_meta_output.n3
+    
+    <http://dx.doi.org/10.1145/1103963.1103968>     <http://purl.org/dc/terms/creator> "Michael Elkin";
+         <http://purl.org/dc/terms/identifier> "10.1145/1103963.1103968";
+         <http://purl.org/dc/terms/source> "F.2.0",
+                "G.2.1",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "almost shortest paths",
+                "combinatorics",
+                "general",
+                "graph algorithms",
+                "graph theory",
+                "spanners",
+                "theory";
+         <http://purl.org/dc/terms/title> "Computing almost shortest paths" .
+    
+    <http://dx.doi.org/10.1145/1150334.1150336>     <http://purl.org/dc/terms/creator> "Dana Moshkovitz",
+                "Noga Alon",
+                "Shmuel Safra";
+         <http://purl.org/dc/terms/identifier> "10.1145/1150334.1150336";
+         <http://purl.org/dc/terms/source> "G.2.1";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "almost k-wise independence",
+                "combinatorial algorithms",
+                "derandomization",
+                "generalized hashing",
+                "group testing",
+                "k-restriction",
+                "set-cover",
+                "splitter",
+                "theory";
+         <http://purl.org/dc/terms/title> "Algorithmic construction of sets for <i>k</i>-restrictions" .
+    
+    <http://dx.doi.org/10.1145/1186810.1186814>     <http://purl.org/dc/terms/creator> "Artur Czumaj",
+                "Berthold V&#246",
+                "cking";
+         <http://purl.org/dc/terms/identifier> "10.1145/1186810.1186814";
+         <http://purl.org/dc/terms/source> "F.2",
+                "K.4.4",
+                "K.6.0";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "coordination ration",
+                "economics",
+                "nash equilibria",
+                "noncooperative networks",
+                "selfish strategies",
+                "theory",
+                "traffic routing";
+         <http://purl.org/dc/terms/title> "Tight bounds for worst-case equilibria" .
+    
+    <http://dx.doi.org/10.1145/1217299.1217301>     <http://purl.org/dc/terms/creator> "Christos Faloutsos",
+                "Jon Kleinberg",
+                "Jure Leskovec";
+         <http://purl.org/dc/terms/identifier> "10.1145/1217299.1217301";
+         <http://purl.org/dc/terms/source> "H.2.8";
+         <http://purl.org/dc/terms/subject> "data mining",
+                "densification power laws",
+                "graph generators",
+                "graph mining",
+                "heavy-tailed distributions",
+                "measurement",
+                "small-world phenomena",
+                "theory";
+         <http://purl.org/dc/terms/title> "Graph evolution: Densification and shrinking diameters" .
+    
+    <http://dx.doi.org/10.1145/1217299.1217302>     <http://purl.org/dc/terms/creator> "Ashwin Machanavajjhala",
+                "Daniel Kifer",
+                "Johannes Gehrke",
+                "Muthuramakrishnan Venkitasubramaniam";
+         <http://purl.org/dc/terms/identifier> "10.1145/1217299.1217302";
+         <http://purl.org/dc/terms/source> "E.m";
+         <http://purl.org/dc/terms/subject> "data privacy",
+                "diversity",
+                "k-anonymity",
+                "miscellaneous",
+                "privacy-preserving data publishing",
+                "security";
+         <http://purl.org/dc/terms/title> "<i>L</i>-diversity: Privacy beyond <i>k</i>-anonymity" .
+    
+    <http://dx.doi.org/10.1145/1217299.1217303>     <http://purl.org/dc/terms/creator> "Aristides Gionis",
+                "Heikki Mannila",
+                "Panayiotis Tsaparas";
+         <http://purl.org/dc/terms/identifier> "10.1145/1217299.1217303";
+         <http://purl.org/dc/terms/source> "F.2.2",
+                "H.2.8";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "clustering aggregation",
+                "clustering categorical data",
+                "correlation clustering",
+                "data clustering",
+                "data mining",
+                "nonnumerical algorithms and problems";
+         <http://purl.org/dc/terms/title> "Clustering aggregation" .
+    
+    <http://dx.doi.org/10.1145/1217299.1217304>     <http://purl.org/dc/terms/creator> "Indrajit Bhattacharya",
+                "Lise Getoor";
+         <http://purl.org/dc/terms/identifier> "10.1145/1217299.1217304";
+         <http://purl.org/dc/terms/source> "H.2.8",
+                "H.3.3";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "clustering",
+                "data cleaning",
+                "data mining",
+                "entity resolution",
+                "graph clustering",
+                "record linkage";
+         <http://purl.org/dc/terms/title> "Collective entity resolution in relational data" .
+    
+    <http://dx.doi.org/10.1145/1240233.1240234>     <http://purl.org/dc/terms/creator> "Markus P&#252",
+                "Yevgen Voronenko",
+                "schel";
+         <http://purl.org/dc/terms/identifier> "10.1145/1240233.1240234";
+         <http://purl.org/dc/terms/source> "B.2.4",
+                "F.2.1",
+                "I.1.2";
+         <http://purl.org/dc/terms/subject> "addition chains",
+                "algebraic algorithms",
+                "algorithms",
+                "cost/performance",
+                "design",
+                "directed graph",
+                "fir filter",
+                "fixed-point arithmetic",
+                "number-theoretic computations",
+                "performance",
+                "strength reduction",
+                "theory";
+         <http://purl.org/dc/terms/title> "Multiplierless multiple constant multiplication" .
+    
+    <http://dx.doi.org/10.1145/1240233.1240243>     <http://purl.org/dc/terms/creator> "Giovanni Manzini",
+                "Gonzalo Navarro",
+                "Paolo Ferragina",
+                "Veli M&#228",
+                "kinen";
+         <http://purl.org/dc/terms/identifier> "10.1145/1240233.1240243";
+         <http://purl.org/dc/terms/source> "E.1",
+                "E.4",
+                "F.2.2",
+                "H.3.1",
+                "H.3.3",
+                "I.7.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "arrays",
+                "burrows-wheeler transform",
+                "compression boosting",
+                "data compaction and compression",
+                "entropy",
+                "index generation",
+                "indexing methods",
+                "pattern matching",
+                "rank and select",
+                "search process",
+                "sorting and searching",
+                "text compression",
+                "text indexing",
+                "theory",
+                "trees",
+                "wavelet tree";
+         <http://purl.org/dc/terms/title> "Compressed representations of sequences and full-text indexes" .
+    
+    <http://dx.doi.org/10.1145/1240233.1240244>     <http://purl.org/dc/terms/creator> "Ho-Leung Chan",
+                "Kunihiko Sadakane",
+                "Tak-Wah Lam",
+                "Wing-Kai Hon";
+         <http://purl.org/dc/terms/identifier> "10.1145/1240233.1240244";
+         <http://purl.org/dc/terms/source> "E.1",
+                "E.4",
+                "F.2.2",
+                "H.3.1";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "compressed suffix tree",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "indexing methods",
+                "pattern matching",
+                "string matching",
+                "theory";
+         <http://purl.org/dc/terms/title> "Compressed indexes for dynamic text collections" .
+    
+    <http://dx.doi.org/10.1145/1273340.1273341>     <http://purl.org/dc/terms/creator> "Daming Zhu",
+                "Jianxing Feng";
+         <http://purl.org/dc/terms/identifier> "10.1145/1273340.1273341";
+         <http://purl.org/dc/terms/source> "E.1",
+                "F.2.2",
+                "J.3";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "biology and genetics",
+                "block interchange",
+                "genome",
+                "permutation",
+                "sorting and searching",
+                "theory",
+                "time complexity",
+                "transposition",
+                "tree",
+                "trees";
+         <http://purl.org/dc/terms/title> "Faster algorithms for sorting by transpositions and sorting by block interchanges" .
+    
+    <http://dx.doi.org/10.1145/1273340.1273348>     <http://purl.org/dc/terms/creator> "Alex Kesselman",
+                "Eyal Even-Dar",
+                "Yishay Mansour";
+         <http://purl.org/dc/terms/identifier> "10.1145/1273340.1273348";
+         <http://purl.org/dc/terms/source> "F.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "convergence time",
+                "game theory",
+                "nash equilibrium",
+                "nonnumerical algorithms and problems",
+                "theory";
+         <http://purl.org/dc/terms/title> "Convergence time to Nash equilibrium in load balancing" .
+    
+    <http://dx.doi.org/10.1145/1290672.1290680>     <http://purl.org/dc/terms/creator> "Rajeev Raman",
+                "Srinivasa Rao Satti",
+                "Venkatesh Raman";
+         <http://purl.org/dc/terms/identifier> "10.1145/1290672.1290680";
+         <http://purl.org/dc/terms/source> "E.1",
+                "E.4",
+                "F.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "design",
+                "dictionaries",
+                "multisets",
+                "perfect hashing",
+                "prefix sums",
+                "sets",
+                "succinct data structures",
+                "theory",
+                "tries";
+         <http://purl.org/dc/terms/title> "Succinct indexable dictionaries with applications to encoding <i>k</i>-ary trees prefix sums and multisets" .
+    
+    <http://dx.doi.org/10.1145/1290672.1290686>     <http://purl.org/dc/terms/creator> "Hiroshi Fujiwara",
+                "Susanne Albers";
+         <http://purl.org/dc/terms/identifier> "10.1145/1290672.1290686";
+         <http://purl.org/dc/terms/source> "F.2.2",
+                "G.2.1";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "combinatorial algorithms",
+                "competitive analysis",
+                "dynamic programming",
+                "flow time",
+                "offline algorithms",
+                "online algorithms",
+                "sequencing and scheduling",
+                "theory",
+                "variable-speed processor";
+         <http://purl.org/dc/terms/title> "Energy-efficient algorithms for flow time minimization" .
+    
+    <http://dx.doi.org/10.1145/1297332.1297338>     <http://purl.org/dc/terms/creator> "Aristides Gionis",
+                "Heikki Mannila",
+                "Panayiotis Tsaparas",
+                "Taneli Mielik&#228",
+                "inen";
+         <http://purl.org/dc/terms/identifier> "10.1145/1297332.1297338";
+         <http://purl.org/dc/terms/source> "H.2.8";
+         <http://purl.org/dc/terms/subject> "0--1 data",
+                "algorithms",
+                "data mining",
+                "experimentation",
+                "management",
+                "randomization tests",
+                "significance testing",
+                "swaps";
+         <http://purl.org/dc/terms/title> "Assessing data mining results via swap randomization" .
+    
+    <http://dx.doi.org/10.1145/1367064.1367072>     <http://purl.org/dc/terms/creator> "Gonzalo Navarro",
+                "Veli M&#228",
+                "kinen";
+         <http://purl.org/dc/terms/identifier> "10.1145/1367064.1367072";
+         <http://purl.org/dc/terms/source> "E.1",
+                "E.2",
+                "E.4",
+                "F.2.2",
+                "H.2.2",
+                "H.3.2",
+                "H.3.3";
+         <http://purl.org/dc/terms/subject> "access methods",
+                "algorithms",
+                "compressed dynamic data structures",
+                "compressed text databases",
+                "computations on discrete structures",
+                "data compaction and compression",
+                "entropy",
+                "file organization",
+                "partial sums",
+                "pattern matching",
+                "search process",
+                "sequences",
+                "sorting and searching";
+         <http://purl.org/dc/terms/title> "Dynamic entropy-compressed sequences and full-text indexes" .
+    
+    <http://dx.doi.org/10.1145/1376815.1376819>     <http://purl.org/dc/terms/creator> "Aminul Islam",
+                "Diana Inkpen";
+         <http://purl.org/dc/terms/identifier> "10.1145/1376815.1376819";
+         <http://purl.org/dc/terms/source> "I.2.1",
+                "I.2.7";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "corpus-based measures",
+                "experimentation",
+                "natural language interfaces",
+                "performance",
+                "semantic similarity of words",
+                "similarity of short texts",
+                "text analysis";
+         <http://purl.org/dc/terms/title> "Semantic text similarity using corpus-based word similarity and string similarity" .
+    
+    <http://dx.doi.org/10.1145/1409620.1409621>     <http://purl.org/dc/terms/creator> "Christos Faloutsos",
+                "Dacheng Tao",
+                "Jimeng Sun",
+                "Philip S. Yu",
+                "Spiros Papadimitriou";
+         <http://purl.org/dc/terms/identifier> "10.1145/1409620.1409621";
+         <http://purl.org/dc/terms/source> "G.1.10",
+                "H.2.8",
+                "I.5.3";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "data mining",
+                "multilinear algebra",
+                "performance",
+                "stream mining",
+                "tensor",
+                "theory";
+         <http://purl.org/dc/terms/title> "Incremental tensor analysis: Theory and applications" .
+    
+    <http://dx.doi.org/10.1145/1490270.1490272>     <http://purl.org/dc/terms/creator> "Avi Wigderson",
+                "Scott Aaronson";
+         <http://purl.org/dc/terms/identifier> "10.1145/1490270.1490272";
+         <http://purl.org/dc/terms/source> "F.1";
+         <http://purl.org/dc/terms/subject> "arithmetization",
+                "communication complexity",
+                "computation by abstract devices",
+                "interactive proofs",
+                "low-degree polynomials",
+                "oracles",
+                "query complexity",
+                "theory";
+         <http://purl.org/dc/terms/title> "Algebrization: A New Barrier in Complexity Theory" .
+    
+    <http://dx.doi.org/10.1145/1490270.1490273>     <http://purl.org/dc/terms/creator> "Alexander Razborov";
+         <http://purl.org/dc/terms/identifier> "10.1145/1490270.1490273";
+         <http://purl.org/dc/terms/source> "F.1.2";
+         <http://purl.org/dc/terms/subject> "dnf",
+                "probabilistic computation",
+                "pseudo-random generators",
+                "theory";
+         <http://purl.org/dc/terms/title> "A Simple Proof of Bazzi&rsquo;s Theorem" .
+    
+    <http://dx.doi.org/10.1145/1490270.1490274>     <http://purl.org/dc/terms/creator> "Chris Bourke",
+                "N. V. Vinodchandran",
+                "Raghunath Tewari";
+         <http://purl.org/dc/terms/identifier> "10.1145/1490270.1490274";
+         <http://purl.org/dc/terms/source> "F.1.3",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "directed graph reachability",
+                "path and circuit problems",
+                "planar graphs",
+                "relations among complexity classes",
+                "theory",
+                "unambiguous log-space";
+         <http://purl.org/dc/terms/title> "Directed Planar Reachability Is in Unambiguous Log-Space" .
+    
+    <http://dx.doi.org/10.1145/1497577.1497578>     <http://purl.org/dc/terms/creator> "Arthur Zimek",
+                "Hans-Peter Kriegel",
+                "Peer Kr&#246",
+                "ger";
+         <http://purl.org/dc/terms/identifier> "10.1145/1497577.1497578";
+         <http://purl.org/dc/terms/source> "A.1",
+                "H.2.8",
+                "I.5.3";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "clustering",
+                "data mining",
+                "high-dimensional data",
+                "survey",
+                "theory";
+         <http://purl.org/dc/terms/title> "Clustering high-dimensional data: A survey on subspace clustering pattern-based clustering and correlation clustering" .
+    
+    <http://dx.doi.org/10.1145/1552303.1552304>     <http://purl.org/dc/terms/creator> "Neil R. Smalheiser",
+                "Vetle I. Torvik";
+         <http://purl.org/dc/terms/identifier> "10.1145/1552303.1552304";
+         <http://purl.org/dc/terms/source> "H.3.3",
+                "H.3.7",
+                "I.5.1",
+                "I.5.2",
+                "I.5.3";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "bibliographic databases",
+                "clustering",
+                "design methodology",
+                "digital libraries",
+                "experimentation",
+                "information search and retrieval",
+                "models",
+                "name disambiguation",
+                "performance";
+         <http://purl.org/dc/terms/title> "Author name disambiguation in MEDLINE" .
+    
+    <http://dx.doi.org/10.1145/1595391.1595392>     <http://purl.org/dc/terms/creator> "Emanuele Viola",
+                "Matei David",
+                "Toniann Pitassi";
+         <http://purl.org/dc/terms/identifier> "10.1145/1595391.1595392";
+         <http://purl.org/dc/terms/source> "F.1.3";
+         <http://purl.org/dc/terms/subject> "communication complexity",
+                "lower bound",
+                "nondeterminism",
+                "number on forehead",
+                "randomization",
+                "relations among complexity classes",
+                "relations among complexity measures",
+                "theory";
+         <http://purl.org/dc/terms/title> "Improved Separations between Nondeterministic and Randomized Multiparty Communication" .
+    
+    <http://dx.doi.org/10.1145/1595391.1595393>     <http://purl.org/dc/terms/creator> "Prasad Raghavendra",
+                "Venkatesan Guruswami";
+         <http://purl.org/dc/terms/identifier> "10.1145/1595391.1595393";
+         <http://purl.org/dc/terms/source> "F.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "analysis of algorithms and problem complexity",
+                "hardness of approximation",
+                "linearity testing",
+                "probabilistically checkable proofs",
+                "sparse linear equations",
+                "theory";
+         <http://purl.org/dc/terms/title> "Hardness of Solving Sparse Overdetermined Linear Systems: A 3-Query PCP over Integers" .
+    
+    <http://dx.doi.org/10.1145/1644873.1644874>     <http://purl.org/dc/terms/creator> "Yehuda Koren";
+         <http://purl.org/dc/terms/identifier> "10.1145/1644873.1644874";
+         <http://purl.org/dc/terms/source> "H.2.8",
+                "H.3.3";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "collaborative filtering",
+                "data mining",
+                "information filtering",
+                "netflix prize",
+                "recommender systems";
+         <http://purl.org/dc/terms/title> "Factor in the neighbors: Scalable and accurate collaborative filtering" .
+    
+    <http://dx.doi.org/10.1145/1714450.1714453>     <http://purl.org/dc/terms/creator> "Meena Mahajan",
+                "Nutan Limaye",
+                "Raghav Kulkarni",
+                "Samir Datta";
+         <http://purl.org/dc/terms/identifier> "10.1145/1714450.1714453";
+         <http://purl.org/dc/terms/source> "F.1.3",
+                "F.2.2",
+                "F.2.3",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "bipartite graphs",
+                "computations on discrete structures",
+                "counting classes",
+                "determinant",
+                "path and circuit problems",
+                "perfect matching",
+                "permanent",
+                "planarity",
+                "relations among complexity classes",
+                "theory";
+         <http://purl.org/dc/terms/title> "Planarity Determinants Permanents and (Unique) Matchings" .
+    
+    <http://dx.doi.org/10.1145/1867719.1867721>     <http://purl.org/dc/terms/creator> "Alexander Souza",
+                "Martin Hoefer";
+         <http://purl.org/dc/terms/identifier> "10.1145/1867719.1867721";
+         <http://purl.org/dc/terms/source> "F.2.2",
+                "G.2.3",
+                "I.2.11";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "average-case analysis",
+                "economics",
+                "multiagent systems",
+                "price of anarchy",
+                "selfish routing",
+                "sequencing and scheduling",
+                "theory";
+         <http://purl.org/dc/terms/title> "Tradeoffs and Average-Case Equilibria in Selfish Routing" .
+    
+    <http://dx.doi.org/10.1145/1944857.1944858>     <http://purl.org/dc/terms/creator> "Eric Purdy";
+         <http://purl.org/dc/terms/identifier> "10.1145/1944857.1944858";
+         <http://purl.org/dc/terms/source> "F.1.3",
+                "F.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "coin-weighing problems",
+                "complexity of proof procedures",
+                "relations among complexity measures",
+                "theory";
+         <http://purl.org/dc/terms/title> "Lower Bounds for Coin-Weighing Problems" .
+    
+    <http://dx.doi.org/10.1145/1944857.1944859>     <http://purl.org/dc/terms/creator> "Jacobo Tor&#225",
+                "Vikraman Arvind",
+                "n";
+         <http://purl.org/dc/terms/identifier> "10.1145/1944857.1944859";
+         <http://purl.org/dc/terms/source> "F.1.1",
+                "F.1.3",
+                "F.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "arthur-merlin games",
+                "computational and structural complexity",
+                "computations on discrete structures",
+                "derandomization",
+                "limited nondeterminism",
+                "relations between models",
+                "theory";
+         <http://purl.org/dc/terms/title> "Solvable Group Isomorphism Is (Almost) in NP &#8745; coNP" .
+    
+    <http://dx.doi.org/10.1145/2071379.2071383>     <http://purl.org/dc/terms/creator> "Charles E. Leiserson",
+                "Harald Prokop",
+                "Matteo Frigo",
+                "Sridhar Ramachandran";
+         <http://purl.org/dc/terms/identifier> "10.1145/2071379.2071383";
+         <http://purl.org/dc/terms/source> "F.2";
+         <http://purl.org/dc/terms/subject> "algorithm",
+                "algorithms",
+                "analysis of algorithms and problem complexity",
+                "cache-oblivious",
+                "caching",
+                "fast fourier transform",
+                "i/o complexity",
+                "matrix multiplication",
+                "matrix transpose",
+                "sorting",
+                "theory";
+         <http://purl.org/dc/terms/title> "Cache-Oblivious Algorithms" .
+    
+    <http://dx.doi.org/10.1145/2077336.2077337>     <http://purl.org/dc/terms/creator> "Dustin Wehr",
+                "Mark Braverman",
+                "Pierre McKenzie",
+                "Rahul Santhanam",
+                "Stephen Cook";
+         <http://purl.org/dc/terms/identifier> "10.1145/2077336.2077337";
+         <http://purl.org/dc/terms/source> "F.2.0";
+         <http://purl.org/dc/terms/subject> "branching programs",
+                "general",
+                "log space",
+                "logdcfl",
+                "lower bounds",
+                "theory";
+         <http://purl.org/dc/terms/title> "Pebbles and Branching Programs for Tree Evaluation" .
+    
+    <http://dx.doi.org/10.1145/2086737.2086741>     <http://purl.org/dc/terms/creator> "Andreas Krause",
+                "Jure Leskovec",
+                "Manuel Gomez-Rodriguez";
+         <http://purl.org/dc/terms/identifier> "10.1145/2086737.2086741";
+         <http://purl.org/dc/terms/source> "H.2.8";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "blogs",
+                "data mining",
+                "experimentation",
+                "information cascades",
+                "meme-tracking",
+                "networks of diffusion",
+                "news media",
+                "social networks";
+         <http://purl.org/dc/terms/title> "Inferring Networks of Diffusion and Influence" .
+    
+    <http://dx.doi.org/10.1145/2133360.2133364>     <http://purl.org/dc/terms/creator> "Jeffrey Erman",
+                "Nick Duffield",
+                "Patrick Haffner",
+                "Subhabrata Sen",
+                "Yu Jin",
+                "Zhi-Li Zhang";
+         <http://purl.org/dc/terms/identifier> "10.1145/2133360.2133364";
+         <http://purl.org/dc/terms/source> "C.2.3",
+                "I.5.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "classifier design and evaluation",
+                "communications network",
+                "machine learning",
+                "measurement",
+                "network management",
+                "theory",
+                "traffic classification";
+         <http://purl.org/dc/terms/title> "A Modular Machine Learning System for Flow-Level Traffic Classification in Large Networks" .
+    
+    <http://dx.doi.org/10.1145/2141938.2141939>     <http://purl.org/dc/terms/creator> "Hirotada Kobayashi",
+                "Keiji Matsumoto",
+                "Seiichiro Tani";
+         <http://purl.org/dc/terms/identifier> "10.1145/2141938.2141939";
+         <http://purl.org/dc/terms/source> "C.2.1",
+                "C.2.2",
+                "F.1.1",
+                "F.1.2",
+                "F.2.0";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "distributed computing",
+                "distributed networks",
+                "general",
+                "models of computation",
+                "modes of computation",
+                "network protocols",
+                "quantum algorithms",
+                "quantum communication",
+                "theory";
+         <http://purl.org/dc/terms/title> "Exact Quantum Algorithms for the Leader Election Problem" .
+    
+    <http://dx.doi.org/10.1145/2141938.2141941>     <http://purl.org/dc/terms/creator> "Anindya De",
+                "Thomas Watson";
+         <http://purl.org/dc/terms/identifier> "10.1145/2141938.2141941";
+         <http://purl.org/dc/terms/source> "F.1.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "extractors",
+                "locally samplable sources",
+                "lower bounds",
+                "probabilistic computation",
+                "theory";
+         <http://purl.org/dc/terms/title> "Extractors and Lower Bounds for Locally Samplable Sources" .
+    
+    <http://dx.doi.org/10.1145/2189778.2189780>     <http://purl.org/dc/terms/creator> "Akitoshi Kawamura",
+                "Stephen Cook";
+         <http://purl.org/dc/terms/identifier> "10.1145/2189778.2189780";
+         <http://purl.org/dc/terms/source> "F.1.3";
+         <http://purl.org/dc/terms/subject> "complexity measures and classes",
+                "computable analysis",
+                "computational complexity",
+                "higher-type complexity",
+                "second-order polynomials",
+                "theory";
+         <http://purl.org/dc/terms/title> "Complexity Theory for Operators in Analysis" .
+    
+    <http://dx.doi.org/10.1145/2362383.2362384>     <http://purl.org/dc/terms/creator> "Laiwan Chan",
+                "Zhenxing Wang";
+         <http://purl.org/dc/terms/identifier> "10.1145/2362383.2362384";
+         <http://purl.org/dc/terms/source> "H.2.8";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "bayesian networks",
+                "causal modeling",
+                "data mining",
+                "graphical models",
+                "performance";
+         <http://purl.org/dc/terms/title> "Learning bayesian networks from Markov random fields: An efficient algorithm for linear models" .
+    
+    <http://dx.doi.org/10.1145/2362383.2362387>     <http://purl.org/dc/terms/creator> "Antonio A. F. Loureiro",
+                "Christos Faloutsos",
+                "Pedro O. S. Vaz de Melo",
+                "Virgilio A. F. Almeida";
+         <http://purl.org/dc/terms/identifier> "10.1145/2362383.2362387";
+         <http://purl.org/dc/terms/source> "G.3",
+                "H.2.8";
+         <http://purl.org/dc/terms/subject> "complex networks",
+                "data mining",
+                "social networks",
+                "sports analytics",
+                "statistical computing",
+                "theory";
+         <http://purl.org/dc/terms/title> "Forecasting in the NBA and other team sports: Network effects in action" .
+    
+    <http://dx.doi.org/10.1145/2382559.2382560>     <http://purl.org/dc/terms/creator> "Chandan Saha",
+                "Neeraj Kayal";
+         <http://purl.org/dc/terms/identifier> "10.1145/2382559.2382560";
+         <http://purl.org/dc/terms/source> "F.2.1";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "arithmetic circuits",
+                "numerical algorithms and problems",
+                "polynomials",
+                "sum of square roots",
+                "theory";
+         <http://purl.org/dc/terms/title> "On the Sum of Square Roots of Polynomials and Related Problems" .
+    
+    <http://dx.doi.org/10.1145/2382559.2382561>     <http://purl.org/dc/terms/creator> "Muthuramakrishnan Venkitasubramaniam",
+                "Rafael Pass";
+         <http://purl.org/dc/terms/identifier> "10.1145/2382559.2382561";
+         <http://purl.org/dc/terms/source> "F.1.2";
+         <http://purl.org/dc/terms/subject> "interactive proofs",
+                "modes of computation",
+                "parallel-repetition",
+                "public-coin protocols",
+                "security",
+                "soundness error",
+                "theory";
+         <http://purl.org/dc/terms/title> "A Parallel Repetition Theorem for Constant-Round Arthur-Merlin Proofs" .
+    
+    <http://dx.doi.org/10.1145/2382559.2382562>     <http://purl.org/dc/terms/creator> "Alex Samorodnitsky",
+                "Dana Ron",
+                "Muli Safra",
+                "Omri Weinstein",
+                "Ronitt Rubinfeld";
+         <http://purl.org/dc/terms/identifier> "10.1145/2382559.2382562";
+         <http://purl.org/dc/terms/source> "G.2.1";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "combinatorial algorithms",
+                "influence of a boolean function",
+                "sublinear query approximation algorithms",
+                "symmetric chains",
+                "theory";
+         <http://purl.org/dc/terms/title> "Approximating the Influence of Monotone Boolean Functions in O(&#x0221A;n) Query Complexity" .
+    
+    <http://dx.doi.org/10.1145/2382559.2382563>     <http://purl.org/dc/terms/creator> "David Barber",
+                "Michael L. Littman",
+                "Nikos Vlassis";
+         <http://purl.org/dc/terms/identifier> "10.1145/2382559.2382563";
+         <http://purl.org/dc/terms/source> "F.2.1";
+         <http://purl.org/dc/terms/subject> "bilinear program",
+                "computational complexity",
+                "computations on polynomials",
+                "matrix fractional program",
+                "motzkin-straus theorem",
+                "nonlinear optimization",
+                "numerical algorithms and problems",
+                "partially observable markov decision process",
+                "performance",
+                "stochastic controller",
+                "sum-of-square-roots problem";
+         <http://purl.org/dc/terms/title> "On the Computational Complexity of Stochastic Controller Optimization in POMDPs" .
+    
+    <http://dx.doi.org/10.1145/2390176.2390177>     <http://purl.org/dc/terms/creator> "Zeev Nutov";
+         <http://purl.org/dc/terms/identifier> "10.1145/2390176.2390177";
+         <http://purl.org/dc/terms/source> "F.2.2",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "approximation algorithms",
+                "computations on discrete structures",
+                "graph algorithms",
+                "graph connectivity",
+                "node-costs",
+                "rooted connectivity",
+                "theory";
+         <http://purl.org/dc/terms/title> "Approximating minimum-cost connectivity problems via uncrossable bifamilies" .
+    
+    <http://dx.doi.org/10.1145/2390176.2390180>     <http://purl.org/dc/terms/creator> "Christian Sommer",
+                "Shang-Hua Teng",
+                "Wei Chen",
+                "Yajun Wang";
+         <http://purl.org/dc/terms/identifier> "10.1145/2390176.2390180";
+         <http://purl.org/dc/terms/source> "C.2.2",
+                "F.2.2",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "complex networks",
+                "distance oracle",
+                "graph theory",
+                "network protocols",
+                "nonnumerical algorithms and problems",
+                "power-law graphs",
+                "shortest path",
+                "shortest-path query",
+                "theory";
+         <http://purl.org/dc/terms/title> "A compact routing scheme and approximate distance oracle for power-law graphs" .
+    
+    <http://dx.doi.org/10.1145/2390176.2390188>     <http://purl.org/dc/terms/creator> "Arie M. C. A. Koster",
+                "Dieter Kratsch",
+                "Dimitrios M. Thilikos",
+                "Fedor V. Fomin",
+                "Hans L. Bodlaender";
+         <http://purl.org/dc/terms/identifier> "10.1145/2390176.2390188";
+         <http://purl.org/dc/terms/source> "F.2.2",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "computations on discrete structures",
+                "design",
+                "dynamic programming",
+                "exact algorithms",
+                "experimentation",
+                "graph algorithms",
+                "graph theory",
+                "separators",
+                "theory",
+                "treewidth";
+         <http://purl.org/dc/terms/title> "On exact algorithms for treewidth" .
+    
+    <http://dx.doi.org/10.1145/2435209.2435210>     <http://purl.org/dc/terms/creator> "Fabio Fassetti",
+                "Fabrizio Angiulli";
+         <http://purl.org/dc/terms/identifier> "10.1145/2435209.2435210";
+         <http://purl.org/dc/terms/source> "H.2.8";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "classification",
+                "data mining",
+                "nearest neighbor",
+                "nearest neighbor rule",
+                "probability density functions",
+                "uncertain data";
+         <http://purl.org/dc/terms/title> "Nearest Neighbor-Based Classification of Uncertain Data" .
+    
+    <http://dx.doi.org/10.1145/2435209.2435211>     <http://purl.org/dc/terms/creator> "Dingding Wang",
+                "Shenghuo Zhu",
+                "Tao Li",
+                "Yihong Gong";
+         <http://purl.org/dc/terms/identifier> "10.1145/2435209.2435211";
+         <http://purl.org/dc/terms/source> "H.3.3",
+                "I.2.6";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "comparative document summarization",
+                "discriminative sentence selection",
+                "experimentation",
+                "information search and retrieval",
+                "learning",
+                "performance";
+         <http://purl.org/dc/terms/title> "Comparative Document Summarization via Discriminative Sentence Selection" .
+    
+    <http://dx.doi.org/10.1145/2435209.2435212>     <http://purl.org/dc/terms/creator> "Amin Saberi",
+                "David F. Gleich",
+                "Mohsen Bayati",
+                "Ying Wang";
+         <http://purl.org/dc/terms/identifier> "10.1145/2435209.2435212";
+         <http://purl.org/dc/terms/source> "H.4.0";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "belief propagation",
+                "general",
+                "graph matching",
+                "message-passing",
+                "network alignment";
+         <http://purl.org/dc/terms/title> "Message-Passing Algorithms for Sparse Network Alignment" .
+    
+    <http://dx.doi.org/10.1145/2438645.2438646>     <http://purl.org/dc/terms/creator> "Oren Weimann",
+                "Raphael Yuster";
+         <http://purl.org/dc/terms/identifier> "10.1145/2438645.2438646";
+         <http://purl.org/dc/terms/source> "E.1",
+                "F.2.2",
+                "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "computations on discrete structures",
+                "design",
+                "distance oracles",
+                "fault tolerance",
+                "graph theory",
+                "replacement paths",
+                "shortest paths",
+                "theory";
+         <http://purl.org/dc/terms/title> "Replacement Paths and Distance Sensitivity Oracles via Fast Matrix Multiplication" .
+    
+    <http://dx.doi.org/10.1145/2438645.2438647>     <http://purl.org/dc/terms/creator> "Liam Roditty",
+                "Roei Tov";
+         <http://purl.org/dc/terms/identifier> "10.1145/2438645.2438647";
+         <http://purl.org/dc/terms/source> "G.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "approximation",
+                "girth",
+                "graph theory",
+                "graphs",
+                "minimum weight cycle",
+                "performance",
+                "theory";
+         <http://purl.org/dc/terms/title> "Approximating the Girth" .
+    
+    <http://dx.doi.org/10.1145/2438645.2438648>     <http://purl.org/dc/terms/creator> "Ken-Ichi Kawarabayashi",
+                "Yusuke Kobayashi";
+         <http://purl.org/dc/terms/identifier> "10.1145/2438645.2438648";
+         <http://purl.org/dc/terms/source> "G.2.2";
+         <http://purl.org/dc/terms/subject> "4-edge-connected graph",
+                "algorithms",
+                "approximation algorithm",
+                "edge-disjoint paths",
+                "eulerian graph",
+                "graph theory";
+         <http://purl.org/dc/terms/title> "An O(log n)-Approximation Algorithm for the Edge-Disjoint Paths Problem in Eulerian Planar Graphs" .
+    
+    <http://dx.doi.org/10.1145/2438645.2438650>     <http://purl.org/dc/terms/creator> "Ho-Leung Chan",
+                "Kirk Pruhs",
+                "Nikhil Bansal";
+         <http://purl.org/dc/terms/identifier> "10.1145/2438645.2438650";
+         <http://purl.org/dc/terms/source> "F.2.2";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "design",
+                "nonnumerical algorithms and problems",
+                "performance",
+                "scheduling",
+                "speed scaling";
+         <http://purl.org/dc/terms/title> "Speed Scaling with an Arbitrary Power Function" .
+    
+    <http://dx.doi.org/10.1145/2438645.2438651>     <http://purl.org/dc/terms/creator> "Asaf Levin",
+                "Dorit S. Hochbaum";
+         <http://purl.org/dc/terms/identifier> "10.1145/2438645.2438651";
+         <http://purl.org/dc/terms/source> "G.2.1";
+         <http://purl.org/dc/terms/subject> "algorithms",
+                "approximation algorithm",
+                "biclustering",
+                "combinatorics",
+                "gene expression",
+                "order preserving",
+                "theory";
+         <http://purl.org/dc/terms/title> "Approximation Algorithms for a Minimization Variant of the Order-Preserving Submatrices and for Biclustering Problems" .
+    
+#ENDS

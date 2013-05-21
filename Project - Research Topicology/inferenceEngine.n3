@@ -1,0 +1,33 @@
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+#Publication is a document
+{?Publication dcterms:creator ?Author} => {?Publication a foaf:Document}.
+
+#Author is a person
+{?Publication dcterms:creator ?Author} => {?Author a foaf:Person}.
+
+foaf:knows a owl:SymmetricProperty.
+
+# Co-authors know each other
+{?Publication dcterms:creator ?Author1 . ?Publication dcterms:creator ?Author2} => {?Author1 foaf:knows ?Author2}.
+
+#Topic of a publication is the author interest
+{?Publication dcterms:creator ?Author . ?Publication dcterms:subject ?Topic} => {?Author foaf:interest ?Topic}.
+
+#CCS classification specified by dcterms:source is a community and the publication is a part of the community
+#triple in RDF is -> [doi] dcterms:source [ccs_id]
+#in the new file => C.1.1 , D.3.2 , E.4
+{?Publication dcterms:source ?CCSNode} => {?CCSNode a sioc:Community . ?CCSNode dcterms:hasPart ?Publication}.
+
+
+#author of a document is part of the community to which the document belongs to
+{?Publication a foaf:Document . ?Publication dcterms:creator ?Author . ?CCSNode dcterms:hasPart ?Publication } => {?CCSNode dcterms:hasPart ?Author}.
+
+#topic of a publication is also a topic that a community deals with
+{?Publication dcterms:subject ?Topic . ?CCSNode dcterms:hasPart ?Publication } => {?CCSNode sioc:topic ?Topic}.
